@@ -9,3 +9,4 @@ VPR API
    contexts
    netlist
    rr_graph
+   errors
