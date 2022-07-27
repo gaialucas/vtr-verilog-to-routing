@@ -1,0 +1,36 @@
+#VPR Routing Metrics
+routed_wirelength;vpr_second_run.out;\s*Total wirelength: (.*), average .*
+
+all_rr_edges;vpr.out;\s*RR Graph Edges: (\d+)
+post_sim_rr_edges;vpr_second_run.out;\s*RR Graph Edges: (\d+)
+
+total_nets_routed;vpr_second_run.out;Router Stats: total_nets_routed: (\d+) .*
+total_connections_routed;vpr_second_run.out;Router Stats: .*total_connections_routed: (\d+) .*
+total_heap_pushes;vpr_second_run.out;Router Stats: .*total_heap_pushes: (\d+) .*
+total_heap_pops;vpr_second_run.out;Router Stats: .*total_heap_pops: (\d+)
+
+#Area Metrics
+logic_block_area_total;vpr_second_run.out;\s*Total logic block area .*: (.*)
+logic_block_area_used;vpr_second_run.out;\s*Total used logic block area: (.*)
+routing_area_total;vpr_second_run.out;\s*Total routing area: (.*), per logic tile: .*
+routing_area_per_tile;vpr_second_run.out;\s*Total routing area: .*, per logic tile: (.*)
+
+#VPR Routing Timing Metrics
+crit_path_route_success_iteration;vpr_second_run.out;Successfully routed after (\d+) routing iterations
+
+#VPR Analysis (final implementation) Timing Metrics
+first_critical_path_delay;vpr.out;Final critical path delay \(least slack\): (.*) ns
+second_critical_path_delay;vpr_second_run.out;Final critical path delay \(least slack\): (.*) ns
+geomean_nonvirtual_intradomain_critical_path_delay;vpr_second_run.out;Final geomean non-virtual intra-domain period: (.*) ns
+setup_TNS;vpr_second_run.out;Final setup Total Negative Slack \(sTNS\): (.*) ns
+setup_WNS;vpr_second_run.out;Final setup Worst Negative Slack \(sWNS\): (.*) ns
+hold_TNS;vpr_second_run.out;Final hold Total Negative Slack \(hTNS\): (.*) ns
+hold_WNS;vpr_second_run.out;Final hold Worst Negative Slack \(hWNS\): (.*) ns
+
+crit_path_route_time;vpr_second_run.out;\s*Routing took (.*) seconds
+
+crit_path_total_timing_analysis_time;vpr_second_run.out;Flow timing analysis took (.*) seconds
+crit_path_total_sta_time;vpr_second_run.out;Flow timing analysis took .* seconds \((.*) STA
+
+#Run-time Metrics
+router_lookahead_computation_time;vpr_second_run.out;\s*Computing router lookahead map took (.*) seconds

@@ -1,0 +1,12 @@
+# Metrics for the standard VTR flow with fixed channel width
+# and fault simulation
+
+%include "common/vtr_flow.txt"
+%include "common/vtr_benchmarks.txt"
+
+%include "common/vpr.common.txt"
+%include "timing/vpr.pack.txt"
+%include "timing/vpr.place_second_run.txt"
+%include "timing/vpr.route_fixed_chan_width_second_run.txt"
+
+# Simulation Metrics
