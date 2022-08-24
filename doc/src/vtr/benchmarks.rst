@@ -47,10 +47,6 @@ The VTR benchmarks are provided as Verilog under: ::
 
 This provides full flexibility to modify and change how the designs are implemented (including the creation of new netlist primitives).
 
-The VTR benchmarks are also included as pre-synthesized BLIF files under: ::
-
-    $VTR_ROOT/vtr_flow/benchmarks/vtr_benchmarks_blif
-
 .. _titan_benchmarks:
 
 Titan Benchmarks
