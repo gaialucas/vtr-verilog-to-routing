@@ -1,0 +1,2604 @@
+# Benchmark "paj_boundtop_hierarchy_no_mem" written by ABC on Wed Aug 24 19:26:57 2022 
+
+
+.model paj_boundtop_hierarchy_no_mem 
+
+
+.inputs paj_boundtop_hierarchy_no_mem^wanttriID paj_boundtop_hierarchy_no_mem^resultready \
+ paj_boundtop_hierarchy_no_mem^resultdata~0 paj_boundtop_hierarchy_no_mem^resultdata~1 \
+ paj_boundtop_hierarchy_no_mem^resultdata~2 paj_boundtop_hierarchy_no_mem^resultdata~3 \
+ paj_boundtop_hierarchy_no_mem^resultdata~4 paj_boundtop_hierarchy_no_mem^resultdata~5 \
+ paj_boundtop_hierarchy_no_mem^resultdata~6 paj_boundtop_hierarchy_no_mem^resultdata~7 \
+ paj_boundtop_hierarchy_no_mem^resultdata~8 paj_boundtop_hierarchy_no_mem^resultdata~9 \
+ paj_boundtop_hierarchy_no_mem^resultdata~10 paj_boundtop_hierarchy_no_mem^resultdata~11 \
+ paj_boundtop_hierarchy_no_mem^resultdata~12 paj_boundtop_hierarchy_no_mem^resultdata~13 \
+ paj_boundtop_hierarchy_no_mem^resultdata~14 paj_boundtop_hierarchy_no_mem^resultdata~15 \
+ paj_boundtop_hierarchy_no_mem^resultdata~16 paj_boundtop_hierarchy_no_mem^resultdata~17 \
+ paj_boundtop_hierarchy_no_mem^resultdata~18 paj_boundtop_hierarchy_no_mem^resultdata~19 \
+ paj_boundtop_hierarchy_no_mem^resultdata~20 paj_boundtop_hierarchy_no_mem^resultdata~21 \
+ paj_boundtop_hierarchy_no_mem^resultdata~22 paj_boundtop_hierarchy_no_mem^resultdata~23 \
+ paj_boundtop_hierarchy_no_mem^resultdata~24 paj_boundtop_hierarchy_no_mem^resultdata~25 \
+ paj_boundtop_hierarchy_no_mem^resultdata~26 paj_boundtop_hierarchy_no_mem^resultdata~27 \
+ paj_boundtop_hierarchy_no_mem^resultdata~28 paj_boundtop_hierarchy_no_mem^resultdata~29 \
+ paj_boundtop_hierarchy_no_mem^resultdata~30 paj_boundtop_hierarchy_no_mem^resultdata~31 \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~0 paj_boundtop_hierarchy_no_mem^braddrin~1 \
+ paj_boundtop_hierarchy_no_mem^braddrin~2 paj_boundtop_hierarchy_no_mem^braddrin~3 paj_boundtop_hierarchy_no_mem^braddrin~4 \
+ paj_boundtop_hierarchy_no_mem^braddrin~5 paj_boundtop_hierarchy_no_mem^braddrin~6 paj_boundtop_hierarchy_no_mem^braddrin~7 \
+ paj_boundtop_hierarchy_no_mem^braddrin~8 paj_boundtop_hierarchy_no_mem^braddrin~9 paj_boundtop_hierarchy_no_mem^brdata_ready \
+ paj_boundtop_hierarchy_no_mem^brdatain~0 paj_boundtop_hierarchy_no_mem^brdatain~1 paj_boundtop_hierarchy_no_mem^brdatain~2 \
+ paj_boundtop_hierarchy_no_mem^brdatain~3 paj_boundtop_hierarchy_no_mem^brdatain~4 paj_boundtop_hierarchy_no_mem^brdatain~5 \
+ paj_boundtop_hierarchy_no_mem^brdatain~6 paj_boundtop_hierarchy_no_mem^brdatain~7 paj_boundtop_hierarchy_no_mem^brdatain~8 \
+ paj_boundtop_hierarchy_no_mem^brdatain~9 paj_boundtop_hierarchy_no_mem^brdatain~10 paj_boundtop_hierarchy_no_mem^brdatain~11 \
+ paj_boundtop_hierarchy_no_mem^brdatain~12 paj_boundtop_hierarchy_no_mem^brdatain~13 paj_boundtop_hierarchy_no_mem^brdatain~14 \
+ paj_boundtop_hierarchy_no_mem^brdatain~15 paj_boundtop_hierarchy_no_mem^brdatain~16 paj_boundtop_hierarchy_no_mem^brdatain~17 \
+ paj_boundtop_hierarchy_no_mem^brdatain~18 paj_boundtop_hierarchy_no_mem^brdatain~19 paj_boundtop_hierarchy_no_mem^brdatain~20 \
+ paj_boundtop_hierarchy_no_mem^brdatain~21 paj_boundtop_hierarchy_no_mem^brdatain~22 paj_boundtop_hierarchy_no_mem^brdatain~23 \
+ paj_boundtop_hierarchy_no_mem^brdatain~24 paj_boundtop_hierarchy_no_mem^brdatain~25 paj_boundtop_hierarchy_no_mem^brdatain~26 \
+ paj_boundtop_hierarchy_no_mem^brdatain~27 paj_boundtop_hierarchy_no_mem^brdatain~28 paj_boundtop_hierarchy_no_mem^brdatain~29 \
+ paj_boundtop_hierarchy_no_mem^brdatain~30 paj_boundtop_hierarchy_no_mem^brdatain~31 paj_boundtop_hierarchy_no_mem^addr2_ready \
+ paj_boundtop_hierarchy_no_mem^addr2in~0 paj_boundtop_hierarchy_no_mem^addr2in~1 paj_boundtop_hierarchy_no_mem^addr2in~2 \
+ paj_boundtop_hierarchy_no_mem^addr2in~3 paj_boundtop_hierarchy_no_mem^addr2in~4 paj_boundtop_hierarchy_no_mem^addr2in~5 \
+ paj_boundtop_hierarchy_no_mem^addr2in~6 paj_boundtop_hierarchy_no_mem^addr2in~7 paj_boundtop_hierarchy_no_mem^addr2in~8 \
+ paj_boundtop_hierarchy_no_mem^addr2in~9 paj_boundtop_hierarchy_no_mem^addr2in~10 paj_boundtop_hierarchy_no_mem^addr2in~11 \
+ paj_boundtop_hierarchy_no_mem^addr2in~12 paj_boundtop_hierarchy_no_mem^addr2in~13 paj_boundtop_hierarchy_no_mem^addr2in~14 \
+ paj_boundtop_hierarchy_no_mem^addr2in~15 paj_boundtop_hierarchy_no_mem^addr2in~16 paj_boundtop_hierarchy_no_mem^addr2in~17 \
+ paj_boundtop_hierarchy_no_mem^data2_ready paj_boundtop_hierarchy_no_mem^data2in~0 paj_boundtop_hierarchy_no_mem^data2in~1 \
+ paj_boundtop_hierarchy_no_mem^data2in~2 paj_boundtop_hierarchy_no_mem^data2in~3 paj_boundtop_hierarchy_no_mem^data2in~4 \
+ paj_boundtop_hierarchy_no_mem^data2in~5 paj_boundtop_hierarchy_no_mem^data2in~6 paj_boundtop_hierarchy_no_mem^data2in~7 \
+ paj_boundtop_hierarchy_no_mem^data2in~8 paj_boundtop_hierarchy_no_mem^data2in~9 paj_boundtop_hierarchy_no_mem^data2in~10 \
+ paj_boundtop_hierarchy_no_mem^data2in~11 paj_boundtop_hierarchy_no_mem^data2in~12 paj_boundtop_hierarchy_no_mem^data2in~13 \
+ paj_boundtop_hierarchy_no_mem^data2in~14 paj_boundtop_hierarchy_no_mem^data2in~15 paj_boundtop_hierarchy_no_mem^data2in~16 \
+ paj_boundtop_hierarchy_no_mem^data2in~17 paj_boundtop_hierarchy_no_mem^data2in~18 paj_boundtop_hierarchy_no_mem^data2in~19 \
+ paj_boundtop_hierarchy_no_mem^data2in~20 paj_boundtop_hierarchy_no_mem^data2in~21 paj_boundtop_hierarchy_no_mem^data2in~22 \
+ paj_boundtop_hierarchy_no_mem^data2in~23 paj_boundtop_hierarchy_no_mem^data2in~24 paj_boundtop_hierarchy_no_mem^data2in~25 \
+ paj_boundtop_hierarchy_no_mem^data2in~26 paj_boundtop_hierarchy_no_mem^data2in~27 paj_boundtop_hierarchy_no_mem^data2in~28 \
+ paj_boundtop_hierarchy_no_mem^data2in~29 paj_boundtop_hierarchy_no_mem^data2in~30 paj_boundtop_hierarchy_no_mem^data2in~31 \
+ paj_boundtop_hierarchy_no_mem^data2in~32 paj_boundtop_hierarchy_no_mem^data2in~33 paj_boundtop_hierarchy_no_mem^data2in~34 \
+ paj_boundtop_hierarchy_no_mem^data2in~35 paj_boundtop_hierarchy_no_mem^data2in~36 paj_boundtop_hierarchy_no_mem^data2in~37 \
+ paj_boundtop_hierarchy_no_mem^data2in~38 paj_boundtop_hierarchy_no_mem^data2in~39 paj_boundtop_hierarchy_no_mem^data2in~40 \
+ paj_boundtop_hierarchy_no_mem^data2in~41 paj_boundtop_hierarchy_no_mem^data2in~42 paj_boundtop_hierarchy_no_mem^data2in~43 \
+ paj_boundtop_hierarchy_no_mem^data2in~44 paj_boundtop_hierarchy_no_mem^data2in~45 paj_boundtop_hierarchy_no_mem^data2in~46 \
+ paj_boundtop_hierarchy_no_mem^data2in~47 paj_boundtop_hierarchy_no_mem^data2in~48 paj_boundtop_hierarchy_no_mem^data2in~49 \
+ paj_boundtop_hierarchy_no_mem^data2in~50 paj_boundtop_hierarchy_no_mem^data2in~51 paj_boundtop_hierarchy_no_mem^data2in~52 \
+ paj_boundtop_hierarchy_no_mem^data2in~53 paj_boundtop_hierarchy_no_mem^data2in~54 paj_boundtop_hierarchy_no_mem^data2in~55 \
+ paj_boundtop_hierarchy_no_mem^data2in~56 paj_boundtop_hierarchy_no_mem^data2in~57 paj_boundtop_hierarchy_no_mem^data2in~58 \
+ paj_boundtop_hierarchy_no_mem^data2in~59 paj_boundtop_hierarchy_no_mem^data2in~60 paj_boundtop_hierarchy_no_mem^data2in~61 \
+ paj_boundtop_hierarchy_no_mem^data2in~62 paj_boundtop_hierarchy_no_mem^data2in~63 paj_boundtop_hierarchy_no_mem^pglobalreset \
+ paj_boundtop_hierarchy_no_mem^tm3_clk_v0 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~0 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~1 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~2 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~3 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~4 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~5 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~6 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~7 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~8 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~9 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~10 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~11 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~12 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~13 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~14 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~15 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~16 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~17 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~18 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~19 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~20 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~21 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~22 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~23 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~24 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~25 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~26 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~27 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~28 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~29 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~30 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~31 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~32 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~33 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~34 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~35 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~36 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~37 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~38 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~39 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~40 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~41 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~42 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~43 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~44 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~45 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~46 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~47 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~48 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~49 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~50 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~51 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~52 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~53 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~54 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~55 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~56 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~57 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~58 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~59 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~60 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~61 paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~62 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_in~63 paj_boundtop_hierarchy_no_mem^raygroup01~0 \
+ paj_boundtop_hierarchy_no_mem^raygroup01~1 paj_boundtop_hierarchy_no_mem^raygroupvalid01 \
+ paj_boundtop_hierarchy_no_mem^raygroup10~0 paj_boundtop_hierarchy_no_mem^raygroup10~1 \
+ paj_boundtop_hierarchy_no_mem^raygroupvalid10 paj_boundtop_hierarchy_no_mem^rgData~0 paj_boundtop_hierarchy_no_mem^rgData~1 \
+ paj_boundtop_hierarchy_no_mem^rgData~2 paj_boundtop_hierarchy_no_mem^rgData~3 paj_boundtop_hierarchy_no_mem^rgData~4 \
+ paj_boundtop_hierarchy_no_mem^rgData~5 paj_boundtop_hierarchy_no_mem^rgData~6 paj_boundtop_hierarchy_no_mem^rgData~7 \
+ paj_boundtop_hierarchy_no_mem^rgData~8 paj_boundtop_hierarchy_no_mem^rgData~9 paj_boundtop_hierarchy_no_mem^rgData~10 \
+ paj_boundtop_hierarchy_no_mem^rgData~11 paj_boundtop_hierarchy_no_mem^rgData~12 paj_boundtop_hierarchy_no_mem^rgData~13 \
+ paj_boundtop_hierarchy_no_mem^rgData~14 paj_boundtop_hierarchy_no_mem^rgData~15 paj_boundtop_hierarchy_no_mem^rgData~16 \
+ paj_boundtop_hierarchy_no_mem^rgData~17 paj_boundtop_hierarchy_no_mem^rgData~18 paj_boundtop_hierarchy_no_mem^rgData~19 \
+ paj_boundtop_hierarchy_no_mem^rgData~20 paj_boundtop_hierarchy_no_mem^rgData~21 paj_boundtop_hierarchy_no_mem^rgData~22 \
+ paj_boundtop_hierarchy_no_mem^rgData~23 paj_boundtop_hierarchy_no_mem^rgData~24 paj_boundtop_hierarchy_no_mem^rgData~25 \
+ paj_boundtop_hierarchy_no_mem^rgData~26 paj_boundtop_hierarchy_no_mem^rgData~27 paj_boundtop_hierarchy_no_mem^rgData~28 \
+ paj_boundtop_hierarchy_no_mem^rgData~29 paj_boundtop_hierarchy_no_mem^rgData~30 paj_boundtop_hierarchy_no_mem^rgData~31 \
+ paj_boundtop_hierarchy_no_mem^rgAddr~0 paj_boundtop_hierarchy_no_mem^rgAddr~1 paj_boundtop_hierarchy_no_mem^rgAddr~2 \
+ paj_boundtop_hierarchy_no_mem^rgAddr~3 paj_boundtop_hierarchy_no_mem^rgWE~0 paj_boundtop_hierarchy_no_mem^rgWE~1 \
+ paj_boundtop_hierarchy_no_mem^rgWE~2 paj_boundtop_hierarchy_no_mem^rgAddrValid paj_boundtop_hierarchy_no_mem^input1 
+
+
+.outputs paj_boundtop_hierarchy_no_mem^triIDvalid paj_boundtop_hierarchy_no_mem^triID~0 paj_boundtop_hierarchy_no_mem^triID~1 \
+ paj_boundtop_hierarchy_no_mem^triID~2 paj_boundtop_hierarchy_no_mem^triID~3 paj_boundtop_hierarchy_no_mem^triID~4 \
+ paj_boundtop_hierarchy_no_mem^triID~5 paj_boundtop_hierarchy_no_mem^triID~6 paj_boundtop_hierarchy_no_mem^triID~7 \
+ paj_boundtop_hierarchy_no_mem^triID~8 paj_boundtop_hierarchy_no_mem^triID~9 paj_boundtop_hierarchy_no_mem^triID~10 \
+ paj_boundtop_hierarchy_no_mem^triID~11 paj_boundtop_hierarchy_no_mem^triID~12 paj_boundtop_hierarchy_no_mem^triID~13 \
+ paj_boundtop_hierarchy_no_mem^triID~14 paj_boundtop_hierarchy_no_mem^triID~15 paj_boundtop_hierarchy_no_mem^raydata~0 \
+ paj_boundtop_hierarchy_no_mem^raydata~1 paj_boundtop_hierarchy_no_mem^raydata~2 paj_boundtop_hierarchy_no_mem^raydata~3 \
+ paj_boundtop_hierarchy_no_mem^raydata~4 paj_boundtop_hierarchy_no_mem^raydata~5 paj_boundtop_hierarchy_no_mem^raydata~6 \
+ paj_boundtop_hierarchy_no_mem^raydata~7 paj_boundtop_hierarchy_no_mem^raydata~8 paj_boundtop_hierarchy_no_mem^raydata~9 \
+ paj_boundtop_hierarchy_no_mem^raydata~10 paj_boundtop_hierarchy_no_mem^raydata~11 paj_boundtop_hierarchy_no_mem^raydata~12 \
+ paj_boundtop_hierarchy_no_mem^raydata~13 paj_boundtop_hierarchy_no_mem^raydata~14 paj_boundtop_hierarchy_no_mem^raydata~15 \
+ paj_boundtop_hierarchy_no_mem^raydata~16 paj_boundtop_hierarchy_no_mem^raydata~17 paj_boundtop_hierarchy_no_mem^raydata~18 \
+ paj_boundtop_hierarchy_no_mem^raydata~19 paj_boundtop_hierarchy_no_mem^raydata~20 paj_boundtop_hierarchy_no_mem^raydata~21 \
+ paj_boundtop_hierarchy_no_mem^raydata~22 paj_boundtop_hierarchy_no_mem^raydata~23 paj_boundtop_hierarchy_no_mem^raydata~24 \
+ paj_boundtop_hierarchy_no_mem^raydata~25 paj_boundtop_hierarchy_no_mem^raydata~26 paj_boundtop_hierarchy_no_mem^raydata~27 \
+ paj_boundtop_hierarchy_no_mem^raydata~28 paj_boundtop_hierarchy_no_mem^raydata~29 paj_boundtop_hierarchy_no_mem^raydata~30 \
+ paj_boundtop_hierarchy_no_mem^raydata~31 paj_boundtop_hierarchy_no_mem^rayaddr~0 paj_boundtop_hierarchy_no_mem^rayaddr~1 \
+ paj_boundtop_hierarchy_no_mem^rayaddr~2 paj_boundtop_hierarchy_no_mem^rayaddr~3 paj_boundtop_hierarchy_no_mem^raywe~0 \
+ paj_boundtop_hierarchy_no_mem^raywe~1 paj_boundtop_hierarchy_no_mem^raywe~2 paj_boundtop_hierarchy_no_mem^globalreset \
+ paj_boundtop_hierarchy_no_mem^want_braddr paj_boundtop_hierarchy_no_mem^want_brdata paj_boundtop_hierarchy_no_mem^want_addr2 \
+ paj_boundtop_hierarchy_no_mem^want_data2 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~0 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~1 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~2 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~3 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~4 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~5 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~6 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~7 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~8 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~9 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~10 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~11 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~12 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~13 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~14 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~15 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~16 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~17 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~18 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~19 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~20 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~21 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~22 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~23 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~24 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~25 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~26 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~27 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~28 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~29 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~30 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~31 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~32 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~33 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~34 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~35 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~36 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~37 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~38 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~39 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~40 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~41 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~42 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~43 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~44 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~45 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~46 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~47 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~48 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~49 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~50 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~51 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~52 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~53 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~54 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~55 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~56 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~57 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~58 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~59 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~60 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~61 paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~62 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~63 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~0 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_addr~1 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~2 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_addr~3 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~4 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_addr~5 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~6 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_addr~7 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~8 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_addr~9 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~10 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_addr~11 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~12 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_addr~13 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~14 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_addr~15 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~16 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_addr~17 paj_boundtop_hierarchy_no_mem^tm3_sram_addr~18 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^tm3_sram_we~1 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_we~2 paj_boundtop_hierarchy_no_mem^tm3_sram_we~3 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_we~4 paj_boundtop_hierarchy_no_mem^tm3_sram_we~5 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_we~6 paj_boundtop_hierarchy_no_mem^tm3_sram_we~7 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_oe~0 paj_boundtop_hierarchy_no_mem^tm3_sram_oe~1 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_adsp paj_boundtop_hierarchy_no_mem^busy01 paj_boundtop_hierarchy_no_mem^busy10 \
+ paj_boundtop_hierarchy_no_mem^rgDone paj_boundtop_hierarchy_no_mem^rgResultData~0 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~1 paj_boundtop_hierarchy_no_mem^rgResultData~2 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~3 paj_boundtop_hierarchy_no_mem^rgResultData~4 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~5 paj_boundtop_hierarchy_no_mem^rgResultData~6 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~7 paj_boundtop_hierarchy_no_mem^rgResultData~8 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~9 paj_boundtop_hierarchy_no_mem^rgResultData~10 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~11 paj_boundtop_hierarchy_no_mem^rgResultData~12 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~13 paj_boundtop_hierarchy_no_mem^rgResultData~14 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~15 paj_boundtop_hierarchy_no_mem^rgResultData~16 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~17 paj_boundtop_hierarchy_no_mem^rgResultData~18 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~19 paj_boundtop_hierarchy_no_mem^rgResultData~20 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~21 paj_boundtop_hierarchy_no_mem^rgResultData~22 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~23 paj_boundtop_hierarchy_no_mem^rgResultData~24 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~25 paj_boundtop_hierarchy_no_mem^rgResultData~26 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~27 paj_boundtop_hierarchy_no_mem^rgResultData~28 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~29 paj_boundtop_hierarchy_no_mem^rgResultData~30 \
+ paj_boundtop_hierarchy_no_mem^rgResultData~31 paj_boundtop_hierarchy_no_mem^rgResultReady \
+ paj_boundtop_hierarchy_no_mem^rgResultSource~0 paj_boundtop_hierarchy_no_mem^rgResultSource~1 
+
+
+
+.latch n892 paj_boundtop_hierarchy_no_mem.boundcont01^state~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n897 paj_boundtop_hierarchy_no_mem.rayint^rayaddr~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n902 paj_boundtop_hierarchy_no_mem.rayint^rayaddr~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n917 paj_boundtop_hierarchy_no_mem.boundcont01^state~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1142 paj_boundtop_hierarchy_no_mem.rayint^raydata~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1217 paj_boundtop_hierarchy_no_mem.rayint^rayaddr~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1222 paj_boundtop_hierarchy_no_mem.rayint^rayaddr~3_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1227 paj_boundtop_hierarchy_no_mem.boundcont01^triIDvalid_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1237 paj_boundtop_hierarchy_no_mem.boundcont01^state~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1252 paj_boundtop_hierarchy_no_mem.rayint^raydata~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1257 paj_boundtop_hierarchy_no_mem.rayint^raydata~10_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1262 paj_boundtop_hierarchy_no_mem.rayint^raydata~11_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1267 paj_boundtop_hierarchy_no_mem.rayint^raydata~12_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1272 paj_boundtop_hierarchy_no_mem.rayint^raydata~13_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1277 paj_boundtop_hierarchy_no_mem.rayint^raydata~14_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1282 paj_boundtop_hierarchy_no_mem.rayint^raydata~15_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1287 paj_boundtop_hierarchy_no_mem.rayint^raydata~16_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1292 paj_boundtop_hierarchy_no_mem.rayint^raydata~17_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1297 paj_boundtop_hierarchy_no_mem.rayint^raydata~18_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1302 paj_boundtop_hierarchy_no_mem.rayint^raydata~19_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1307 paj_boundtop_hierarchy_no_mem.rayint^raydata~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1312 paj_boundtop_hierarchy_no_mem.rayint^raydata~20_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1317 paj_boundtop_hierarchy_no_mem.rayint^raydata~21_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1322 paj_boundtop_hierarchy_no_mem.rayint^raydata~22_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1327 paj_boundtop_hierarchy_no_mem.rayint^raydata~23_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1332 paj_boundtop_hierarchy_no_mem.rayint^raydata~24_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1337 paj_boundtop_hierarchy_no_mem.rayint^raydata~25_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1342 paj_boundtop_hierarchy_no_mem.rayint^raydata~26_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1347 paj_boundtop_hierarchy_no_mem.rayint^raydata~27_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1352 paj_boundtop_hierarchy_no_mem.rayint^raydata~28_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1357 paj_boundtop_hierarchy_no_mem.rayint^raydata~29_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1362 paj_boundtop_hierarchy_no_mem.rayint^raydata~3_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1367 paj_boundtop_hierarchy_no_mem.rayint^raydata~30_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1372 paj_boundtop_hierarchy_no_mem.rayint^raydata~31_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1377 paj_boundtop_hierarchy_no_mem.rayint^raydata~4_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1382 paj_boundtop_hierarchy_no_mem.rayint^raydata~5_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1387 paj_boundtop_hierarchy_no_mem.rayint^raydata~6_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1392 paj_boundtop_hierarchy_no_mem.rayint^raydata~7_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1397 paj_boundtop_hierarchy_no_mem.rayint^raydata~8_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1402 paj_boundtop_hierarchy_no_mem.rayint^raydata~9_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1407 paj_boundtop_hierarchy_no_mem.rayint^raywe~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1412 paj_boundtop_hierarchy_no_mem.rayint^raywe~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1417 paj_boundtop_hierarchy_no_mem.rayint^raywe~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1422 paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1432 paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1722 paj_boundtop_hierarchy_no_mem.trilist^state~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1727 paj_boundtop_hierarchy_no_mem.trilist^state~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1732 paj_boundtop_hierarchy_no_mem.trilist^state~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1742 paj_boundtop_hierarchy_no_mem.boundcont01^busy_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n1747 paj_boundtop_hierarchy_no_mem.boundcont10^state~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n2092 paj_boundtop_hierarchy_no_mem.boundcont10^addr~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n2097 paj_boundtop_hierarchy_no_mem.boundcont10^triID~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n3182 paj_boundtop_hierarchy_no_mem.boundcont10^cts_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n3192 paj_boundtop_hierarchy_no_mem.boundcont01^cts_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5142 paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5147 paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5157 paj_boundtop_hierarchy_no_mem.offsettable^waddr~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5162 paj_boundtop_hierarchy_no_mem.offsettable^waddr~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5167 paj_boundtop_hierarchy_no_mem.offsettable^waddr~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5172 paj_boundtop_hierarchy_no_mem.offsettable^waddr~3_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5177 paj_boundtop_hierarchy_no_mem.offsettable^waddr~4_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5182 paj_boundtop_hierarchy_no_mem.offsettable^waddr~5_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5187 paj_boundtop_hierarchy_no_mem.offsettable^waddr~6_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5192 paj_boundtop_hierarchy_no_mem.offsettable^waddr~7_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5197 paj_boundtop_hierarchy_no_mem.offsettable^waddr~8_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n5202 paj_boundtop_hierarchy_no_mem.offsettable^waddr~9_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8802 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8807 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8812 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8817 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~3_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8822 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~4_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8827 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~5_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8832 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~6_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8837 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~7_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8842 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~8_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8847 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~9_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8852 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~10_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8857 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~11_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8862 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~12_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8867 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~13_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8872 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~14_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8877 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~15_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8882 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~16_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8887 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~17_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8892 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~18_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8897 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~19_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8902 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~20_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8907 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~21_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8912 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~22_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8917 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~23_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8922 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~24_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8927 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~25_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8932 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~26_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8937 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~27_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8942 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~28_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8947 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~29_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8952 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~30_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8957 paj_boundtop_hierarchy_no_mem.rayint^rgDatal~31_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8962 paj_boundtop_hierarchy_no_mem.rayint^rgAddrl~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8967 paj_boundtop_hierarchy_no_mem.rayint^rgAddrl~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8972 paj_boundtop_hierarchy_no_mem.rayint^rgAddrl~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8977 paj_boundtop_hierarchy_no_mem.rayint^rgAddrl~3_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8982 paj_boundtop_hierarchy_no_mem.rayint^rgWEl~0_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8987 paj_boundtop_hierarchy_no_mem.rayint^rgWEl~1_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8992 paj_boundtop_hierarchy_no_mem.rayint^rgWEl~2_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+.latch n8997 paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF re paj_boundtop_hierarchy_no_mem^tm3_clk_v0 0 
+
+
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~31 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~31 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~0 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~0 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~1 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~1 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~2 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~2 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~3 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~3 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~4 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~4 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~5 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~5 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~6 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~6 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~7 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~7 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~8 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~8 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~9 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~9 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~10 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~10 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~11 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~11 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~12 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~12 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~13 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~13 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~14 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~14 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~15 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~15 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~16 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~16 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~17 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~17 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~18 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~18 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~19 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~19 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~20 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~20 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~21 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~21 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~22 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~22 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~23 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~23 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~24 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~24 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~25 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~25 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~26 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~26 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~27 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~27 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~28 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~28 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~29 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~29 
+
+
+.subckt single_port_ram clk=paj_boundtop_hierarchy_no_mem^tm3_clk_v0 data=paj_boundtop_hierarchy_no_mem^brdatain~30 \
+ addr[0]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 \
+ addr[1]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 \
+ addr[2]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 \
+ addr[3]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 \
+ addr[4]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 \
+ addr[5]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 \
+ addr[6]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 \
+ addr[7]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 \
+ addr[8]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 \
+ addr[9]=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 addr[10]=unconn addr[11]=unconn addr[12]=unconn \
+ addr[13]=unconn addr[14]=unconn we=paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 \
+ out=paj_boundtop_hierarchy_no_mem.offsettable.ramblock.new_ram^out~30 
+
+
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem^want_braddr 
+--1 1 
+00- 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF \
+ paj_boundtop_hierarchy_no_mem^want_brdata 
+01 1 
+10 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.trilist^state~0_FF paj_boundtop_hierarchy_no_mem.trilist^state~2_FF \
+ paj_boundtop_hierarchy_no_mem.trilist^state~1_FF paj_boundtop_hierarchy_no_mem^want_addr2 
+--1 1 
+00- 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.trilist^state~0_FF paj_boundtop_hierarchy_no_mem.trilist^state~1_FF \
+ paj_boundtop_hierarchy_no_mem^want_data2 
+01 1 
+10 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~0 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~0 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.trilist^state~0_FF paj_boundtop_hierarchy_no_mem.trilist^state~1_FF \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 
+01 0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~1 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~1 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~2 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~2 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~3 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~3 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~4 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~4 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~5 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~5 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~6 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~6 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~7 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~7 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~8 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~8 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~9 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~9 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~10 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~10 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~11 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~11 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~12 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~12 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~13 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~13 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~14 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~14 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~15 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~15 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~16 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~16 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~17 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~17 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~18 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~18 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~19 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~19 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~20 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~20 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~21 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~21 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~22 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~22 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~23 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~23 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~24 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~24 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~25 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~25 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~26 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~26 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~27 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~27 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~28 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~28 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~29 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~29 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~30 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~30 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~31 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~31 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~32 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~32 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~33 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~33 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~34 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~34 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~35 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~35 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~36 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~36 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~37 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~37 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~38 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~38 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~39 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~39 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~40 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~40 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~41 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~41 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~42 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~42 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~43 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~43 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~44 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~44 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~45 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~45 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~46 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~46 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~47 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~47 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~48 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~48 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~49 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~49 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~50 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~50 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~51 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~51 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~52 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~52 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~53 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~53 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~54 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~54 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~55 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~55 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~56 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~56 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~57 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~57 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~58 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~58 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~59 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~59 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~60 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~60 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~61 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~61 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~62 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~62 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^data2in~63 \
+ paj_boundtop_hierarchy_no_mem^tm3_sram_data_out~63 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.trilist^state~0_FF paj_boundtop_hierarchy_no_mem.trilist^state~1_FF \
+ paj_boundtop_hierarchy_no_mem.trilist^state~2_FF paj_boundtop_hierarchy_no_mem^tm3_sram_oe~0 
+000 0 
+
+
+.names paj_boundtop_hierarchy_no_mem.trilist^state~1_FF paj_boundtop_hierarchy_no_mem.trilist^state~2_FF \
+ paj_boundtop_hierarchy_no_mem.trilist^state~0_FF paj_boundtop_hierarchy_no_mem^tm3_sram_adsp 
+--1 1 
+01- 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem^brdata_ready paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^nMUX~38^MUX_2~13749 
+0011 1 
+
+
+.names n941 n940 n939 n938 paj_boundtop_hierarchy_no_mem^pglobalreset n892 
+--10- 1 
+-1--0 1 
+0---0 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^cts_FF paj_boundtop_hierarchy_no_mem.boundcont10^cts_FF \
+ paj_boundtop_hierarchy_no_mem^raygroupvalid01 n938 
+-00 1 
+0-0 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^cts_FF paj_boundtop_hierarchy_no_mem^raygroupvalid01 \
+ paj_boundtop_hierarchy_no_mem.boundcont01^state~0_FF paj_boundtop_hierarchy_no_mem.boundcont01^state~1_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont01^state~2_FF paj_boundtop_hierarchy_no_mem^pglobalreset n939 
+-00000 1 
+0-0000 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^state~1_FF paj_boundtop_hierarchy_no_mem.boundcont10^cts_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont01^cts_FF paj_boundtop_hierarchy_no_mem.boundcont01^state~0_FF n940 
+0011 1 
+0101 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^state~2_FF paj_boundtop_hierarchy_no_mem^wanttriID \
+ paj_boundtop_hierarchy_no_mem.boundcont01^triIDvalid_FF paj_boundtop_hierarchy_no_mem.boundcont01^state~1_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont01^state~0_FF n941 
+--1-- 0 
+-1-10 0 
+1--01 0 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgAddrl~0_FF paj_boundtop_hierarchy_no_mem.rayint^rayaddr~0_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n897 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgAddrl~1_FF paj_boundtop_hierarchy_no_mem.rayint^rayaddr~1_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n902 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^state~2_FF paj_boundtop_hierarchy_no_mem.boundcont01^cts_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont10^cts_FF paj_boundtop_hierarchy_no_mem.boundcont01^state~1_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont01^state~0_FF paj_boundtop_hierarchy_no_mem^pglobalreset n917 
+---100 1 
+-11--0 1 
+1--010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~0_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~0_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1142 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgAddrl~2_FF paj_boundtop_hierarchy_no_mem.rayint^rayaddr~2_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1217 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgAddrl~3_FF paj_boundtop_hierarchy_no_mem.rayint^rayaddr~3_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1222 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.boundcont01^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont01^state~1_FF n1227 
+011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.boundcont01^triIDvalid_FF n1227 n1237 
+--1 1 
+01- 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~1_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~1_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1252 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~10_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~10_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1257 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~11_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~11_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1262 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~12_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~12_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1267 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~13_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~13_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1272 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~14_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~14_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1277 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~15_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~15_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1282 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~16_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~16_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1287 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~17_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~17_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1292 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~18_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~18_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1297 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~19_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~19_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1302 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~2_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~2_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1307 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~20_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~20_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1312 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~21_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~21_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1317 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~22_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~22_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1322 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~23_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~23_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1327 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~24_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~24_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1332 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~25_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~25_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1337 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~26_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~26_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1342 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~27_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~27_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1347 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~28_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~28_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1352 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~29_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~29_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1357 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~3_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~3_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1362 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~30_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~30_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1367 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~31_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~31_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1372 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~4_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~4_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1377 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~5_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~5_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1382 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~6_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~6_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1387 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~7_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~7_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1392 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~8_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~8_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1397 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDatal~9_FF paj_boundtop_hierarchy_no_mem.rayint^raydata~9_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1402 
+-1-00 1 
+-11-0 1 
+1-010 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgWEl~0_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF n1407 
+0011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgWEl~1_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF n1412 
+0011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF \
+ paj_boundtop_hierarchy_no_mem.rayint^rgWEl~2_FF paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF n1417 
+0011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgAddrValidl_FF paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF \
+ paj_boundtop_hierarchy_no_mem^pglobalreset n1422 
+-10 1 
+1-0 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem^brdata_ready paj_boundtop_hierarchy_no_mem^braddr_ready \
+ paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF n1432 
+--1001 1 
+-1-100 1 
+-11-01 1 
+0--100 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.trilist^state~2_FF paj_boundtop_hierarchy_no_mem.trilist^state~0_FF \
+ paj_boundtop_hierarchy_no_mem^data2_ready paj_boundtop_hierarchy_no_mem^addr2_ready \
+ paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.trilist^state~1_FF n1722 
+--1001 1 
+-1-100 1 
+-11-01 1 
+0--100 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^addr2_ready paj_boundtop_hierarchy_no_mem.trilist^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.trilist^state~1_FF paj_boundtop_hierarchy_no_mem^pglobalreset n1727 
+-110 1 
+0-10 1 
+01-0 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.trilist^state~2_FF paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 \
+ paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^addr2_ready n1732 
+-001 1 
+1-01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^triIDvalid_FF paj_boundtop_hierarchy_no_mem^pglobalreset n917 n1227 n1742 
+-100 0 
+0-00 0 
+
+
+.names n991 n992 n941 paj_boundtop_hierarchy_no_mem^pglobalreset n1747 
+---1 0 
+001- 0 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^cts_FF paj_boundtop_hierarchy_no_mem.boundcont01^state~1_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont01^state~2_FF paj_boundtop_hierarchy_no_mem.boundcont10^state~0_FF \
+ paj_boundtop_hierarchy_no_mem^raygroupvalid10 paj_boundtop_hierarchy_no_mem.boundcont10^cts_FF n991 
+-00010 1 
+100001 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^state~1_FF paj_boundtop_hierarchy_no_mem.boundcont01^state~2_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont10^cts_FF paj_boundtop_hierarchy_no_mem.boundcont01^cts_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont10^state~0_FF n992 
+00011 1 
+00101 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.boundcont01^state~1_FF \
+ paj_boundtop_hierarchy_no_mem.boundcont01^state~0_FF paj_boundtop_hierarchy_no_mem.boundcont01^state~2_FF n2092 
+0011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.boundcont10^addr~0_FF n2097 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset n991 n3182 
+01 1 
+
+
+.names n938 n939 n3192 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem^pglobalreset n5142 
+-110 1 
+0-10 1 
+01-0 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF paj_boundtop_hierarchy_no_mem^pglobalreset \
+ paj_boundtop_hierarchy_no_mem^braddr_ready n5147 
+--101 1 
+01-01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^waddr~0_FF paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF \
+ paj_boundtop_hierarchy_no_mem^brdata_ready n1000 n5157 
+-----1 1 
+00011- 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~0 n1000 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~1 n5162 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~2 n5167 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~3 n5172 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~4 n5177 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~5 n5182 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~6 n5187 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~7 n5192 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~8 n5197 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem.offsettable^state~0_FF \
+ paj_boundtop_hierarchy_no_mem.offsettable^state~1_FF paj_boundtop_hierarchy_no_mem.offsettable^state~2_FF \
+ paj_boundtop_hierarchy_no_mem^braddr_ready paj_boundtop_hierarchy_no_mem^braddrin~9 n5202 
+000011 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~0 n8802 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~1 n8807 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~2 n8812 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~3 n8817 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~4 n8822 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~5 n8827 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~6 n8832 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~7 n8837 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~8 n8842 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~9 n8847 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~10 n8852 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~11 n8857 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~12 n8862 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~13 n8867 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~14 n8872 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~15 n8877 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~16 n8882 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~17 n8887 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~18 n8892 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~19 n8897 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~20 n8902 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~21 n8907 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~22 n8912 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~23 n8917 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~24 n8922 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~25 n8927 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~26 n8932 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~27 n8937 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~28 n8942 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~29 n8947 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~30 n8952 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgData~31 n8957 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgAddr~0 n8962 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgAddr~1 n8967 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgAddr~2 n8972 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgAddr~3 n8977 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgWE~0 n8982 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgWE~1 n8987 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgWE~2 n8992 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^rgAddrValid n8997 
+01 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~1 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~2 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~3 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~4 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~5 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~6 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~7 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~8 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~9 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~10 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~11 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~12 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~13 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~14 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^triID~15 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~0 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~1 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~2 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~3 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~4 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~5 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~6 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~7 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~8 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~9 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~10 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~11 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~12 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~13 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~14 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~15 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~16 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~17 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_addr~18 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~0 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~1 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~2 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~3 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~4 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~5 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~6 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~7 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~8 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~9 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~10 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~11 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~12 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~13 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~14 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~15 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~16 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~17 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~18 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~19 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~20 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~21 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~22 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~23 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~24 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~25 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~26 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~27 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~28 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~29 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~30 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultData~31 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultReady 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultSource~0 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem^rgResultSource~1 
+0 
+
+
+.names unconn 
+0 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^triIDvalid_FF paj_boundtop_hierarchy_no_mem^triIDvalid 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont10^triID~0_FF paj_boundtop_hierarchy_no_mem^triID~0 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~0_FF paj_boundtop_hierarchy_no_mem^raydata~0 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~1_FF paj_boundtop_hierarchy_no_mem^raydata~1 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~2_FF paj_boundtop_hierarchy_no_mem^raydata~2 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~3_FF paj_boundtop_hierarchy_no_mem^raydata~3 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~4_FF paj_boundtop_hierarchy_no_mem^raydata~4 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~5_FF paj_boundtop_hierarchy_no_mem^raydata~5 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~6_FF paj_boundtop_hierarchy_no_mem^raydata~6 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~7_FF paj_boundtop_hierarchy_no_mem^raydata~7 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~8_FF paj_boundtop_hierarchy_no_mem^raydata~8 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~9_FF paj_boundtop_hierarchy_no_mem^raydata~9 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~10_FF paj_boundtop_hierarchy_no_mem^raydata~10 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~11_FF paj_boundtop_hierarchy_no_mem^raydata~11 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~12_FF paj_boundtop_hierarchy_no_mem^raydata~12 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~13_FF paj_boundtop_hierarchy_no_mem^raydata~13 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~14_FF paj_boundtop_hierarchy_no_mem^raydata~14 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~15_FF paj_boundtop_hierarchy_no_mem^raydata~15 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~16_FF paj_boundtop_hierarchy_no_mem^raydata~16 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~17_FF paj_boundtop_hierarchy_no_mem^raydata~17 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~18_FF paj_boundtop_hierarchy_no_mem^raydata~18 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~19_FF paj_boundtop_hierarchy_no_mem^raydata~19 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~20_FF paj_boundtop_hierarchy_no_mem^raydata~20 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~21_FF paj_boundtop_hierarchy_no_mem^raydata~21 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~22_FF paj_boundtop_hierarchy_no_mem^raydata~22 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~23_FF paj_boundtop_hierarchy_no_mem^raydata~23 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~24_FF paj_boundtop_hierarchy_no_mem^raydata~24 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~25_FF paj_boundtop_hierarchy_no_mem^raydata~25 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~26_FF paj_boundtop_hierarchy_no_mem^raydata~26 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~27_FF paj_boundtop_hierarchy_no_mem^raydata~27 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~28_FF paj_boundtop_hierarchy_no_mem^raydata~28 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~29_FF paj_boundtop_hierarchy_no_mem^raydata~29 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~30_FF paj_boundtop_hierarchy_no_mem^raydata~30 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raydata~31_FF paj_boundtop_hierarchy_no_mem^raydata~31 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rayaddr~0_FF paj_boundtop_hierarchy_no_mem^rayaddr~0 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rayaddr~1_FF paj_boundtop_hierarchy_no_mem^rayaddr~1 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rayaddr~2_FF paj_boundtop_hierarchy_no_mem^rayaddr~2 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rayaddr~3_FF paj_boundtop_hierarchy_no_mem^rayaddr~3 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raywe~0_FF paj_boundtop_hierarchy_no_mem^raywe~0 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raywe~1_FF paj_boundtop_hierarchy_no_mem^raywe~1 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^raywe~2_FF paj_boundtop_hierarchy_no_mem^raywe~2 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^pglobalreset paj_boundtop_hierarchy_no_mem^globalreset 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^tm3_sram_we~1 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^tm3_sram_we~2 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^tm3_sram_we~3 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^tm3_sram_we~4 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^tm3_sram_we~5 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^tm3_sram_we~6 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_we~0 paj_boundtop_hierarchy_no_mem^tm3_sram_we~7 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem^tm3_sram_oe~0 paj_boundtop_hierarchy_no_mem^tm3_sram_oe~1 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^busy_FF paj_boundtop_hierarchy_no_mem^busy01 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.boundcont01^busy_FF paj_boundtop_hierarchy_no_mem^busy10 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.rayint^rgDone_FF paj_boundtop_hierarchy_no_mem^rgDone 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~0_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6218 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~1_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6219 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~2_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6220 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~3_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6221 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~4_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6222 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~5_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6223 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~6_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6224 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~7_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6225 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~8_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6226 
+1 1 
+
+
+.names paj_boundtop_hierarchy_no_mem.offsettable^waddr~9_FF paj_boundtop_hierarchy_no_mem.offsettable^nMUX~22^MUX_2~6227 
+1 1 
+
+
+
+.end 
+
+
+
+
+.model single_port_ram 
+
+
+.inputs clk data addr[0] addr[1] addr[2] addr[3] addr[4] addr[5] addr[6] addr[7] addr[8] addr[9] addr[10] addr[11] addr[12] \
+ addr[13] addr[14] we 
+
+
+.outputs out 
+
+
+.blackbox 
+
+
+
+.end 
+
+
+
+

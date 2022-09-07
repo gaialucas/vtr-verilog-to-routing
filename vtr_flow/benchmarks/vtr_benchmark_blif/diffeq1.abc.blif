@@ -1,0 +1,4952 @@
+# Benchmark "diffeq_paj_convert" written by ABC on Wed Aug 24 19:26:56 2022 
+
+
+.model diffeq_paj_convert 
+
+
+.inputs diffeq_paj_convert^Xinport~0 diffeq_paj_convert^Xinport~1 diffeq_paj_convert^Xinport~2 diffeq_paj_convert^Xinport~3 \
+ diffeq_paj_convert^Xinport~4 diffeq_paj_convert^Xinport~5 diffeq_paj_convert^Xinport~6 diffeq_paj_convert^Xinport~7 \
+ diffeq_paj_convert^Xinport~8 diffeq_paj_convert^Xinport~9 diffeq_paj_convert^Xinport~10 diffeq_paj_convert^Xinport~11 \
+ diffeq_paj_convert^Xinport~12 diffeq_paj_convert^Xinport~13 diffeq_paj_convert^Xinport~14 diffeq_paj_convert^Xinport~15 \
+ diffeq_paj_convert^Xinport~16 diffeq_paj_convert^Xinport~17 diffeq_paj_convert^Xinport~18 diffeq_paj_convert^Xinport~19 \
+ diffeq_paj_convert^Xinport~20 diffeq_paj_convert^Xinport~21 diffeq_paj_convert^Xinport~22 diffeq_paj_convert^Xinport~23 \
+ diffeq_paj_convert^Xinport~24 diffeq_paj_convert^Xinport~25 diffeq_paj_convert^Xinport~26 diffeq_paj_convert^Xinport~27 \
+ diffeq_paj_convert^Xinport~28 diffeq_paj_convert^Xinport~29 diffeq_paj_convert^Xinport~30 diffeq_paj_convert^Xinport~31 \
+ diffeq_paj_convert^Yinport~0 diffeq_paj_convert^Yinport~1 diffeq_paj_convert^Yinport~2 diffeq_paj_convert^Yinport~3 \
+ diffeq_paj_convert^Yinport~4 diffeq_paj_convert^Yinport~5 diffeq_paj_convert^Yinport~6 diffeq_paj_convert^Yinport~7 \
+ diffeq_paj_convert^Yinport~8 diffeq_paj_convert^Yinport~9 diffeq_paj_convert^Yinport~10 diffeq_paj_convert^Yinport~11 \
+ diffeq_paj_convert^Yinport~12 diffeq_paj_convert^Yinport~13 diffeq_paj_convert^Yinport~14 diffeq_paj_convert^Yinport~15 \
+ diffeq_paj_convert^Yinport~16 diffeq_paj_convert^Yinport~17 diffeq_paj_convert^Yinport~18 diffeq_paj_convert^Yinport~19 \
+ diffeq_paj_convert^Yinport~20 diffeq_paj_convert^Yinport~21 diffeq_paj_convert^Yinport~22 diffeq_paj_convert^Yinport~23 \
+ diffeq_paj_convert^Yinport~24 diffeq_paj_convert^Yinport~25 diffeq_paj_convert^Yinport~26 diffeq_paj_convert^Yinport~27 \
+ diffeq_paj_convert^Yinport~28 diffeq_paj_convert^Yinport~29 diffeq_paj_convert^Yinport~30 diffeq_paj_convert^Yinport~31 \
+ diffeq_paj_convert^Uinport~0 diffeq_paj_convert^Uinport~1 diffeq_paj_convert^Uinport~2 diffeq_paj_convert^Uinport~3 \
+ diffeq_paj_convert^Uinport~4 diffeq_paj_convert^Uinport~5 diffeq_paj_convert^Uinport~6 diffeq_paj_convert^Uinport~7 \
+ diffeq_paj_convert^Uinport~8 diffeq_paj_convert^Uinport~9 diffeq_paj_convert^Uinport~10 diffeq_paj_convert^Uinport~11 \
+ diffeq_paj_convert^Uinport~12 diffeq_paj_convert^Uinport~13 diffeq_paj_convert^Uinport~14 diffeq_paj_convert^Uinport~15 \
+ diffeq_paj_convert^Uinport~16 diffeq_paj_convert^Uinport~17 diffeq_paj_convert^Uinport~18 diffeq_paj_convert^Uinport~19 \
+ diffeq_paj_convert^Uinport~20 diffeq_paj_convert^Uinport~21 diffeq_paj_convert^Uinport~22 diffeq_paj_convert^Uinport~23 \
+ diffeq_paj_convert^Uinport~24 diffeq_paj_convert^Uinport~25 diffeq_paj_convert^Uinport~26 diffeq_paj_convert^Uinport~27 \
+ diffeq_paj_convert^Uinport~28 diffeq_paj_convert^Uinport~29 diffeq_paj_convert^Uinport~30 diffeq_paj_convert^Uinport~31 \
+ diffeq_paj_convert^Aport~0 diffeq_paj_convert^Aport~1 diffeq_paj_convert^Aport~2 diffeq_paj_convert^Aport~3 \
+ diffeq_paj_convert^Aport~4 diffeq_paj_convert^Aport~5 diffeq_paj_convert^Aport~6 diffeq_paj_convert^Aport~7 \
+ diffeq_paj_convert^Aport~8 diffeq_paj_convert^Aport~9 diffeq_paj_convert^Aport~10 diffeq_paj_convert^Aport~11 \
+ diffeq_paj_convert^Aport~12 diffeq_paj_convert^Aport~13 diffeq_paj_convert^Aport~14 diffeq_paj_convert^Aport~15 \
+ diffeq_paj_convert^Aport~16 diffeq_paj_convert^Aport~17 diffeq_paj_convert^Aport~18 diffeq_paj_convert^Aport~19 \
+ diffeq_paj_convert^Aport~20 diffeq_paj_convert^Aport~21 diffeq_paj_convert^Aport~22 diffeq_paj_convert^Aport~23 \
+ diffeq_paj_convert^Aport~24 diffeq_paj_convert^Aport~25 diffeq_paj_convert^Aport~26 diffeq_paj_convert^Aport~27 \
+ diffeq_paj_convert^Aport~28 diffeq_paj_convert^Aport~29 diffeq_paj_convert^Aport~30 diffeq_paj_convert^Aport~31 \
+ diffeq_paj_convert^DXport~0 diffeq_paj_convert^DXport~1 diffeq_paj_convert^DXport~2 diffeq_paj_convert^DXport~3 \
+ diffeq_paj_convert^DXport~4 diffeq_paj_convert^DXport~5 diffeq_paj_convert^DXport~6 diffeq_paj_convert^DXport~7 \
+ diffeq_paj_convert^DXport~8 diffeq_paj_convert^DXport~9 diffeq_paj_convert^DXport~10 diffeq_paj_convert^DXport~11 \
+ diffeq_paj_convert^DXport~12 diffeq_paj_convert^DXport~13 diffeq_paj_convert^DXport~14 diffeq_paj_convert^DXport~15 \
+ diffeq_paj_convert^DXport~16 diffeq_paj_convert^DXport~17 diffeq_paj_convert^DXport~18 diffeq_paj_convert^DXport~19 \
+ diffeq_paj_convert^DXport~20 diffeq_paj_convert^DXport~21 diffeq_paj_convert^DXport~22 diffeq_paj_convert^DXport~23 \
+ diffeq_paj_convert^DXport~24 diffeq_paj_convert^DXport~25 diffeq_paj_convert^DXport~26 diffeq_paj_convert^DXport~27 \
+ diffeq_paj_convert^DXport~28 diffeq_paj_convert^DXport~29 diffeq_paj_convert^DXport~30 diffeq_paj_convert^DXport~31 \
+ diffeq_paj_convert^clk diffeq_paj_convert^reset 
+
+
+.outputs diffeq_paj_convert^Xoutport~0 diffeq_paj_convert^Xoutport~1 diffeq_paj_convert^Xoutport~2 \
+ diffeq_paj_convert^Xoutport~3 diffeq_paj_convert^Xoutport~4 diffeq_paj_convert^Xoutport~5 diffeq_paj_convert^Xoutport~6 \
+ diffeq_paj_convert^Xoutport~7 diffeq_paj_convert^Xoutport~8 diffeq_paj_convert^Xoutport~9 diffeq_paj_convert^Xoutport~10 \
+ diffeq_paj_convert^Xoutport~11 diffeq_paj_convert^Xoutport~12 diffeq_paj_convert^Xoutport~13 diffeq_paj_convert^Xoutport~14 \
+ diffeq_paj_convert^Xoutport~15 diffeq_paj_convert^Xoutport~16 diffeq_paj_convert^Xoutport~17 diffeq_paj_convert^Xoutport~18 \
+ diffeq_paj_convert^Xoutport~19 diffeq_paj_convert^Xoutport~20 diffeq_paj_convert^Xoutport~21 diffeq_paj_convert^Xoutport~22 \
+ diffeq_paj_convert^Xoutport~23 diffeq_paj_convert^Xoutport~24 diffeq_paj_convert^Xoutport~25 diffeq_paj_convert^Xoutport~26 \
+ diffeq_paj_convert^Xoutport~27 diffeq_paj_convert^Xoutport~28 diffeq_paj_convert^Xoutport~29 diffeq_paj_convert^Xoutport~30 \
+ diffeq_paj_convert^Xoutport~31 diffeq_paj_convert^Youtport~0 diffeq_paj_convert^Youtport~1 diffeq_paj_convert^Youtport~2 \
+ diffeq_paj_convert^Youtport~3 diffeq_paj_convert^Youtport~4 diffeq_paj_convert^Youtport~5 diffeq_paj_convert^Youtport~6 \
+ diffeq_paj_convert^Youtport~7 diffeq_paj_convert^Youtport~8 diffeq_paj_convert^Youtport~9 diffeq_paj_convert^Youtport~10 \
+ diffeq_paj_convert^Youtport~11 diffeq_paj_convert^Youtport~12 diffeq_paj_convert^Youtport~13 diffeq_paj_convert^Youtport~14 \
+ diffeq_paj_convert^Youtport~15 diffeq_paj_convert^Youtport~16 diffeq_paj_convert^Youtport~17 diffeq_paj_convert^Youtport~18 \
+ diffeq_paj_convert^Youtport~19 diffeq_paj_convert^Youtport~20 diffeq_paj_convert^Youtport~21 diffeq_paj_convert^Youtport~22 \
+ diffeq_paj_convert^Youtport~23 diffeq_paj_convert^Youtport~24 diffeq_paj_convert^Youtport~25 diffeq_paj_convert^Youtport~26 \
+ diffeq_paj_convert^Youtport~27 diffeq_paj_convert^Youtport~28 diffeq_paj_convert^Youtport~29 diffeq_paj_convert^Youtport~30 \
+ diffeq_paj_convert^Youtport~31 diffeq_paj_convert^Uoutport~0 diffeq_paj_convert^Uoutport~1 diffeq_paj_convert^Uoutport~2 \
+ diffeq_paj_convert^Uoutport~3 diffeq_paj_convert^Uoutport~4 diffeq_paj_convert^Uoutport~5 diffeq_paj_convert^Uoutport~6 \
+ diffeq_paj_convert^Uoutport~7 diffeq_paj_convert^Uoutport~8 diffeq_paj_convert^Uoutport~9 diffeq_paj_convert^Uoutport~10 \
+ diffeq_paj_convert^Uoutport~11 diffeq_paj_convert^Uoutport~12 diffeq_paj_convert^Uoutport~13 diffeq_paj_convert^Uoutport~14 \
+ diffeq_paj_convert^Uoutport~15 diffeq_paj_convert^Uoutport~16 diffeq_paj_convert^Uoutport~17 diffeq_paj_convert^Uoutport~18 \
+ diffeq_paj_convert^Uoutport~19 diffeq_paj_convert^Uoutport~20 diffeq_paj_convert^Uoutport~21 diffeq_paj_convert^Uoutport~22 \
+ diffeq_paj_convert^Uoutport~23 diffeq_paj_convert^Uoutport~24 diffeq_paj_convert^Uoutport~25 diffeq_paj_convert^Uoutport~26 \
+ diffeq_paj_convert^Uoutport~27 diffeq_paj_convert^Uoutport~28 diffeq_paj_convert^Uoutport~29 diffeq_paj_convert^Uoutport~30 \
+ diffeq_paj_convert^Uoutport~31 
+
+
+
+.latch n782 diffeq_paj_convert^looping_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n787 diffeq_paj_convert^Uoutport~0_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n792 diffeq_paj_convert^Uoutport~1_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n797 diffeq_paj_convert^Uoutport~10_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n802 diffeq_paj_convert^Uoutport~11_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n807 diffeq_paj_convert^Uoutport~12_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n812 diffeq_paj_convert^Uoutport~13_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n817 diffeq_paj_convert^Uoutport~14_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n822 diffeq_paj_convert^Uoutport~15_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n827 diffeq_paj_convert^Uoutport~16_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n832 diffeq_paj_convert^Uoutport~17_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n837 diffeq_paj_convert^Uoutport~18_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n842 diffeq_paj_convert^Uoutport~19_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n847 diffeq_paj_convert^Uoutport~2_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n852 diffeq_paj_convert^Uoutport~20_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n857 diffeq_paj_convert^Uoutport~21_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n862 diffeq_paj_convert^Uoutport~22_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n867 diffeq_paj_convert^Uoutport~23_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n872 diffeq_paj_convert^Uoutport~24_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n877 diffeq_paj_convert^Uoutport~25_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n882 diffeq_paj_convert^Uoutport~26_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n887 diffeq_paj_convert^Uoutport~27_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n892 diffeq_paj_convert^Uoutport~28_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n897 diffeq_paj_convert^Uoutport~29_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n902 diffeq_paj_convert^Uoutport~3_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n907 diffeq_paj_convert^Uoutport~30_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n912 diffeq_paj_convert^Uoutport~31_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n917 diffeq_paj_convert^Uoutport~4_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n922 diffeq_paj_convert^Uoutport~5_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n927 diffeq_paj_convert^Uoutport~6_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n932 diffeq_paj_convert^Uoutport~7_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n937 diffeq_paj_convert^Uoutport~8_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n942 diffeq_paj_convert^Uoutport~9_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n947 diffeq_paj_convert^Xoutport~0_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n952 diffeq_paj_convert^Xoutport~1_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n957 diffeq_paj_convert^Xoutport~10_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n962 diffeq_paj_convert^Xoutport~11_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n967 diffeq_paj_convert^Xoutport~12_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n972 diffeq_paj_convert^Xoutport~13_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n977 diffeq_paj_convert^Xoutport~14_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n982 diffeq_paj_convert^Xoutport~15_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n987 diffeq_paj_convert^Xoutport~16_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n992 diffeq_paj_convert^Xoutport~17_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n997 diffeq_paj_convert^Xoutport~18_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1002 diffeq_paj_convert^Xoutport~19_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1007 diffeq_paj_convert^Xoutport~2_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1012 diffeq_paj_convert^Xoutport~20_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1017 diffeq_paj_convert^Xoutport~21_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1022 diffeq_paj_convert^Xoutport~22_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1027 diffeq_paj_convert^Xoutport~23_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1032 diffeq_paj_convert^Xoutport~24_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1037 diffeq_paj_convert^Xoutport~25_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1042 diffeq_paj_convert^Xoutport~26_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1047 diffeq_paj_convert^Xoutport~27_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1052 diffeq_paj_convert^Xoutport~28_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1057 diffeq_paj_convert^Xoutport~29_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1062 diffeq_paj_convert^Xoutport~3_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1067 diffeq_paj_convert^Xoutport~30_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1072 diffeq_paj_convert^Xoutport~31_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1077 diffeq_paj_convert^Xoutport~4_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1082 diffeq_paj_convert^Xoutport~5_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1087 diffeq_paj_convert^Xoutport~6_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1092 diffeq_paj_convert^Xoutport~7_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1097 diffeq_paj_convert^Xoutport~8_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1102 diffeq_paj_convert^Xoutport~9_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1107 diffeq_paj_convert^Youtport~0_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1112 diffeq_paj_convert^Youtport~1_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1117 diffeq_paj_convert^Youtport~10_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1122 diffeq_paj_convert^Youtport~11_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1127 diffeq_paj_convert^Youtport~12_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1132 diffeq_paj_convert^Youtport~13_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1137 diffeq_paj_convert^Youtport~14_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1142 diffeq_paj_convert^Youtport~15_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1147 diffeq_paj_convert^Youtport~16_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1152 diffeq_paj_convert^Youtport~17_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1157 diffeq_paj_convert^Youtport~18_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1162 diffeq_paj_convert^Youtport~19_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1167 diffeq_paj_convert^Youtport~2_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1172 diffeq_paj_convert^Youtport~20_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1177 diffeq_paj_convert^Youtport~21_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1182 diffeq_paj_convert^Youtport~22_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1187 diffeq_paj_convert^Youtport~23_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1192 diffeq_paj_convert^Youtport~24_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1197 diffeq_paj_convert^Youtport~25_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1202 diffeq_paj_convert^Youtport~26_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1207 diffeq_paj_convert^Youtport~27_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1212 diffeq_paj_convert^Youtport~28_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1217 diffeq_paj_convert^Youtport~29_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1222 diffeq_paj_convert^Youtport~3_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1227 diffeq_paj_convert^Youtport~30_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1232 diffeq_paj_convert^Youtport~31_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1237 diffeq_paj_convert^Youtport~4_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1242 diffeq_paj_convert^Youtport~5_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1247 diffeq_paj_convert^Youtport~6_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1252 diffeq_paj_convert^Youtport~7_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1257 diffeq_paj_convert^Youtport~8_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1262 diffeq_paj_convert^Youtport~9_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1267 diffeq_paj_convert^u_var~0_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1272 diffeq_paj_convert^u_var~1_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1277 diffeq_paj_convert^u_var~2_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1282 diffeq_paj_convert^u_var~3_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1287 diffeq_paj_convert^u_var~4_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1292 diffeq_paj_convert^u_var~5_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1297 diffeq_paj_convert^u_var~6_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1302 diffeq_paj_convert^u_var~7_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1307 diffeq_paj_convert^u_var~8_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1312 diffeq_paj_convert^u_var~9_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1317 diffeq_paj_convert^u_var~10_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1322 diffeq_paj_convert^u_var~11_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1327 diffeq_paj_convert^u_var~12_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1332 diffeq_paj_convert^u_var~13_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1337 diffeq_paj_convert^u_var~14_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1342 diffeq_paj_convert^u_var~15_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1347 diffeq_paj_convert^u_var~16_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1352 diffeq_paj_convert^u_var~17_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1357 diffeq_paj_convert^u_var~18_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1362 diffeq_paj_convert^u_var~19_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1367 diffeq_paj_convert^u_var~20_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1372 diffeq_paj_convert^u_var~21_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1377 diffeq_paj_convert^u_var~22_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1382 diffeq_paj_convert^u_var~23_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1387 diffeq_paj_convert^u_var~24_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1392 diffeq_paj_convert^u_var~25_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1397 diffeq_paj_convert^u_var~26_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1402 diffeq_paj_convert^u_var~27_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1407 diffeq_paj_convert^u_var~28_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1412 diffeq_paj_convert^u_var~29_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1417 diffeq_paj_convert^u_var~30_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1422 diffeq_paj_convert^u_var~31_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1427 diffeq_paj_convert^y_var~0_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1432 diffeq_paj_convert^y_var~1_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1437 diffeq_paj_convert^y_var~2_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1442 diffeq_paj_convert^y_var~3_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1447 diffeq_paj_convert^y_var~4_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1452 diffeq_paj_convert^y_var~5_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1457 diffeq_paj_convert^y_var~6_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1462 diffeq_paj_convert^y_var~7_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1467 diffeq_paj_convert^y_var~8_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1472 diffeq_paj_convert^y_var~9_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1477 diffeq_paj_convert^y_var~10_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1482 diffeq_paj_convert^y_var~11_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1487 diffeq_paj_convert^y_var~12_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1492 diffeq_paj_convert^y_var~13_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1497 diffeq_paj_convert^y_var~14_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1502 diffeq_paj_convert^y_var~15_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1507 diffeq_paj_convert^y_var~16_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1512 diffeq_paj_convert^y_var~17_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1517 diffeq_paj_convert^y_var~18_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1522 diffeq_paj_convert^y_var~19_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1527 diffeq_paj_convert^y_var~20_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1532 diffeq_paj_convert^y_var~21_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1537 diffeq_paj_convert^y_var~22_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1542 diffeq_paj_convert^y_var~23_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1547 diffeq_paj_convert^y_var~24_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1552 diffeq_paj_convert^y_var~25_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1557 diffeq_paj_convert^y_var~26_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1562 diffeq_paj_convert^y_var~27_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1567 diffeq_paj_convert^y_var~28_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1572 diffeq_paj_convert^y_var~29_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1577 diffeq_paj_convert^y_var~30_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1582 diffeq_paj_convert^y_var~31_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1587 diffeq_paj_convert^x_var~0_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1592 diffeq_paj_convert^x_var~1_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1597 diffeq_paj_convert^x_var~2_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1602 diffeq_paj_convert^x_var~3_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1607 diffeq_paj_convert^x_var~4_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1612 diffeq_paj_convert^x_var~5_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1617 diffeq_paj_convert^x_var~6_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1622 diffeq_paj_convert^x_var~7_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1627 diffeq_paj_convert^x_var~8_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1632 diffeq_paj_convert^x_var~9_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1637 diffeq_paj_convert^x_var~10_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1642 diffeq_paj_convert^x_var~11_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1647 diffeq_paj_convert^x_var~12_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1652 diffeq_paj_convert^x_var~13_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1657 diffeq_paj_convert^x_var~14_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1662 diffeq_paj_convert^x_var~15_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1667 diffeq_paj_convert^x_var~16_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1672 diffeq_paj_convert^x_var~17_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1677 diffeq_paj_convert^x_var~18_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1682 diffeq_paj_convert^x_var~19_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1687 diffeq_paj_convert^x_var~20_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1692 diffeq_paj_convert^x_var~21_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1697 diffeq_paj_convert^x_var~22_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1702 diffeq_paj_convert^x_var~23_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1707 diffeq_paj_convert^x_var~24_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1712 diffeq_paj_convert^x_var~25_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1717 diffeq_paj_convert^x_var~26_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1722 diffeq_paj_convert^x_var~27_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1727 diffeq_paj_convert^x_var~28_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1732 diffeq_paj_convert^x_var~29_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1737 diffeq_paj_convert^x_var~30_FF re diffeq_paj_convert^clk 0 
+
+
+.latch n1742 diffeq_paj_convert^x_var~31_FF re diffeq_paj_convert^clk 0 
+
+
+
+
+.subckt multiply a[0]=diffeq_paj_convert^u_var~0_FF a[1]=diffeq_paj_convert^u_var~1_FF a[2]=diffeq_paj_convert^u_var~2_FF \
+ a[3]=diffeq_paj_convert^u_var~3_FF a[4]=diffeq_paj_convert^u_var~4_FF a[5]=diffeq_paj_convert^u_var~5_FF \
+ a[6]=diffeq_paj_convert^u_var~6_FF a[7]=diffeq_paj_convert^u_var~7_FF a[8]=diffeq_paj_convert^u_var~8_FF \
+ a[9]=diffeq_paj_convert^u_var~9_FF a[10]=diffeq_paj_convert^u_var~10_FF a[11]=diffeq_paj_convert^u_var~11_FF \
+ a[12]=diffeq_paj_convert^u_var~12_FF a[13]=diffeq_paj_convert^u_var~13_FF a[14]=diffeq_paj_convert^u_var~14_FF \
+ a[15]=diffeq_paj_convert^u_var~15_FF a[16]=diffeq_paj_convert^u_var~16_FF a[17]=diffeq_paj_convert^u_var~17_FF \
+ a[18]=diffeq_paj_convert^u_var~18_FF a[19]=diffeq_paj_convert^u_var~19_FF a[20]=diffeq_paj_convert^u_var~20_FF \
+ a[21]=diffeq_paj_convert^u_var~21_FF a[22]=diffeq_paj_convert^u_var~22_FF a[23]=diffeq_paj_convert^u_var~23_FF \
+ a[24]=diffeq_paj_convert^u_var~24_FF a[25]=diffeq_paj_convert^u_var~25_FF a[26]=diffeq_paj_convert^u_var~26_FF \
+ a[27]=diffeq_paj_convert^u_var~27_FF a[28]=diffeq_paj_convert^u_var~28_FF a[29]=diffeq_paj_convert^u_var~29_FF \
+ a[30]=diffeq_paj_convert^u_var~30_FF a[31]=diffeq_paj_convert^u_var~31_FF a[32]=unconn a[33]=unconn a[34]=unconn a[35]=unconn \
+ b[0]=diffeq_paj_convert^DXport~0 b[1]=diffeq_paj_convert^DXport~1 b[2]=diffeq_paj_convert^DXport~2 \
+ b[3]=diffeq_paj_convert^DXport~3 b[4]=diffeq_paj_convert^DXport~4 b[5]=diffeq_paj_convert^DXport~5 \
+ b[6]=diffeq_paj_convert^DXport~6 b[7]=diffeq_paj_convert^DXport~7 b[8]=diffeq_paj_convert^DXport~8 \
+ b[9]=diffeq_paj_convert^DXport~9 b[10]=diffeq_paj_convert^DXport~10 b[11]=diffeq_paj_convert^DXport~11 \
+ b[12]=diffeq_paj_convert^DXport~12 b[13]=diffeq_paj_convert^DXport~13 b[14]=diffeq_paj_convert^DXport~14 \
+ b[15]=diffeq_paj_convert^DXport~15 b[16]=diffeq_paj_convert^DXport~16 b[17]=diffeq_paj_convert^DXport~17 \
+ b[18]=diffeq_paj_convert^DXport~18 b[19]=diffeq_paj_convert^DXport~19 b[20]=diffeq_paj_convert^DXport~20 \
+ b[21]=diffeq_paj_convert^DXport~21 b[22]=diffeq_paj_convert^DXport~22 b[23]=diffeq_paj_convert^DXport~23 \
+ b[24]=diffeq_paj_convert^DXport~24 b[25]=diffeq_paj_convert^DXport~25 b[26]=diffeq_paj_convert^DXport~26 \
+ b[27]=diffeq_paj_convert^DXport~27 b[28]=diffeq_paj_convert^DXport~28 b[29]=diffeq_paj_convert^DXport~29 \
+ b[30]=diffeq_paj_convert^DXport~30 b[31]=diffeq_paj_convert^DXport~31 b[32]=unconn b[33]=unconn b[34]=unconn b[35]=unconn \
+ out[0]=diffeq_paj_convert^MUL~0[0] out[1]=diffeq_paj_convert^MUL~0[1] out[2]=diffeq_paj_convert^MUL~0[2] \
+ out[3]=diffeq_paj_convert^MUL~0[3] out[4]=diffeq_paj_convert^MUL~0[4] out[5]=diffeq_paj_convert^MUL~0[5] \
+ out[6]=diffeq_paj_convert^MUL~0[6] out[7]=diffeq_paj_convert^MUL~0[7] out[8]=diffeq_paj_convert^MUL~0[8] \
+ out[9]=diffeq_paj_convert^MUL~0[9] out[10]=diffeq_paj_convert^MUL~0[10] out[11]=diffeq_paj_convert^MUL~0[11] \
+ out[12]=diffeq_paj_convert^MUL~0[12] out[13]=diffeq_paj_convert^MUL~0[13] out[14]=diffeq_paj_convert^MUL~0[14] \
+ out[15]=diffeq_paj_convert^MUL~0[15] out[16]=diffeq_paj_convert^MUL~0[16] out[17]=diffeq_paj_convert^MUL~0[17] \
+ out[18]=diffeq_paj_convert^MUL~0[18] out[19]=diffeq_paj_convert^MUL~0[19] out[20]=diffeq_paj_convert^MUL~0[20] \
+ out[21]=diffeq_paj_convert^MUL~0[21] out[22]=diffeq_paj_convert^MUL~0[22] out[23]=diffeq_paj_convert^MUL~0[23] \
+ out[24]=diffeq_paj_convert^MUL~0[24] out[25]=diffeq_paj_convert^MUL~0[25] out[26]=diffeq_paj_convert^MUL~0[26] \
+ out[27]=diffeq_paj_convert^MUL~0[27] out[28]=diffeq_paj_convert^MUL~0[28] out[29]=diffeq_paj_convert^MUL~0[29] \
+ out[30]=diffeq_paj_convert^MUL~0[30] out[31]=diffeq_paj_convert^MUL~0[31] out[32]=diffeq_paj_convert^MUL~0[32] \
+ out[33]=diffeq_paj_convert^MUL~0[33] out[34]=diffeq_paj_convert^MUL~0[34] out[35]=diffeq_paj_convert^MUL~0[35] \
+ out[36]=diffeq_paj_convert^MUL~0[36] out[37]=diffeq_paj_convert^MUL~0[37] out[38]=diffeq_paj_convert^MUL~0[38] \
+ out[39]=diffeq_paj_convert^MUL~0[39] out[40]=diffeq_paj_convert^MUL~0[40] out[41]=diffeq_paj_convert^MUL~0[41] \
+ out[42]=diffeq_paj_convert^MUL~0[42] out[43]=diffeq_paj_convert^MUL~0[43] out[44]=diffeq_paj_convert^MUL~0[44] \
+ out[45]=diffeq_paj_convert^MUL~0[45] out[46]=diffeq_paj_convert^MUL~0[46] out[47]=diffeq_paj_convert^MUL~0[47] \
+ out[48]=diffeq_paj_convert^MUL~0[48] out[49]=diffeq_paj_convert^MUL~0[49] out[50]=diffeq_paj_convert^MUL~0[50] \
+ out[51]=diffeq_paj_convert^MUL~0[51] out[52]=diffeq_paj_convert^MUL~0[52] out[53]=diffeq_paj_convert^MUL~0[53] \
+ out[54]=diffeq_paj_convert^MUL~0[54] out[55]=diffeq_paj_convert^MUL~0[55] out[56]=diffeq_paj_convert^MUL~0[56] \
+ out[57]=diffeq_paj_convert^MUL~0[57] out[58]=diffeq_paj_convert^MUL~0[58] out[59]=diffeq_paj_convert^MUL~0[59] \
+ out[60]=diffeq_paj_convert^MUL~0[60] out[61]=diffeq_paj_convert^MUL~0[61] out[62]=diffeq_paj_convert^MUL~0[62] \
+ out[63]=diffeq_paj_convert^MUL~0[63] out[64]=diffeq_paj_convert^MUL~0[64] out[65]=diffeq_paj_convert^MUL~0[65] \
+ out[66]=diffeq_paj_convert^MUL~0[66] out[67]=diffeq_paj_convert^MUL~0[67] out[68]=diffeq_paj_convert^MUL~0[68] \
+ out[69]=diffeq_paj_convert^MUL~0[69] out[70]=diffeq_paj_convert^MUL~0[70] out[71]=diffeq_paj_convert^MUL~0[71] 
+
+
+.subckt multiply a[0]=diffeq_paj_convert^MUL~0[0] a[1]=diffeq_paj_convert^MUL~0[1] a[2]=diffeq_paj_convert^MUL~0[2] \
+ a[3]=diffeq_paj_convert^MUL~0[3] a[4]=diffeq_paj_convert^MUL~0[4] a[5]=diffeq_paj_convert^MUL~0[5] \
+ a[6]=diffeq_paj_convert^MUL~0[6] a[7]=diffeq_paj_convert^MUL~0[7] a[8]=diffeq_paj_convert^MUL~0[8] \
+ a[9]=diffeq_paj_convert^MUL~0[9] a[10]=diffeq_paj_convert^MUL~0[10] a[11]=diffeq_paj_convert^MUL~0[11] \
+ a[12]=diffeq_paj_convert^MUL~0[12] a[13]=diffeq_paj_convert^MUL~0[13] a[14]=diffeq_paj_convert^MUL~0[14] \
+ a[15]=diffeq_paj_convert^MUL~0[15] a[16]=diffeq_paj_convert^MUL~0[16] a[17]=diffeq_paj_convert^MUL~0[17] \
+ a[18]=diffeq_paj_convert^MUL~0[18] a[19]=diffeq_paj_convert^MUL~0[19] a[20]=diffeq_paj_convert^MUL~0[20] \
+ a[21]=diffeq_paj_convert^MUL~0[21] a[22]=diffeq_paj_convert^MUL~0[22] a[23]=diffeq_paj_convert^MUL~0[23] \
+ a[24]=diffeq_paj_convert^MUL~0[24] a[25]=diffeq_paj_convert^MUL~0[25] a[26]=diffeq_paj_convert^MUL~0[26] \
+ a[27]=diffeq_paj_convert^MUL~0[27] a[28]=diffeq_paj_convert^MUL~0[28] a[29]=diffeq_paj_convert^MUL~0[29] \
+ a[30]=diffeq_paj_convert^MUL~0[30] a[31]=diffeq_paj_convert^MUL~0[31] a[32]=unconn a[33]=unconn a[34]=unconn a[35]=unconn \
+ b[0]=vcc b[1]=vcc b[2]=gnd b[3]=gnd b[4]=gnd b[5]=gnd b[6]=gnd b[7]=gnd b[8]=gnd b[9]=gnd b[10]=gnd b[11]=gnd b[12]=gnd \
+ b[13]=gnd b[14]=gnd b[15]=gnd b[16]=gnd b[17]=gnd b[18]=gnd b[19]=gnd b[20]=gnd b[21]=gnd b[22]=gnd b[23]=gnd b[24]=gnd \
+ b[25]=gnd b[26]=gnd b[27]=gnd b[28]=gnd b[29]=gnd b[30]=gnd b[31]=gnd b[32]=unconn b[33]=unconn b[34]=unconn b[35]=unconn \
+ out[0]=diffeq_paj_convert^MUL~42[0] out[1]=diffeq_paj_convert^MUL~42[1] out[2]=diffeq_paj_convert^MUL~42[2] \
+ out[3]=diffeq_paj_convert^MUL~42[3] out[4]=diffeq_paj_convert^MUL~42[4] out[5]=diffeq_paj_convert^MUL~42[5] \
+ out[6]=diffeq_paj_convert^MUL~42[6] out[7]=diffeq_paj_convert^MUL~42[7] out[8]=diffeq_paj_convert^MUL~42[8] \
+ out[9]=diffeq_paj_convert^MUL~42[9] out[10]=diffeq_paj_convert^MUL~42[10] out[11]=diffeq_paj_convert^MUL~42[11] \
+ out[12]=diffeq_paj_convert^MUL~42[12] out[13]=diffeq_paj_convert^MUL~42[13] out[14]=diffeq_paj_convert^MUL~42[14] \
+ out[15]=diffeq_paj_convert^MUL~42[15] out[16]=diffeq_paj_convert^MUL~42[16] out[17]=diffeq_paj_convert^MUL~42[17] \
+ out[18]=diffeq_paj_convert^MUL~42[18] out[19]=diffeq_paj_convert^MUL~42[19] out[20]=diffeq_paj_convert^MUL~42[20] \
+ out[21]=diffeq_paj_convert^MUL~42[21] out[22]=diffeq_paj_convert^MUL~42[22] out[23]=diffeq_paj_convert^MUL~42[23] \
+ out[24]=diffeq_paj_convert^MUL~42[24] out[25]=diffeq_paj_convert^MUL~42[25] out[26]=diffeq_paj_convert^MUL~42[26] \
+ out[27]=diffeq_paj_convert^MUL~42[27] out[28]=diffeq_paj_convert^MUL~42[28] out[29]=diffeq_paj_convert^MUL~42[29] \
+ out[30]=diffeq_paj_convert^MUL~42[30] out[31]=diffeq_paj_convert^MUL~42[31] out[32]=diffeq_paj_convert^MUL~42[32] \
+ out[33]=diffeq_paj_convert^MUL~42[33] out[34]=diffeq_paj_convert^MUL~42[34] out[35]=diffeq_paj_convert^MUL~42[35] \
+ out[36]=diffeq_paj_convert^MUL~42[36] out[37]=diffeq_paj_convert^MUL~42[37] out[38]=diffeq_paj_convert^MUL~42[38] \
+ out[39]=diffeq_paj_convert^MUL~42[39] out[40]=diffeq_paj_convert^MUL~42[40] out[41]=diffeq_paj_convert^MUL~42[41] \
+ out[42]=diffeq_paj_convert^MUL~42[42] out[43]=diffeq_paj_convert^MUL~42[43] out[44]=diffeq_paj_convert^MUL~42[44] \
+ out[45]=diffeq_paj_convert^MUL~42[45] out[46]=diffeq_paj_convert^MUL~42[46] out[47]=diffeq_paj_convert^MUL~42[47] \
+ out[48]=diffeq_paj_convert^MUL~42[48] out[49]=diffeq_paj_convert^MUL~42[49] out[50]=diffeq_paj_convert^MUL~42[50] \
+ out[51]=diffeq_paj_convert^MUL~42[51] out[52]=diffeq_paj_convert^MUL~42[52] out[53]=diffeq_paj_convert^MUL~42[53] \
+ out[54]=diffeq_paj_convert^MUL~42[54] out[55]=diffeq_paj_convert^MUL~42[55] out[56]=diffeq_paj_convert^MUL~42[56] \
+ out[57]=diffeq_paj_convert^MUL~42[57] out[58]=diffeq_paj_convert^MUL~42[58] out[59]=diffeq_paj_convert^MUL~42[59] \
+ out[60]=diffeq_paj_convert^MUL~42[60] out[61]=diffeq_paj_convert^MUL~42[61] out[62]=diffeq_paj_convert^MUL~42[62] \
+ out[63]=diffeq_paj_convert^MUL~42[63] out[64]=diffeq_paj_convert^MUL~42[64] out[65]=diffeq_paj_convert^MUL~42[65] \
+ out[66]=diffeq_paj_convert^MUL~42[66] out[67]=diffeq_paj_convert^MUL~42[67] out[68]=diffeq_paj_convert^MUL~42[68] \
+ out[69]=diffeq_paj_convert^MUL~42[69] out[70]=diffeq_paj_convert^MUL~42[70] out[71]=diffeq_paj_convert^MUL~42[71] 
+
+
+.subckt multiply a[0]=diffeq_paj_convert^MUL~42[0] a[1]=diffeq_paj_convert^MUL~42[1] a[2]=diffeq_paj_convert^MUL~42[2] \
+ a[3]=diffeq_paj_convert^MUL~42[3] a[4]=diffeq_paj_convert^MUL~42[4] a[5]=diffeq_paj_convert^MUL~42[5] \
+ a[6]=diffeq_paj_convert^MUL~42[6] a[7]=diffeq_paj_convert^MUL~42[7] a[8]=diffeq_paj_convert^MUL~42[8] \
+ a[9]=diffeq_paj_convert^MUL~42[9] a[10]=diffeq_paj_convert^MUL~42[10] a[11]=diffeq_paj_convert^MUL~42[11] \
+ a[12]=diffeq_paj_convert^MUL~42[12] a[13]=diffeq_paj_convert^MUL~42[13] a[14]=diffeq_paj_convert^MUL~42[14] \
+ a[15]=diffeq_paj_convert^MUL~42[15] a[16]=diffeq_paj_convert^MUL~42[16] a[17]=diffeq_paj_convert^MUL~42[17] \
+ a[18]=diffeq_paj_convert^MUL~42[18] a[19]=diffeq_paj_convert^MUL~42[19] a[20]=diffeq_paj_convert^MUL~42[20] \
+ a[21]=diffeq_paj_convert^MUL~42[21] a[22]=diffeq_paj_convert^MUL~42[22] a[23]=diffeq_paj_convert^MUL~42[23] \
+ a[24]=diffeq_paj_convert^MUL~42[24] a[25]=diffeq_paj_convert^MUL~42[25] a[26]=diffeq_paj_convert^MUL~42[26] \
+ a[27]=diffeq_paj_convert^MUL~42[27] a[28]=diffeq_paj_convert^MUL~42[28] a[29]=diffeq_paj_convert^MUL~42[29] \
+ a[30]=diffeq_paj_convert^MUL~42[30] a[31]=diffeq_paj_convert^MUL~42[31] a[32]=diffeq_paj_convert^MUL~42[32] \
+ a[33]=diffeq_paj_convert^MUL~42[33] a[34]=diffeq_paj_convert^MUL~42[34] a[35]=diffeq_paj_convert^MUL~42[35] \
+ b[0]=diffeq_paj_convert^x_var~0_FF b[1]=diffeq_paj_convert^x_var~1_FF b[2]=diffeq_paj_convert^x_var~2_FF \
+ b[3]=diffeq_paj_convert^x_var~3_FF b[4]=diffeq_paj_convert^x_var~4_FF b[5]=diffeq_paj_convert^x_var~5_FF \
+ b[6]=diffeq_paj_convert^x_var~6_FF b[7]=diffeq_paj_convert^x_var~7_FF b[8]=diffeq_paj_convert^x_var~8_FF \
+ b[9]=diffeq_paj_convert^x_var~9_FF b[10]=diffeq_paj_convert^x_var~10_FF b[11]=diffeq_paj_convert^x_var~11_FF \
+ b[12]=diffeq_paj_convert^x_var~12_FF b[13]=diffeq_paj_convert^x_var~13_FF b[14]=diffeq_paj_convert^x_var~14_FF \
+ b[15]=diffeq_paj_convert^x_var~15_FF b[16]=diffeq_paj_convert^x_var~16_FF b[17]=diffeq_paj_convert^x_var~17_FF \
+ b[18]=diffeq_paj_convert^x_var~18_FF b[19]=diffeq_paj_convert^x_var~19_FF b[20]=diffeq_paj_convert^x_var~20_FF \
+ b[21]=diffeq_paj_convert^x_var~21_FF b[22]=diffeq_paj_convert^x_var~22_FF b[23]=diffeq_paj_convert^x_var~23_FF \
+ b[24]=diffeq_paj_convert^x_var~24_FF b[25]=diffeq_paj_convert^x_var~25_FF b[26]=diffeq_paj_convert^x_var~26_FF \
+ b[27]=diffeq_paj_convert^x_var~27_FF b[28]=diffeq_paj_convert^x_var~28_FF b[29]=diffeq_paj_convert^x_var~29_FF \
+ b[30]=diffeq_paj_convert^x_var~30_FF b[31]=diffeq_paj_convert^x_var~31_FF b[32]=unconn b[33]=unconn b[34]=unconn b[35]=unconn \
+ out[0]=diffeq_paj_convert^MUL~43-0[0] out[1]=diffeq_paj_convert^MUL~43-0[1] out[2]=diffeq_paj_convert^MUL~43-0[2] \
+ out[3]=diffeq_paj_convert^MUL~43-0[3] out[4]=diffeq_paj_convert^MUL~43-0[4] out[5]=diffeq_paj_convert^MUL~43-0[5] \
+ out[6]=diffeq_paj_convert^MUL~43-0[6] out[7]=diffeq_paj_convert^MUL~43-0[7] out[8]=diffeq_paj_convert^MUL~43-0[8] \
+ out[9]=diffeq_paj_convert^MUL~43-0[9] out[10]=diffeq_paj_convert^MUL~43-0[10] out[11]=diffeq_paj_convert^MUL~43-0[11] \
+ out[12]=diffeq_paj_convert^MUL~43-0[12] out[13]=diffeq_paj_convert^MUL~43-0[13] out[14]=diffeq_paj_convert^MUL~43-0[14] \
+ out[15]=diffeq_paj_convert^MUL~43-0[15] out[16]=diffeq_paj_convert^MUL~43-0[16] out[17]=diffeq_paj_convert^MUL~43-0[17] \
+ out[18]=diffeq_paj_convert^MUL~43-0[18] out[19]=diffeq_paj_convert^MUL~43-0[19] out[20]=diffeq_paj_convert^MUL~43-0[20] \
+ out[21]=diffeq_paj_convert^MUL~43-0[21] out[22]=diffeq_paj_convert^MUL~43-0[22] out[23]=diffeq_paj_convert^MUL~43-0[23] \
+ out[24]=diffeq_paj_convert^MUL~43-0[24] out[25]=diffeq_paj_convert^MUL~43-0[25] out[26]=diffeq_paj_convert^MUL~43-0[26] \
+ out[27]=diffeq_paj_convert^MUL~43-0[27] out[28]=diffeq_paj_convert^MUL~43-0[28] out[29]=diffeq_paj_convert^MUL~43-0[29] \
+ out[30]=diffeq_paj_convert^MUL~43-0[30] out[31]=diffeq_paj_convert^MUL~43-0[31] out[32]=diffeq_paj_convert^MUL~43-0[32] \
+ out[33]=diffeq_paj_convert^MUL~43-0[33] out[34]=diffeq_paj_convert^MUL~43-0[34] out[35]=diffeq_paj_convert^MUL~43-0[35] \
+ out[36]=diffeq_paj_convert^MUL~43-0[36] out[37]=diffeq_paj_convert^MUL~43-0[37] out[38]=diffeq_paj_convert^MUL~43-0[38] \
+ out[39]=diffeq_paj_convert^MUL~43-0[39] out[40]=diffeq_paj_convert^MUL~43-0[40] out[41]=diffeq_paj_convert^MUL~43-0[41] \
+ out[42]=diffeq_paj_convert^MUL~43-0[42] out[43]=diffeq_paj_convert^MUL~43-0[43] out[44]=diffeq_paj_convert^MUL~43-0[44] \
+ out[45]=diffeq_paj_convert^MUL~43-0[45] out[46]=diffeq_paj_convert^MUL~43-0[46] out[47]=diffeq_paj_convert^MUL~43-0[47] \
+ out[48]=diffeq_paj_convert^MUL~43-0[48] out[49]=diffeq_paj_convert^MUL~43-0[49] out[50]=diffeq_paj_convert^MUL~43-0[50] \
+ out[51]=diffeq_paj_convert^MUL~43-0[51] out[52]=diffeq_paj_convert^MUL~43-0[52] out[53]=diffeq_paj_convert^MUL~43-0[53] \
+ out[54]=diffeq_paj_convert^MUL~43-0[54] out[55]=diffeq_paj_convert^MUL~43-0[55] out[56]=diffeq_paj_convert^MUL~43-0[56] \
+ out[57]=diffeq_paj_convert^MUL~43-0[57] out[58]=diffeq_paj_convert^MUL~43-0[58] out[59]=diffeq_paj_convert^MUL~43-0[59] \
+ out[60]=diffeq_paj_convert^MUL~43-0[60] out[61]=diffeq_paj_convert^MUL~43-0[61] out[62]=diffeq_paj_convert^MUL~43-0[62] \
+ out[63]=diffeq_paj_convert^MUL~43-0[63] out[64]=diffeq_paj_convert^MUL~43-0[64] out[65]=diffeq_paj_convert^MUL~43-0[65] \
+ out[66]=diffeq_paj_convert^MUL~43-0[66] out[67]=diffeq_paj_convert^MUL~43-0[67] out[68]=diffeq_paj_convert^MUL~43-0[68] \
+ out[69]=diffeq_paj_convert^MUL~43-0[69] out[70]=diffeq_paj_convert^MUL~43-0[70] out[71]=diffeq_paj_convert^MUL~43-0[71] 
+
+
+.subckt multiply a[0]=diffeq_paj_convert^MUL~45[0] a[1]=diffeq_paj_convert^MUL~45[1] a[2]=diffeq_paj_convert^MUL~45[2] \
+ a[3]=diffeq_paj_convert^MUL~45[3] a[4]=diffeq_paj_convert^MUL~45[4] a[5]=diffeq_paj_convert^MUL~45[5] \
+ a[6]=diffeq_paj_convert^MUL~45[6] a[7]=diffeq_paj_convert^MUL~45[7] a[8]=diffeq_paj_convert^MUL~45[8] \
+ a[9]=diffeq_paj_convert^MUL~45[9] a[10]=diffeq_paj_convert^MUL~45[10] a[11]=diffeq_paj_convert^MUL~45[11] \
+ a[12]=diffeq_paj_convert^MUL~45[12] a[13]=diffeq_paj_convert^MUL~45[13] a[14]=diffeq_paj_convert^MUL~45[14] \
+ a[15]=diffeq_paj_convert^MUL~45[15] a[16]=diffeq_paj_convert^MUL~45[16] a[17]=diffeq_paj_convert^MUL~45[17] \
+ a[18]=diffeq_paj_convert^MUL~45[18] a[19]=diffeq_paj_convert^MUL~45[19] a[20]=diffeq_paj_convert^MUL~45[20] \
+ a[21]=diffeq_paj_convert^MUL~45[21] a[22]=diffeq_paj_convert^MUL~45[22] a[23]=diffeq_paj_convert^MUL~45[23] \
+ a[24]=diffeq_paj_convert^MUL~45[24] a[25]=diffeq_paj_convert^MUL~45[25] a[26]=diffeq_paj_convert^MUL~45[26] \
+ a[27]=diffeq_paj_convert^MUL~45[27] a[28]=diffeq_paj_convert^MUL~45[28] a[29]=diffeq_paj_convert^MUL~45[29] \
+ a[30]=diffeq_paj_convert^MUL~45[30] a[31]=diffeq_paj_convert^MUL~45[31] a[32]=diffeq_paj_convert^MUL~45[32] \
+ a[33]=diffeq_paj_convert^MUL~45[33] a[34]=diffeq_paj_convert^MUL~45[34] a[35]=diffeq_paj_convert^MUL~45[35] \
+ b[0]=diffeq_paj_convert^y_var~0_FF b[1]=diffeq_paj_convert^y_var~1_FF b[2]=diffeq_paj_convert^y_var~2_FF \
+ b[3]=diffeq_paj_convert^y_var~3_FF b[4]=diffeq_paj_convert^y_var~4_FF b[5]=diffeq_paj_convert^y_var~5_FF \
+ b[6]=diffeq_paj_convert^y_var~6_FF b[7]=diffeq_paj_convert^y_var~7_FF b[8]=diffeq_paj_convert^y_var~8_FF \
+ b[9]=diffeq_paj_convert^y_var~9_FF b[10]=diffeq_paj_convert^y_var~10_FF b[11]=diffeq_paj_convert^y_var~11_FF \
+ b[12]=diffeq_paj_convert^y_var~12_FF b[13]=diffeq_paj_convert^y_var~13_FF b[14]=diffeq_paj_convert^y_var~14_FF \
+ b[15]=diffeq_paj_convert^y_var~15_FF b[16]=diffeq_paj_convert^y_var~16_FF b[17]=diffeq_paj_convert^y_var~17_FF \
+ b[18]=diffeq_paj_convert^y_var~18_FF b[19]=diffeq_paj_convert^y_var~19_FF b[20]=diffeq_paj_convert^y_var~20_FF \
+ b[21]=diffeq_paj_convert^y_var~21_FF b[22]=diffeq_paj_convert^y_var~22_FF b[23]=diffeq_paj_convert^y_var~23_FF \
+ b[24]=diffeq_paj_convert^y_var~24_FF b[25]=diffeq_paj_convert^y_var~25_FF b[26]=diffeq_paj_convert^y_var~26_FF \
+ b[27]=diffeq_paj_convert^y_var~27_FF b[28]=diffeq_paj_convert^y_var~28_FF b[29]=diffeq_paj_convert^y_var~29_FF \
+ b[30]=diffeq_paj_convert^y_var~30_FF b[31]=diffeq_paj_convert^y_var~31_FF b[32]=unconn b[33]=unconn b[34]=unconn b[35]=unconn \
+ out[0]=diffeq_paj_convert^MUL~46-0[0] out[1]=diffeq_paj_convert^MUL~46-0[1] out[2]=diffeq_paj_convert^MUL~46-0[2] \
+ out[3]=diffeq_paj_convert^MUL~46-0[3] out[4]=diffeq_paj_convert^MUL~46-0[4] out[5]=diffeq_paj_convert^MUL~46-0[5] \
+ out[6]=diffeq_paj_convert^MUL~46-0[6] out[7]=diffeq_paj_convert^MUL~46-0[7] out[8]=diffeq_paj_convert^MUL~46-0[8] \
+ out[9]=diffeq_paj_convert^MUL~46-0[9] out[10]=diffeq_paj_convert^MUL~46-0[10] out[11]=diffeq_paj_convert^MUL~46-0[11] \
+ out[12]=diffeq_paj_convert^MUL~46-0[12] out[13]=diffeq_paj_convert^MUL~46-0[13] out[14]=diffeq_paj_convert^MUL~46-0[14] \
+ out[15]=diffeq_paj_convert^MUL~46-0[15] out[16]=diffeq_paj_convert^MUL~46-0[16] out[17]=diffeq_paj_convert^MUL~46-0[17] \
+ out[18]=diffeq_paj_convert^MUL~46-0[18] out[19]=diffeq_paj_convert^MUL~46-0[19] out[20]=diffeq_paj_convert^MUL~46-0[20] \
+ out[21]=diffeq_paj_convert^MUL~46-0[21] out[22]=diffeq_paj_convert^MUL~46-0[22] out[23]=diffeq_paj_convert^MUL~46-0[23] \
+ out[24]=diffeq_paj_convert^MUL~46-0[24] out[25]=diffeq_paj_convert^MUL~46-0[25] out[26]=diffeq_paj_convert^MUL~46-0[26] \
+ out[27]=diffeq_paj_convert^MUL~46-0[27] out[28]=diffeq_paj_convert^MUL~46-0[28] out[29]=diffeq_paj_convert^MUL~46-0[29] \
+ out[30]=diffeq_paj_convert^MUL~46-0[30] out[31]=diffeq_paj_convert^MUL~46-0[31] out[32]=diffeq_paj_convert^MUL~46-0[32] \
+ out[33]=diffeq_paj_convert^MUL~46-0[33] out[34]=diffeq_paj_convert^MUL~46-0[34] out[35]=diffeq_paj_convert^MUL~46-0[35] \
+ out[36]=diffeq_paj_convert^MUL~46-0[36] out[37]=diffeq_paj_convert^MUL~46-0[37] out[38]=diffeq_paj_convert^MUL~46-0[38] \
+ out[39]=diffeq_paj_convert^MUL~46-0[39] out[40]=diffeq_paj_convert^MUL~46-0[40] out[41]=diffeq_paj_convert^MUL~46-0[41] \
+ out[42]=diffeq_paj_convert^MUL~46-0[42] out[43]=diffeq_paj_convert^MUL~46-0[43] out[44]=diffeq_paj_convert^MUL~46-0[44] \
+ out[45]=diffeq_paj_convert^MUL~46-0[45] out[46]=diffeq_paj_convert^MUL~46-0[46] out[47]=diffeq_paj_convert^MUL~46-0[47] \
+ out[48]=diffeq_paj_convert^MUL~46-0[48] out[49]=diffeq_paj_convert^MUL~46-0[49] out[50]=diffeq_paj_convert^MUL~46-0[50] \
+ out[51]=diffeq_paj_convert^MUL~46-0[51] out[52]=diffeq_paj_convert^MUL~46-0[52] out[53]=diffeq_paj_convert^MUL~46-0[53] \
+ out[54]=diffeq_paj_convert^MUL~46-0[54] out[55]=diffeq_paj_convert^MUL~46-0[55] out[56]=diffeq_paj_convert^MUL~46-0[56] \
+ out[57]=diffeq_paj_convert^MUL~46-0[57] out[58]=diffeq_paj_convert^MUL~46-0[58] out[59]=diffeq_paj_convert^MUL~46-0[59] \
+ out[60]=diffeq_paj_convert^MUL~46-0[60] out[61]=diffeq_paj_convert^MUL~46-0[61] out[62]=diffeq_paj_convert^MUL~46-0[62] \
+ out[63]=diffeq_paj_convert^MUL~46-0[63] out[64]=diffeq_paj_convert^MUL~46-0[64] out[65]=diffeq_paj_convert^MUL~46-0[65] \
+ out[66]=diffeq_paj_convert^MUL~46-0[66] out[67]=diffeq_paj_convert^MUL~46-0[67] out[68]=diffeq_paj_convert^MUL~46-0[68] \
+ out[69]=diffeq_paj_convert^MUL~46-0[69] out[70]=diffeq_paj_convert^MUL~46-0[70] out[71]=diffeq_paj_convert^MUL~46-0[71] 
+
+
+.subckt multiply a[0]=diffeq_paj_convert^DXport~0 a[1]=diffeq_paj_convert^DXport~1 a[2]=diffeq_paj_convert^DXport~2 \
+ a[3]=diffeq_paj_convert^DXport~3 a[4]=diffeq_paj_convert^DXport~4 a[5]=diffeq_paj_convert^DXport~5 \
+ a[6]=diffeq_paj_convert^DXport~6 a[7]=diffeq_paj_convert^DXport~7 a[8]=diffeq_paj_convert^DXport~8 \
+ a[9]=diffeq_paj_convert^DXport~9 a[10]=diffeq_paj_convert^DXport~10 a[11]=diffeq_paj_convert^DXport~11 \
+ a[12]=diffeq_paj_convert^DXport~12 a[13]=diffeq_paj_convert^DXport~13 a[14]=diffeq_paj_convert^DXport~14 \
+ a[15]=diffeq_paj_convert^DXport~15 a[16]=diffeq_paj_convert^DXport~16 a[17]=diffeq_paj_convert^DXport~17 \
+ a[18]=diffeq_paj_convert^DXport~18 a[19]=diffeq_paj_convert^DXport~19 a[20]=diffeq_paj_convert^DXport~20 \
+ a[21]=diffeq_paj_convert^DXport~21 a[22]=diffeq_paj_convert^DXport~22 a[23]=diffeq_paj_convert^DXport~23 \
+ a[24]=diffeq_paj_convert^DXport~24 a[25]=diffeq_paj_convert^DXport~25 a[26]=diffeq_paj_convert^DXport~26 \
+ a[27]=diffeq_paj_convert^DXport~27 a[28]=diffeq_paj_convert^DXport~28 a[29]=diffeq_paj_convert^DXport~29 \
+ a[30]=diffeq_paj_convert^DXport~30 a[31]=diffeq_paj_convert^DXport~31 a[32]=unconn a[33]=unconn a[34]=unconn a[35]=unconn \
+ b[0]=vcc b[1]=vcc b[2]=gnd b[3]=gnd b[4]=gnd b[5]=gnd b[6]=gnd b[7]=gnd b[8]=gnd b[9]=gnd b[10]=gnd b[11]=gnd b[12]=gnd \
+ b[13]=gnd b[14]=gnd b[15]=gnd b[16]=gnd b[17]=gnd b[18]=gnd b[19]=gnd b[20]=gnd b[21]=gnd b[22]=gnd b[23]=gnd b[24]=gnd \
+ b[25]=gnd b[26]=gnd b[27]=gnd b[28]=gnd b[29]=gnd b[30]=gnd b[31]=gnd b[32]=unconn b[33]=unconn b[34]=unconn b[35]=unconn \
+ out[0]=diffeq_paj_convert^MUL~45[0] out[1]=diffeq_paj_convert^MUL~45[1] out[2]=diffeq_paj_convert^MUL~45[2] \
+ out[3]=diffeq_paj_convert^MUL~45[3] out[4]=diffeq_paj_convert^MUL~45[4] out[5]=diffeq_paj_convert^MUL~45[5] \
+ out[6]=diffeq_paj_convert^MUL~45[6] out[7]=diffeq_paj_convert^MUL~45[7] out[8]=diffeq_paj_convert^MUL~45[8] \
+ out[9]=diffeq_paj_convert^MUL~45[9] out[10]=diffeq_paj_convert^MUL~45[10] out[11]=diffeq_paj_convert^MUL~45[11] \
+ out[12]=diffeq_paj_convert^MUL~45[12] out[13]=diffeq_paj_convert^MUL~45[13] out[14]=diffeq_paj_convert^MUL~45[14] \
+ out[15]=diffeq_paj_convert^MUL~45[15] out[16]=diffeq_paj_convert^MUL~45[16] out[17]=diffeq_paj_convert^MUL~45[17] \
+ out[18]=diffeq_paj_convert^MUL~45[18] out[19]=diffeq_paj_convert^MUL~45[19] out[20]=diffeq_paj_convert^MUL~45[20] \
+ out[21]=diffeq_paj_convert^MUL~45[21] out[22]=diffeq_paj_convert^MUL~45[22] out[23]=diffeq_paj_convert^MUL~45[23] \
+ out[24]=diffeq_paj_convert^MUL~45[24] out[25]=diffeq_paj_convert^MUL~45[25] out[26]=diffeq_paj_convert^MUL~45[26] \
+ out[27]=diffeq_paj_convert^MUL~45[27] out[28]=diffeq_paj_convert^MUL~45[28] out[29]=diffeq_paj_convert^MUL~45[29] \
+ out[30]=diffeq_paj_convert^MUL~45[30] out[31]=diffeq_paj_convert^MUL~45[31] out[32]=diffeq_paj_convert^MUL~45[32] \
+ out[33]=diffeq_paj_convert^MUL~45[33] out[34]=diffeq_paj_convert^MUL~45[34] out[35]=diffeq_paj_convert^MUL~45[35] \
+ out[36]=diffeq_paj_convert^MUL~45[36] out[37]=diffeq_paj_convert^MUL~45[37] out[38]=diffeq_paj_convert^MUL~45[38] \
+ out[39]=diffeq_paj_convert^MUL~45[39] out[40]=diffeq_paj_convert^MUL~45[40] out[41]=diffeq_paj_convert^MUL~45[41] \
+ out[42]=diffeq_paj_convert^MUL~45[42] out[43]=diffeq_paj_convert^MUL~45[43] out[44]=diffeq_paj_convert^MUL~45[44] \
+ out[45]=diffeq_paj_convert^MUL~45[45] out[46]=diffeq_paj_convert^MUL~45[46] out[47]=diffeq_paj_convert^MUL~45[47] \
+ out[48]=diffeq_paj_convert^MUL~45[48] out[49]=diffeq_paj_convert^MUL~45[49] out[50]=diffeq_paj_convert^MUL~45[50] \
+ out[51]=diffeq_paj_convert^MUL~45[51] out[52]=diffeq_paj_convert^MUL~45[52] out[53]=diffeq_paj_convert^MUL~45[53] \
+ out[54]=diffeq_paj_convert^MUL~45[54] out[55]=diffeq_paj_convert^MUL~45[55] out[56]=diffeq_paj_convert^MUL~45[56] \
+ out[57]=diffeq_paj_convert^MUL~45[57] out[58]=diffeq_paj_convert^MUL~45[58] out[59]=diffeq_paj_convert^MUL~45[59] \
+ out[60]=diffeq_paj_convert^MUL~45[60] out[61]=diffeq_paj_convert^MUL~45[61] out[62]=diffeq_paj_convert^MUL~45[62] \
+ out[63]=diffeq_paj_convert^MUL~45[63] out[64]=diffeq_paj_convert^MUL~45[64] out[65]=diffeq_paj_convert^MUL~45[65] \
+ out[66]=diffeq_paj_convert^MUL~45[66] out[67]=diffeq_paj_convert^MUL~45[67] out[68]=diffeq_paj_convert^MUL~45[68] \
+ out[69]=diffeq_paj_convert^MUL~45[69] out[70]=diffeq_paj_convert^MUL~45[70] out[71]=diffeq_paj_convert^MUL~45[71] 
+
+
+
+
+.names n1436 diffeq_paj_convert^reset n782 
+00 1 
+
+
+.names n1437_1 diffeq_paj_convert^looping_FF n1436 
+11 1 
+
+
+.names n1461 n1438_1 diffeq_paj_convert^Aport~20 diffeq_paj_convert^x_var~20_FF n1450 n1437_1 
+----0 0 
+1-10- 0 
+10-0- 0 
+101-- 0 
+
+
+.names diffeq_paj_convert^Aport~18 diffeq_paj_convert^Aport~19 n1439 n1449 diffeq_paj_convert^x_var~19_FF \
+ diffeq_paj_convert^x_var~18_FF n1438_1 
+--0011 1 
+0---11 1 
+-000-1 1 
+00---1 1 
+0-001- 1 
+-0--1- 1 
+0000-- 1 
+
+
+.names n1440 diffeq_paj_convert^x_var~15_FF diffeq_paj_convert^Aport~15 diffeq_paj_convert^Aport~16 \
+ diffeq_paj_convert^x_var~16_FF n1448_1 n1439 
+-----0 0 
+---10- 0 
+---01- 0 
+-10--- 0 
+0-0--- 0 
+01---- 0 
+
+
+.names n1441 diffeq_paj_convert^Aport~14 diffeq_paj_convert^x_var~14_FF diffeq_paj_convert^x_var~13_FF \
+ diffeq_paj_convert^Aport~13 n1440 
+--001 1 
+-1-01 1 
+1-0-1 1 
+11--1 1 
+1-00- 1 
+11-0- 1 
+-10-- 1 
+
+
+.names n1442_1 diffeq_paj_convert^x_var~12_FF diffeq_paj_convert^Aport~12 n1441 
+-01 1 
+0-1 1 
+00- 1 
+
+
+.names n1443_1 diffeq_paj_convert^Aport~11 diffeq_paj_convert^Aport~10 diffeq_paj_convert^x_var~11_FF \
+ diffeq_paj_convert^x_var~10_FF n1442_1 
+--011 1 
+0--11 1 
+-00-1 1 
+00--1 1 
+0-01- 1 
+-0-1- 1 
+000-- 1 
+
+
+.names n1444 diffeq_paj_convert^Aport~9 diffeq_paj_convert^x_var~9_FF diffeq_paj_convert^x_var~8_FF \
+ diffeq_paj_convert^Aport~8 n1443_1 
+--001 1 
+-1-01 1 
+1-0-1 1 
+11--1 1 
+1-00- 1 
+11-0- 1 
+-10-- 1 
+
+
+.names n1445 diffeq_paj_convert^Aport~7 diffeq_paj_convert^x_var~7_FF diffeq_paj_convert^x_var~6_FF \
+ diffeq_paj_convert^Aport~6 n1444 
+--001 1 
+-1-01 1 
+0-0-1 1 
+01--1 1 
+0-00- 1 
+01-0- 1 
+-10-- 1 
+
+
+.names n1446 diffeq_paj_convert^Aport~4 diffeq_paj_convert^x_var~4_FF diffeq_paj_convert^Aport~5 \
+ diffeq_paj_convert^x_var~5_FF n1445 
+---01 1 
+-01-1 1 
+1---1 1 
+-010- 1 
+1--0- 1 
+
+
+.names diffeq_paj_convert^x_var~4_FF diffeq_paj_convert^Aport~4 n1447_1 diffeq_paj_convert^x_var~3_FF \
+ diffeq_paj_convert^Aport~3 n1446 
+---01 0 
+--0-1 0 
+--00- 0 
+01--- 0 
+
+
+.names diffeq_paj_convert^Aport~1 diffeq_paj_convert^Aport~2 diffeq_paj_convert^x_var~2_FF diffeq_paj_convert^x_var~1_FF \
+ diffeq_paj_convert^x_var~0_FF diffeq_paj_convert^Aport~0 n1447_1 
+--0001 0 
+-1-001 0 
+1-0-01 0 
+11--01 0 
+1-00-- 0 
+11-0-- 0 
+-10--- 0 
+
+
+.names diffeq_paj_convert^Aport~17 diffeq_paj_convert^x_var~17_FF n1448_1 
+00 1 
+11 1 
+
+
+.names diffeq_paj_convert^Aport~17 diffeq_paj_convert^x_var~17_FF diffeq_paj_convert^x_var~16_FF diffeq_paj_convert^Aport~16 \
+ n1449 
+-001 1 
+1-01 1 
+10-- 1 
+
+
+.names n1451 diffeq_paj_convert^x_var~21_FF diffeq_paj_convert^Aport~22 diffeq_paj_convert^x_var~22_FF n1460 \
+ diffeq_paj_convert^Aport~21 n1450 
+-00011 0 
+-01111 0 
+0----- 0 
+
+
+.names n1454 n1459 diffeq_paj_convert^Aport~26 diffeq_paj_convert^x_var~26_FF n1452_1 n1457_1 n1451 
+--0101 1 
+-0-101 1 
+-00-01 1 
+0---01 1 
+
+
+.names n1456 n1453_1 n1452_1 
+01 1 
+
+
+.names diffeq_paj_convert^Aport~25 diffeq_paj_convert^x_var~25_FF diffeq_paj_convert^Aport~26 diffeq_paj_convert^x_var~26_FF \
+ n1454 n1453_1 
+00001 1 
+11001 1 
+00111 1 
+11111 1 
+
+
+.names diffeq_paj_convert^Aport~27 diffeq_paj_convert^x_var~27_FF diffeq_paj_convert^Aport~28 diffeq_paj_convert^x_var~28_FF \
+ n1455 n1454 
+00001 1 
+11001 1 
+00111 1 
+11111 1 
+
+
+.names diffeq_paj_convert^Aport~29 diffeq_paj_convert^x_var~29_FF diffeq_paj_convert^Aport~30 diffeq_paj_convert^x_var~30_FF \
+ diffeq_paj_convert^Aport~31 diffeq_paj_convert^x_var~31_FF n1455 
+----10 0 
+----01 0 
+--10-- 0 
+--01-- 0 
+10---- 0 
+01---- 0 
+
+
+.names diffeq_paj_convert^Aport~23 diffeq_paj_convert^Aport~24 diffeq_paj_convert^x_var~24_FF diffeq_paj_convert^x_var~23_FF \
+ diffeq_paj_convert^x_var~22_FF diffeq_paj_convert^Aport~22 n1456 
+--0001 0 
+-1-001 0 
+1-0-01 0 
+11--01 0 
+1-00-- 0 
+11-0-- 0 
+-10--- 0 
+
+
+.names n1458_1 diffeq_paj_convert^Aport~28 diffeq_paj_convert^x_var~28_FF diffeq_paj_convert^x_var~27_FF \
+ diffeq_paj_convert^Aport~27 n1455 n1457_1 
+--0011 0 
+-1-011 0 
+-10--1 0 
+0----- 0 
+
+
+.names diffeq_paj_convert^Aport~30 diffeq_paj_convert^Aport~31 diffeq_paj_convert^x_var~31_FF diffeq_paj_convert^x_var~30_FF \
+ diffeq_paj_convert^x_var~29_FF diffeq_paj_convert^Aport~29 n1458_1 
+--0001 0 
+-1-001 0 
+1-0-01 0 
+11--01 0 
+1-00-- 0 
+11-0-- 0 
+-10--- 0 
+
+
+.names diffeq_paj_convert^x_var~25_FF diffeq_paj_convert^Aport~25 n1459 
+01 1 
+
+
+.names diffeq_paj_convert^Aport~23 diffeq_paj_convert^x_var~23_FF diffeq_paj_convert^Aport~24 diffeq_paj_convert^x_var~24_FF \
+ n1453_1 n1460 
+00001 1 
+11001 1 
+00111 1 
+11111 1 
+
+
+.names diffeq_paj_convert^Aport~21 diffeq_paj_convert^x_var~21_FF diffeq_paj_convert^Aport~22 diffeq_paj_convert^x_var~22_FF \
+ n1460 n1461 
+00001 1 
+11001 1 
+00111 1 
+11111 1 
+
+
+.names diffeq_paj_convert^Uoutport~0_FF diffeq_paj_convert^u_var~0_FF n1463_1 n787 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^reset n1436 n1463_1 
+01 1 
+
+
+.names diffeq_paj_convert^Uoutport~1_FF diffeq_paj_convert^u_var~1_FF n1463_1 n792 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~10_FF diffeq_paj_convert^u_var~10_FF n1463_1 n797 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~11_FF diffeq_paj_convert^u_var~11_FF n1463_1 n802 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~12_FF diffeq_paj_convert^u_var~12_FF n1463_1 n807 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~13_FF diffeq_paj_convert^u_var~13_FF n1463_1 n812 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~14_FF diffeq_paj_convert^u_var~14_FF n1463_1 n817 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~15_FF diffeq_paj_convert^u_var~15_FF n1463_1 n822 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~16_FF diffeq_paj_convert^u_var~16_FF n1463_1 n827 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~17_FF diffeq_paj_convert^u_var~17_FF n1463_1 n832 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~18_FF diffeq_paj_convert^u_var~18_FF n1463_1 n837 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~19_FF diffeq_paj_convert^u_var~19_FF n1463_1 n842 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~2_FF diffeq_paj_convert^u_var~2_FF n1463_1 n847 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~20_FF diffeq_paj_convert^u_var~20_FF n1463_1 n852 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~21_FF diffeq_paj_convert^u_var~21_FF n1463_1 n857 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~22_FF diffeq_paj_convert^u_var~22_FF n1463_1 n862 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~23_FF diffeq_paj_convert^u_var~23_FF n1463_1 n867 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~24_FF diffeq_paj_convert^u_var~24_FF n1463_1 n872 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~25_FF diffeq_paj_convert^u_var~25_FF n1463_1 n877 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~26_FF diffeq_paj_convert^u_var~26_FF n1463_1 n882 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~27_FF diffeq_paj_convert^u_var~27_FF n1463_1 n887 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~28_FF diffeq_paj_convert^u_var~28_FF n1463_1 n892 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~29_FF diffeq_paj_convert^u_var~29_FF n1463_1 n897 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~3_FF diffeq_paj_convert^u_var~3_FF n1463_1 n902 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~30_FF diffeq_paj_convert^u_var~30_FF n1463_1 n907 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~31_FF diffeq_paj_convert^u_var~31_FF n1463_1 n912 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~4_FF diffeq_paj_convert^u_var~4_FF n1463_1 n917 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~5_FF diffeq_paj_convert^u_var~5_FF n1463_1 n922 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~6_FF diffeq_paj_convert^u_var~6_FF n1463_1 n927 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~7_FF diffeq_paj_convert^u_var~7_FF n1463_1 n932 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~8_FF diffeq_paj_convert^u_var~8_FF n1463_1 n937 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Uoutport~9_FF diffeq_paj_convert^u_var~9_FF n1463_1 n942 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~0_FF diffeq_paj_convert^x_var~0_FF n1463_1 n947 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~1_FF diffeq_paj_convert^x_var~1_FF n1463_1 n952 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~10_FF diffeq_paj_convert^x_var~10_FF n1463_1 n957 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~11_FF diffeq_paj_convert^x_var~11_FF n1463_1 n962 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~12_FF diffeq_paj_convert^x_var~12_FF n1463_1 n967 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~13_FF diffeq_paj_convert^x_var~13_FF n1463_1 n972 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~14_FF diffeq_paj_convert^x_var~14_FF n1463_1 n977 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~15_FF diffeq_paj_convert^x_var~15_FF n1463_1 n982 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~16_FF diffeq_paj_convert^x_var~16_FF n1463_1 n987 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~17_FF diffeq_paj_convert^x_var~17_FF n1463_1 n992 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~18_FF diffeq_paj_convert^x_var~18_FF n1463_1 n997 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~19_FF diffeq_paj_convert^x_var~19_FF n1463_1 n1002 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~2_FF diffeq_paj_convert^x_var~2_FF n1463_1 n1007 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~20_FF diffeq_paj_convert^x_var~20_FF n1463_1 n1012 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~21_FF diffeq_paj_convert^x_var~21_FF n1463_1 n1017 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~22_FF diffeq_paj_convert^x_var~22_FF n1463_1 n1022 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~23_FF diffeq_paj_convert^x_var~23_FF n1463_1 n1027 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~24_FF diffeq_paj_convert^x_var~24_FF n1463_1 n1032 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~25_FF diffeq_paj_convert^x_var~25_FF n1463_1 n1037 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~26_FF diffeq_paj_convert^x_var~26_FF n1463_1 n1042 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~27_FF diffeq_paj_convert^x_var~27_FF n1463_1 n1047 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~28_FF diffeq_paj_convert^x_var~28_FF n1463_1 n1052 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~29_FF diffeq_paj_convert^x_var~29_FF n1463_1 n1057 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~3_FF diffeq_paj_convert^x_var~3_FF n1463_1 n1062 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~30_FF diffeq_paj_convert^x_var~30_FF n1463_1 n1067 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~31_FF diffeq_paj_convert^x_var~31_FF n1463_1 n1072 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~4_FF diffeq_paj_convert^x_var~4_FF n1463_1 n1077 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~5_FF diffeq_paj_convert^x_var~5_FF n1463_1 n1082 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~6_FF diffeq_paj_convert^x_var~6_FF n1463_1 n1087 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~7_FF diffeq_paj_convert^x_var~7_FF n1463_1 n1092 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~8_FF diffeq_paj_convert^x_var~8_FF n1463_1 n1097 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Xoutport~9_FF diffeq_paj_convert^x_var~9_FF n1463_1 n1102 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~0_FF diffeq_paj_convert^y_var~0_FF n1463_1 n1107 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~1_FF diffeq_paj_convert^y_var~1_FF n1463_1 n1112 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~10_FF diffeq_paj_convert^y_var~10_FF n1463_1 n1117 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~11_FF diffeq_paj_convert^y_var~11_FF n1463_1 n1122 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~12_FF diffeq_paj_convert^y_var~12_FF n1463_1 n1127 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~13_FF diffeq_paj_convert^y_var~13_FF n1463_1 n1132 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~14_FF diffeq_paj_convert^y_var~14_FF n1463_1 n1137 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~15_FF diffeq_paj_convert^y_var~15_FF n1463_1 n1142 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~16_FF diffeq_paj_convert^y_var~16_FF n1463_1 n1147 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~17_FF diffeq_paj_convert^y_var~17_FF n1463_1 n1152 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~18_FF diffeq_paj_convert^y_var~18_FF n1463_1 n1157 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~19_FF diffeq_paj_convert^y_var~19_FF n1463_1 n1162 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~2_FF diffeq_paj_convert^y_var~2_FF n1463_1 n1167 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~20_FF diffeq_paj_convert^y_var~20_FF n1463_1 n1172 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~21_FF diffeq_paj_convert^y_var~21_FF n1463_1 n1177 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~22_FF diffeq_paj_convert^y_var~22_FF n1463_1 n1182 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~23_FF diffeq_paj_convert^y_var~23_FF n1463_1 n1187 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~24_FF diffeq_paj_convert^y_var~24_FF n1463_1 n1192 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~25_FF diffeq_paj_convert^y_var~25_FF n1463_1 n1197 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~26_FF diffeq_paj_convert^y_var~26_FF n1463_1 n1202 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~27_FF diffeq_paj_convert^y_var~27_FF n1463_1 n1207 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~28_FF diffeq_paj_convert^y_var~28_FF n1463_1 n1212 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~29_FF diffeq_paj_convert^y_var~29_FF n1463_1 n1217 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~3_FF diffeq_paj_convert^y_var~3_FF n1463_1 n1222 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~30_FF diffeq_paj_convert^y_var~30_FF n1463_1 n1227 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~31_FF diffeq_paj_convert^y_var~31_FF n1463_1 n1232 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~4_FF diffeq_paj_convert^y_var~4_FF n1463_1 n1237 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~5_FF diffeq_paj_convert^y_var~5_FF n1463_1 n1242 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~6_FF diffeq_paj_convert^y_var~6_FF n1463_1 n1247 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~7_FF diffeq_paj_convert^y_var~7_FF n1463_1 n1252 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~8_FF diffeq_paj_convert^y_var~8_FF n1463_1 n1257 
+1-0 1 
+-11 1 
+
+
+.names diffeq_paj_convert^Youtport~9_FF diffeq_paj_convert^y_var~9_FF n1463_1 n1262 
+1-0 1 
+-11 1 
+
+
+.names n1560 diffeq_paj_convert^reset n1267 
+00 1 
+
+
+.names diffeq_paj_convert^Uinport~0 n1437_1 diffeq_paj_convert^MUL~43-0[0] diffeq_paj_convert^MUL~46-0[0] \
+ diffeq_paj_convert^u_var~0_FF diffeq_paj_convert^looping_FF n1560 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1562_1 diffeq_paj_convert^u_var~1_FF diffeq_paj_convert^Uinport~1 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1272 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[0] diffeq_paj_convert^MUL~46-0[0] diffeq_paj_convert^u_var~0_FF \
+ diffeq_paj_convert^MUL~43-0[1] diffeq_paj_convert^MUL~46-0[1] diffeq_paj_convert^u_var~1_FF n1562_1 
+-01000 1 
+0-1000 1 
+00-000 1 
+-10100 1 
+1-0100 1 
+11-100 1 
+-10010 1 
+1-0010 1 
+11-010 1 
+-01110 1 
+0-1110 1 
+00-110 1 
+-10001 1 
+1-0001 1 
+11-001 1 
+-01101 1 
+0-1101 1 
+00-101 1 
+-01011 1 
+0-1011 1 
+00-011 1 
+-10111 1 
+1-0111 1 
+11-111 1 
+
+
+.names n1564 diffeq_paj_convert^u_var~2_FF diffeq_paj_convert^Uinport~2 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1277 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1565 n1566 diffeq_paj_convert^MUL~46-0[2] n1564 
+100 1 
+010 1 
+001 1 
+111 1 
+
+
+.names diffeq_paj_convert^u_var~0_FF diffeq_paj_convert^MUL~43-0[0] diffeq_paj_convert^MUL~43-0[1] \
+ diffeq_paj_convert^u_var~1_FF diffeq_paj_convert^MUL~43-0[2] diffeq_paj_convert^u_var~2_FF n1565 
+--1000 1 
+01-000 1 
+011-00 1 
+--0110 1 
+-0-110 1 
+1--110 1 
+-00-10 1 
+1-0-10 1 
+--0101 1 
+-0-101 1 
+1--101 1 
+-00-01 1 
+1-0-01 1 
+--1011 1 
+01-011 1 
+011-11 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[1] diffeq_paj_convert^MUL~46-0[0] diffeq_paj_convert^MUL~43-0[0] \
+ diffeq_paj_convert^u_var~0_FF diffeq_paj_convert^MUL~43-0[1] diffeq_paj_convert^u_var~1_FF n1566 
+--1000 0 
+--0110 0 
+-0-110 0 
+-00-10 0 
+0---10 0 
+--0101 0 
+-0-101 0 
+-00-01 0 
+0---01 0 
+--1011 0 
+0-01-- 0 
+00---- 0 
+
+
+.names n1568_1 diffeq_paj_convert^u_var~3_FF diffeq_paj_convert^Uinport~3 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1282 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1565 n1566 diffeq_paj_convert^MUL~46-0[2] n1569 n1570 diffeq_paj_convert^MUL~46-0[3] n1568_1 
+-00000 1 
+1-0000 1 
+10-000 1 
+-11100 1 
+0-1100 1 
+01-100 1 
+-11010 1 
+0-1010 1 
+01-010 1 
+-00110 1 
+1-0110 1 
+10-110 1 
+-11001 1 
+0-1001 1 
+01-001 1 
+-00101 1 
+1-0101 1 
+10-101 1 
+-00011 1 
+1-0011 1 
+10-011 1 
+-11111 1 
+0-1111 1 
+01-111 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[3] diffeq_paj_convert^u_var~3_FF n1569 
+00 1 
+11 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[1] diffeq_paj_convert^MUL~43-0[2] diffeq_paj_convert^u_var~2_FF \
+ diffeq_paj_convert^u_var~1_FF diffeq_paj_convert^u_var~0_FF diffeq_paj_convert^MUL~43-0[0] n1570 
+--0001 1 
+-1-001 1 
+1-0-01 1 
+11--01 1 
+1-00-- 1 
+11-0-- 1 
+-10--- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Uinport~4 diffeq_paj_convert^u_var~4_FF n1436 n1572_1 \
+ diffeq_paj_convert^reset n1287 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1574 n1575 diffeq_paj_convert^MUL~46-0[4] n1573_1 n1572_1 
+1001 1 
+0101 1 
+0011 1 
+1111 1 
+
+
+.names n1437_1 diffeq_paj_convert^looping_FF n1573_1 
+01 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[3] n1565 n1566 diffeq_paj_convert^MUL~46-0[2] n1569 n1570 n1574 
+--1110 1 
+-0-110 1 
+-01-10 1 
+1---10 1 
+--1101 1 
+-0-101 1 
+-01-01 1 
+1---01 1 
+1-11-- 1 
+10-1-- 1 
+101--- 1 
+
+
+.names n1570 diffeq_paj_convert^MUL~43-0[3] diffeq_paj_convert^u_var~3_FF diffeq_paj_convert^MUL~43-0[4] \
+ diffeq_paj_convert^u_var~4_FF n1575 
+-1000 1 
+1-000 1 
+11-00 1 
+-0110 1 
+0-110 1 
+00-10 1 
+-0101 1 
+0-101 1 
+00-01 1 
+-1011 1 
+1-011 1 
+11-11 1 
+
+
+.names n1577_1 diffeq_paj_convert^u_var~5_FF diffeq_paj_convert^Uinport~5 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1292 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1574 n1575 diffeq_paj_convert^MUL~46-0[4] n1578_1 n1579 diffeq_paj_convert^MUL~46-0[5] n1577_1 
+-10000 1 
+0-0000 1 
+01-000 1 
+-01100 1 
+1-1100 1 
+10-100 1 
+-01010 1 
+1-1010 1 
+10-010 1 
+-10110 1 
+0-0110 1 
+01-110 1 
+-01001 1 
+1-1001 1 
+10-001 1 
+-10101 1 
+0-0101 1 
+01-101 1 
+-10011 1 
+0-0011 1 
+01-011 1 
+-01111 1 
+1-1111 1 
+10-111 1 
+
+
+.names n1570 diffeq_paj_convert^MUL~43-0[4] diffeq_paj_convert^u_var~4_FF diffeq_paj_convert^u_var~3_FF \
+ diffeq_paj_convert^MUL~43-0[3] n1578_1 
+--001 1 
+-1-01 1 
+1-0-1 1 
+11--1 1 
+1-00- 1 
+11-0- 1 
+-10-- 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[5] diffeq_paj_convert^u_var~5_FF n1579 
+00 1 
+11 1 
+
+
+.names n1581 diffeq_paj_convert^u_var~6_FF diffeq_paj_convert^Uinport~6 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1297 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names n1582_1 n1583_1 diffeq_paj_convert^MUL~46-0[6] n1581 
+000 1 
+110 1 
+101 1 
+011 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[5] n1574 n1575 diffeq_paj_convert^MUL~46-0[4] n1578_1 n1579 n1582_1 
+--0110 1 
+-1-110 1 
+-10-10 1 
+1---10 1 
+--0101 1 
+-1-101 1 
+-10-01 1 
+1---01 1 
+1-01-- 1 
+11-1-- 1 
+110--- 1 
+
+
+.names n1584 n1586 diffeq_paj_convert^MUL~43-0[6] diffeq_paj_convert^u_var~6_FF n1583_1 
+0000 1 
+-110 1 
+1-10 1 
+-101 1 
+1-01 1 
+0011 1 
+
+
+.names n1570 diffeq_paj_convert^MUL~43-0[4] diffeq_paj_convert^MUL~43-0[3] diffeq_paj_convert^u_var~4_FF \
+ diffeq_paj_convert^u_var~3_FF n1579 n1584 
+--0111 1 
+0--111 1 
+-00-11 1 
+00--11 1 
+0-01-1 1 
+-0-1-1 1 
+000--1 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[5] diffeq_paj_convert^u_var~5_FF n1586 
+01 1 
+
+
+.names n1588_1 diffeq_paj_convert^u_var~7_FF diffeq_paj_convert^Uinport~7 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1302 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names n1582_1 n1583_1 diffeq_paj_convert^MUL~46-0[6] n1589 diffeq_paj_convert^MUL~46-0[7] n1588_1 
+-1000 1 
+0-000 1 
+01-00 1 
+-0110 1 
+1-110 1 
+10-10 1 
+-0101 1 
+1-101 1 
+10-01 1 
+-1011 1 
+0-011 1 
+01-11 1 
+
+
+.names n1584 n1586 diffeq_paj_convert^MUL~43-0[6] diffeq_paj_convert^u_var~6_FF diffeq_paj_convert^MUL~43-0[7] \
+ diffeq_paj_convert^u_var~7_FF n1589 
+--1000 1 
+00-000 1 
+001-00 1 
+--0110 1 
+-1-110 1 
+1--110 1 
+-10-10 1 
+1-0-10 1 
+--0101 1 
+-1-101 1 
+1--101 1 
+-10-01 1 
+1-0-01 1 
+--1011 1 
+00-011 1 
+001-11 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Uinport~8 diffeq_paj_convert^u_var~8_FF n1436 n1591 \
+ diffeq_paj_convert^reset n1307 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1592_1 n1594 n1595 n1573_1 n1591 
+-101 1 
+1-01 1 
+0011 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[8] n1593_1 diffeq_paj_convert^MUL~43-0[8] diffeq_paj_convert^u_var~8_FF n1592_1 
+0100 1 
+0010 1 
+0001 1 
+0111 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[6] diffeq_paj_convert^MUL~43-0[7] diffeq_paj_convert^u_var~7_FF \
+ diffeq_paj_convert^u_var~6_FF n1586 n1584 n1593_1 
+--0000 1 
+-1-000 1 
+1-0-00 1 
+11--00 1 
+1-00-- 1 
+11-0-- 1 
+-10--- 1 
+
+
+.names n1593_1 diffeq_paj_convert^MUL~43-0[8] diffeq_paj_convert^u_var~8_FF diffeq_paj_convert^MUL~46-0[8] n1594 
+0001 1 
+1101 1 
+1011 1 
+0111 1 
+
+
+.names n1582_1 n1589 n1583_1 diffeq_paj_convert^MUL~46-0[7] diffeq_paj_convert^MUL~46-0[6] n1595 
+--011 1 
+1--11 1 
+-00-1 1 
+10--1 1 
+1-01- 1 
+-0-1- 1 
+100-- 1 
+
+
+.names n1597_1 diffeq_paj_convert^u_var~9_FF diffeq_paj_convert^Uinport~9 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1312 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1594 n1595 n1592_1 n1598_1 diffeq_paj_convert^MUL~46-0[9] n1597_1 
+-1000 1 
+1-000 1 
+--110 1 
+00-10 1 
+--101 1 
+00-01 1 
+-1011 1 
+1-011 1 
+
+
+.names n1593_1 diffeq_paj_convert^MUL~43-0[8] diffeq_paj_convert^u_var~8_FF diffeq_paj_convert^MUL~43-0[9] \
+ diffeq_paj_convert^u_var~9_FF n1598_1 
+-1000 1 
+1-000 1 
+11-00 1 
+-0110 1 
+0-110 1 
+00-10 1 
+-0101 1 
+0-101 1 
+00-01 1 
+-1011 1 
+1-011 1 
+11-11 1 
+
+
+.names n1600 diffeq_paj_convert^u_var~10_FF diffeq_paj_convert^Uinport~10 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1317 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1601 n1603_1 n1604 n1600 
+-10 1 
+1-0 1 
+001 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[10] n1602_1 diffeq_paj_convert^MUL~43-0[10] diffeq_paj_convert^u_var~10_FF n1601 
+0100 1 
+0010 1 
+0001 1 
+0111 1 
+
+
+.names n1593_1 diffeq_paj_convert^MUL~43-0[9] diffeq_paj_convert^u_var~9_FF diffeq_paj_convert^u_var~8_FF \
+ diffeq_paj_convert^MUL~43-0[8] n1602_1 
+--001 1 
+-1-01 1 
+1-0-1 1 
+11--1 1 
+1-00- 1 
+11-0- 1 
+-10-- 1 
+
+
+.names n1602_1 diffeq_paj_convert^MUL~43-0[10] diffeq_paj_convert^u_var~10_FF diffeq_paj_convert^MUL~46-0[10] n1603_1 
+0001 1 
+1101 1 
+1011 1 
+0111 1 
+
+
+.names n1594 n1595 n1598_1 diffeq_paj_convert^MUL~46-0[9] n1592_1 n1604 
+---01 0 
+--1-1 0 
+--10- 0 
+00-0- 0 
+001-- 0 
+
+
+.names n1606 diffeq_paj_convert^u_var~11_FF diffeq_paj_convert^Uinport~11 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1322 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1608_1 n1612_1 n1607_1 n1606 
+-10 1 
+1-0 1 
+001 1 
+
+
+.names n1604 n1603_1 n1601 n1607_1 
+--1 0 
+00- 0 
+
+
+.names n1609 n1611 diffeq_paj_convert^MUL~46-0[11] diffeq_paj_convert^MUL~43-0[11] diffeq_paj_convert^u_var~11_FF n1608_1 
+00000 1 
+-1010 1 
+1-010 1 
+-1001 1 
+1-001 1 
+00011 1 
+
+
+.names n1593_1 diffeq_paj_convert^MUL~43-0[9] diffeq_paj_convert^MUL~43-0[8] diffeq_paj_convert^u_var~9_FF \
+ diffeq_paj_convert^u_var~8_FF n1610 n1609 
+--0110 1 
+0--110 1 
+-00-10 1 
+00--10 1 
+0-01-0 1 
+-0-1-0 1 
+000--0 1 
+
+
+.names diffeq_paj_convert^u_var~10_FF diffeq_paj_convert^MUL~43-0[10] n1610 
+01 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[10] diffeq_paj_convert^u_var~10_FF n1611 
+01 1 
+
+
+.names n1609 n1611 diffeq_paj_convert^MUL~43-0[11] diffeq_paj_convert^u_var~11_FF diffeq_paj_convert^MUL~46-0[11] n1612_1 
+-1001 1 
+1-001 1 
+00101 1 
+00011 1 
+-1111 1 
+1-111 1 
+
+
+.names n1614 diffeq_paj_convert^u_var~12_FF diffeq_paj_convert^Uinport~12 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1327 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names n1607_1 n1612_1 n1615 n1617_1 n1608_1 n1614 
+-1000 0 
+1-000 0 
+---11 0 
+--1-1 0 
+00-1- 0 
+001-- 0 
+
+
+.names n1609 n1611 diffeq_paj_convert^MUL~43-0[11] diffeq_paj_convert^u_var~11_FF diffeq_paj_convert^MUL~46-0[12] n1616 n1615 
+--0100 1 
+-1-100 1 
+1--100 1 
+-10-00 1 
+1-0-00 1 
+--1001 1 
+00-001 1 
+001-01 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[12] diffeq_paj_convert^u_var~12_FF n1616 
+00 1 
+11 1 
+
+
+.names n1609 n1611 diffeq_paj_convert^MUL~43-0[11] diffeq_paj_convert^u_var~11_FF n1616 diffeq_paj_convert^MUL~46-0[12] \
+ n1617_1 
+--1001 1 
+00-001 1 
+001-01 1 
+--0111 1 
+-1-111 1 
+1--111 1 
+-10-11 1 
+1-0-11 1 
+
+
+.names n1619 diffeq_paj_convert^u_var~13_FF diffeq_paj_convert^Uinport~13 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1332 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names n1622_1 n1624 n1620 n1619 
+000 1 
+-11 1 
+1-1 1 
+
+
+.names n1621 n1615 n1620 
+00 1 
+
+
+.names n1604 n1603_1 n1601 n1608_1 n1612_1 n1617_1 n1621 
+--1-00 1 
+00--00 1 
+---1-0 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[13] n1623_1 diffeq_paj_convert^MUL~43-0[13] diffeq_paj_convert^u_var~13_FF n1622_1 
+0100 1 
+0010 1 
+0001 1 
+0111 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[11] diffeq_paj_convert^MUL~43-0[12] diffeq_paj_convert^u_var~12_FF \
+ diffeq_paj_convert^u_var~11_FF n1611 n1609 n1623_1 
+--0000 1 
+-1-000 1 
+1-0-00 1 
+11--00 1 
+1-00-- 1 
+11-0-- 1 
+-10--- 1 
+
+
+.names n1623_1 diffeq_paj_convert^MUL~43-0[13] diffeq_paj_convert^u_var~13_FF diffeq_paj_convert^MUL~46-0[13] n1624 
+0001 1 
+1101 1 
+1011 1 
+0111 1 
+
+
+.names n1626 diffeq_paj_convert^u_var~14_FF diffeq_paj_convert^Uinport~14 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1337 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names n1620 n1624 n1622_1 n1627_1 diffeq_paj_convert^MUL~46-0[14] n1626 
+--100 1 
+00-00 1 
+-1010 1 
+1-010 1 
+-1001 1 
+1-001 1 
+--111 1 
+00-11 1 
+
+
+.names n1623_1 diffeq_paj_convert^MUL~43-0[13] diffeq_paj_convert^u_var~13_FF diffeq_paj_convert^MUL~43-0[14] \
+ diffeq_paj_convert^u_var~14_FF n1627_1 
+-1000 1 
+1-000 1 
+11-00 1 
+-0110 1 
+0-110 1 
+00-10 1 
+-0101 1 
+0-101 1 
+00-01 1 
+-1011 1 
+1-011 1 
+11-11 1 
+
+
+.names n1629 diffeq_paj_convert^u_var~15_FF diffeq_paj_convert^Uinport~15 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1342 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1630 n1633_1 n1632_1 n1629 
+-10 1 
+1-0 1 
+001 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[15] n1631 diffeq_paj_convert^MUL~43-0[15] diffeq_paj_convert^u_var~15_FF n1630 
+0100 1 
+0010 1 
+0001 1 
+0111 1 
+
+
+.names n1623_1 diffeq_paj_convert^MUL~43-0[14] diffeq_paj_convert^u_var~14_FF diffeq_paj_convert^u_var~13_FF \
+ diffeq_paj_convert^MUL~43-0[13] n1631 
+--001 1 
+-1-01 1 
+1-0-1 1 
+11--1 1 
+1-00- 1 
+11-0- 1 
+-10-- 1 
+
+
+.names n1624 n1621 n1615 n1627_1 diffeq_paj_convert^MUL~46-0[14] n1622_1 n1632_1 
+-00-10 1 
+1---10 1 
+-000-0 1 
+1--0-0 1 
+---01- 1 
+
+
+.names n1631 diffeq_paj_convert^MUL~43-0[15] diffeq_paj_convert^u_var~15_FF diffeq_paj_convert^MUL~46-0[15] n1633_1 
+0001 1 
+1101 1 
+1011 1 
+0111 1 
+
+
+.names n1635 diffeq_paj_convert^u_var~16_FF diffeq_paj_convert^Uinport~16 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1347 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1637_1 n1641 n1636 n1635 
+-10 1 
+1-0 1 
+001 1 
+
+
+.names n1633_1 n1632_1 n1630 n1636 
+--1 0 
+00- 0 
+
+
+.names n1638_1 n1640 diffeq_paj_convert^MUL~46-0[16] diffeq_paj_convert^MUL~43-0[16] diffeq_paj_convert^u_var~16_FF n1637_1 
+00000 1 
+-1010 1 
+1-010 1 
+-1001 1 
+1-001 1 
+00011 1 
+
+
+.names n1623_1 diffeq_paj_convert^MUL~43-0[14] diffeq_paj_convert^MUL~43-0[13] diffeq_paj_convert^u_var~14_FF \
+ diffeq_paj_convert^u_var~13_FF n1639 n1638_1 
+--0110 1 
+0--110 1 
+-00-10 1 
+00--10 1 
+0-01-0 1 
+-0-1-0 1 
+000--0 1 
+
+
+.names diffeq_paj_convert^u_var~15_FF diffeq_paj_convert^MUL~43-0[15] n1639 
+01 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[15] diffeq_paj_convert^u_var~15_FF n1640 
+01 1 
+
+
+.names n1638_1 n1640 diffeq_paj_convert^MUL~43-0[16] diffeq_paj_convert^u_var~16_FF diffeq_paj_convert^MUL~46-0[16] n1641 
+-1001 1 
+1-001 1 
+00101 1 
+00011 1 
+-1111 1 
+1-111 1 
+
+
+.names n1643_1 diffeq_paj_convert^u_var~17_FF diffeq_paj_convert^Uinport~17 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1352 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1645 n1637_1 n1641 n1636 n1647_1 n1643_1 
+00-10 1 
+001-0 1 
+--001 1 
+-1--1 1 
+1-00- 1 
+11--- 1 
+
+
+.names n1633_1 n1632_1 n1630 n1637_1 n1641 n1645 n1644 
+--1-00 1 
+00--00 1 
+---1-0 1 
+
+
+.names n1638_1 n1640 diffeq_paj_convert^MUL~43-0[16] diffeq_paj_convert^u_var~16_FF n1646 diffeq_paj_convert^MUL~46-0[17] \
+ n1645 
+--1001 1 
+00-001 1 
+001-01 1 
+--0111 1 
+-1-111 1 
+1--111 1 
+-10-11 1 
+1-0-11 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[17] diffeq_paj_convert^u_var~17_FF n1646 
+00 1 
+11 1 
+
+
+.names n1638_1 n1640 diffeq_paj_convert^MUL~43-0[16] diffeq_paj_convert^u_var~16_FF diffeq_paj_convert^MUL~46-0[17] n1646 \
+ n1647_1 
+--0100 1 
+-1-100 1 
+1--100 1 
+-10-00 1 
+1-0-00 1 
+--1001 1 
+00-001 1 
+001-01 1 
+
+
+.names n1649 diffeq_paj_convert^u_var~18_FF diffeq_paj_convert^Uinport~18 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1357 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1650 n1651 diffeq_paj_convert^MUL~46-0[18] n1649 
+100 1 
+010 1 
+001 1 
+111 1 
+
+
+.names n1644 n1647_1 n1650 
+00 1 
+
+
+.names n1652_1 diffeq_paj_convert^MUL~43-0[18] diffeq_paj_convert^u_var~18_FF n1651 
+100 1 
+010 1 
+001 1 
+111 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[16] diffeq_paj_convert^MUL~43-0[17] diffeq_paj_convert^u_var~17_FF \
+ diffeq_paj_convert^u_var~16_FF n1640 n1638_1 n1652_1 
+--0000 1 
+-1-000 1 
+1-0-00 1 
+11--00 1 
+1-00-- 1 
+11-0-- 1 
+-10--- 1 
+
+
+.names n1654 diffeq_paj_convert^u_var~19_FF diffeq_paj_convert^Uinport~19 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1362 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1650 n1651 diffeq_paj_convert^MUL~46-0[18] n1655 diffeq_paj_convert^MUL~46-0[19] n1654 
+-0100 1 
+1-100 1 
+10-00 1 
+-1010 1 
+0-010 1 
+01-10 1 
+-1001 1 
+0-001 1 
+01-01 1 
+-0111 1 
+1-111 1 
+10-11 1 
+
+
+.names n1652_1 diffeq_paj_convert^MUL~43-0[18] diffeq_paj_convert^u_var~18_FF diffeq_paj_convert^MUL~43-0[19] \
+ diffeq_paj_convert^u_var~19_FF n1655 
+-1000 1 
+1-000 1 
+11-00 1 
+-0110 1 
+0-110 1 
+00-10 1 
+-0101 1 
+0-101 1 
+00-01 1 
+-1011 1 
+1-011 1 
+11-11 1 
+
+
+.names n1657_1 diffeq_paj_convert^u_var~20_FF diffeq_paj_convert^Uinport~20 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1367 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1658_1 n1660 n1661 n1657_1 
+-10 1 
+1-0 1 
+001 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[20] n1659 diffeq_paj_convert^MUL~43-0[20] diffeq_paj_convert^u_var~20_FF n1658_1 
+0100 1 
+0010 1 
+0001 1 
+0111 1 
+
+
+.names n1652_1 diffeq_paj_convert^MUL~43-0[19] diffeq_paj_convert^u_var~19_FF diffeq_paj_convert^u_var~18_FF \
+ diffeq_paj_convert^MUL~43-0[18] n1659 
+--001 1 
+-1-01 1 
+1-0-1 1 
+11--1 1 
+1-00- 1 
+11-0- 1 
+-10-- 1 
+
+
+.names n1659 diffeq_paj_convert^MUL~43-0[20] diffeq_paj_convert^u_var~20_FF diffeq_paj_convert^MUL~46-0[20] n1660 
+0001 1 
+1101 1 
+1011 1 
+0111 1 
+
+
+.names n1663_1 n1644 n1647_1 n1655 diffeq_paj_convert^MUL~46-0[19] n1662_1 n1661 
+-00-10 1 
+1---10 1 
+-000-0 1 
+1--0-0 1 
+---01- 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[18] n1652_1 diffeq_paj_convert^MUL~43-0[18] diffeq_paj_convert^u_var~18_FF n1662_1 
+0100 1 
+0010 1 
+0001 1 
+0111 1 
+
+
+.names n1652_1 diffeq_paj_convert^MUL~43-0[18] diffeq_paj_convert^u_var~18_FF diffeq_paj_convert^MUL~46-0[18] n1663_1 
+0001 1 
+1101 1 
+1011 1 
+0111 1 
+
+
+.names n1665 diffeq_paj_convert^u_var~21_FF diffeq_paj_convert^Uinport~21 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1372 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1660 n1661 n1658_1 n1666 diffeq_paj_convert^MUL~46-0[21] n1665 
+-1000 1 
+1-000 1 
+--110 1 
+00-10 1 
+--101 1 
+00-01 1 
+-1011 1 
+1-011 1 
+
+
+.names n1667_1 n1669 diffeq_paj_convert^MUL~43-0[21] diffeq_paj_convert^u_var~21_FF n1666 
+0000 1 
+-110 1 
+1-10 1 
+-101 1 
+1-01 1 
+0011 1 
+
+
+.names n1652_1 diffeq_paj_convert^MUL~43-0[19] diffeq_paj_convert^MUL~43-0[18] diffeq_paj_convert^u_var~19_FF \
+ diffeq_paj_convert^u_var~18_FF n1668_1 n1667_1 
+--0110 1 
+0--110 1 
+-00-10 1 
+00--10 1 
+0-01-0 1 
+-0-1-0 1 
+000--0 1 
+
+
+.names diffeq_paj_convert^u_var~20_FF diffeq_paj_convert^MUL~43-0[20] n1668_1 
+01 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[20] diffeq_paj_convert^u_var~20_FF n1669 
+01 1 
+
+
+.names n1671 diffeq_paj_convert^u_var~22_FF diffeq_paj_convert^Uinport~22 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1377 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1674 n1672_1 n1676 n1671 
+010 1 
+-01 1 
+10- 1 
+
+
+.names n1660 n1661 n1666 diffeq_paj_convert^MUL~46-0[21] n1658_1 n1672_1 
+---01 0 
+--1-1 0 
+--10- 0 
+00-0- 0 
+001-- 0 
+
+
+.names n1658_1 n1660 n1661 n1666 diffeq_paj_convert^MUL~46-0[21] n1674 n1673_1 
+---100 1 
+-00-00 1 
+1---00 1 
+-001-0 1 
+1--1-0 1 
+
+
+.names n1667_1 n1669 diffeq_paj_convert^MUL~43-0[21] diffeq_paj_convert^u_var~21_FF n1675 diffeq_paj_convert^MUL~46-0[22] \
+ n1674 
+--1001 1 
+00-001 1 
+001-01 1 
+--0111 1 
+-1-111 1 
+1--111 1 
+-10-11 1 
+1-0-11 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[22] diffeq_paj_convert^u_var~22_FF n1675 
+00 1 
+11 1 
+
+
+.names n1667_1 n1669 diffeq_paj_convert^MUL~43-0[21] diffeq_paj_convert^u_var~21_FF diffeq_paj_convert^MUL~46-0[22] n1675 \
+ n1676 
+--0100 1 
+-1-100 1 
+1--100 1 
+-10-00 1 
+1-0-00 1 
+--1001 1 
+00-001 1 
+001-01 1 
+
+
+.names diffeq_paj_convert^u_var~23_FF n1678_1 diffeq_paj_convert^Uinport~23 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1382 
+--1-00 1 
+-1-001 1 
+1--101 1 
+
+
+.names n1679 n1680 diffeq_paj_convert^MUL~46-0[23] n1678_1 
+100 1 
+010 1 
+001 1 
+111 1 
+
+
+.names n1673_1 n1676 n1679 
+00 1 
+
+
+.names n1681 diffeq_paj_convert^MUL~43-0[23] diffeq_paj_convert^u_var~23_FF n1680 
+100 1 
+010 1 
+001 1 
+111 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[21] diffeq_paj_convert^MUL~43-0[22] diffeq_paj_convert^u_var~22_FF \
+ diffeq_paj_convert^u_var~21_FF n1669 n1667_1 n1681 
+--0000 1 
+-1-000 1 
+1-0-00 1 
+11--00 1 
+1-00-- 1 
+11-0-- 1 
+-10--- 1 
+
+
+.names diffeq_paj_convert^u_var~24_FF n1683_1 diffeq_paj_convert^Uinport~24 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1387 
+--1-00 1 
+-1-001 1 
+1--101 1 
+
+
+.names n1679 n1680 diffeq_paj_convert^MUL~46-0[23] n1684 diffeq_paj_convert^MUL~46-0[24] n1683_1 
+-0100 1 
+1-100 1 
+10-00 1 
+-1010 1 
+0-010 1 
+01-10 1 
+-1001 1 
+0-001 1 
+01-01 1 
+-0111 1 
+1-111 1 
+10-11 1 
+
+
+.names n1681 diffeq_paj_convert^MUL~43-0[23] diffeq_paj_convert^u_var~23_FF diffeq_paj_convert^MUL~43-0[24] \
+ diffeq_paj_convert^u_var~24_FF n1684 
+-1000 1 
+1-000 1 
+11-00 1 
+-0110 1 
+0-110 1 
+00-10 1 
+-0101 1 
+0-101 1 
+00-01 1 
+-1011 1 
+1-011 1 
+11-11 1 
+
+
+.names diffeq_paj_convert^u_var~25_FF n1686 diffeq_paj_convert^Uinport~25 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1392 
+--1-00 1 
+-1-001 1 
+1--101 1 
+
+
+.names n1687_1 n1689 n1690 n1686 
+-10 1 
+1-0 1 
+001 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[25] n1688_1 diffeq_paj_convert^MUL~43-0[25] diffeq_paj_convert^u_var~25_FF n1687_1 
+0100 1 
+0010 1 
+0001 1 
+0111 1 
+
+
+.names n1681 diffeq_paj_convert^MUL~43-0[24] diffeq_paj_convert^u_var~24_FF diffeq_paj_convert^u_var~23_FF \
+ diffeq_paj_convert^MUL~43-0[23] n1688_1 
+--001 1 
+-1-01 1 
+1-0-1 1 
+11--1 1 
+1-00- 1 
+11-0- 1 
+-10-- 1 
+
+
+.names n1688_1 diffeq_paj_convert^MUL~43-0[25] diffeq_paj_convert^u_var~25_FF diffeq_paj_convert^MUL~46-0[25] n1689 
+0001 1 
+1101 1 
+1011 1 
+0111 1 
+
+
+.names n1692_1 n1673_1 n1676 n1684 diffeq_paj_convert^MUL~46-0[24] n1691 n1690 
+-00-10 1 
+1---10 1 
+-000-0 1 
+1--0-0 1 
+---01- 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[23] n1681 diffeq_paj_convert^MUL~43-0[23] diffeq_paj_convert^u_var~23_FF n1691 
+0100 1 
+0010 1 
+0001 1 
+0111 1 
+
+
+.names n1681 diffeq_paj_convert^MUL~43-0[23] diffeq_paj_convert^u_var~23_FF diffeq_paj_convert^MUL~46-0[23] n1692_1 
+0001 1 
+1101 1 
+1011 1 
+0111 1 
+
+
+.names diffeq_paj_convert^u_var~26_FF n1694 diffeq_paj_convert^Uinport~26 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1397 
+--1-00 1 
+-1-001 1 
+1--101 1 
+
+
+.names n1689 n1690 n1687_1 n1695 diffeq_paj_convert^MUL~46-0[26] n1694 
+-1000 1 
+1-000 1 
+--110 1 
+00-10 1 
+--101 1 
+00-01 1 
+-1011 1 
+1-011 1 
+
+
+.names n1696 n1698_1 diffeq_paj_convert^MUL~43-0[26] diffeq_paj_convert^u_var~26_FF n1695 
+0000 1 
+-110 1 
+1-10 1 
+-101 1 
+1-01 1 
+0011 1 
+
+
+.names n1681 diffeq_paj_convert^MUL~43-0[24] diffeq_paj_convert^MUL~43-0[23] diffeq_paj_convert^u_var~24_FF \
+ diffeq_paj_convert^u_var~23_FF n1697_1 n1696 
+--0110 1 
+0--110 1 
+-00-10 1 
+00--10 1 
+0-01-0 1 
+-0-1-0 1 
+000--0 1 
+
+
+.names diffeq_paj_convert^u_var~25_FF diffeq_paj_convert^MUL~43-0[25] n1697_1 
+01 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[25] diffeq_paj_convert^u_var~25_FF n1698_1 
+01 1 
+
+
+.names diffeq_paj_convert^u_var~27_FF n1437_1 diffeq_paj_convert^Uinport~27 n1700 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1402 
+--1-00 1 
+-0-001 1 
+1--001 1 
+
+
+.names n1701 n1705 n1437_1 n1704 n1700 
+0000 1 
+-101 1 
+1-01 1 
+
+
+.names diffeq_paj_convert^MUL~46-0[27] n1703_1 n1702_1 n1701 
+000 1 
+011 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[26] diffeq_paj_convert^u_var~26_FF n1696 n1698_1 n1702_1 
+-000 1 
+1-00 1 
+10-- 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[27] diffeq_paj_convert^u_var~27_FF n1703_1 
+00 1 
+11 1 
+
+
+.names n1689 n1690 n1695 diffeq_paj_convert^MUL~46-0[26] n1687_1 n1704 
+---01 0 
+--1-1 0 
+--10- 0 
+00-0- 0 
+001-- 0 
+
+
+.names n1696 n1698_1 diffeq_paj_convert^MUL~43-0[26] diffeq_paj_convert^u_var~26_FF n1703_1 diffeq_paj_convert^MUL~46-0[27] \
+ n1705 
+--1001 1 
+00-001 1 
+001-01 1 
+--0111 1 
+-1-111 1 
+1--111 1 
+-10-11 1 
+1-0-11 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Uinport~28 n1707_1 diffeq_paj_convert^reset n1407 
+--10 1 
+01-0 1 
+
+
+.names diffeq_paj_convert^u_var~28_FF n1710 n1711 n1708_1 n1437_1 diffeq_paj_convert^looping_FF n1707_1 
+--1001 1 
+-1-001 1 
+-00101 1 
+1---11 1 
+
+
+.names n1701 n1709 n1708_1 
+00 1 
+
+
+.names n1687_1 n1689 n1690 n1695 diffeq_paj_convert^MUL~46-0[26] n1705 n1709 
+---100 1 
+-00-00 1 
+1---00 1 
+-001-0 1 
+1--1-0 1 
+
+
+.names n1702_1 diffeq_paj_convert^MUL~43-0[27] diffeq_paj_convert^u_var~27_FF diffeq_paj_convert^MUL~46-0[28] \
+ diffeq_paj_convert^MUL~43-0[28] diffeq_paj_convert^u_var~28_FF n1710 
+-10000 1 
+1-0000 1 
+11-000 1 
+-01010 1 
+0-1010 1 
+00-010 1 
+-01001 1 
+0-1001 1 
+00-001 1 
+-10011 1 
+1-0011 1 
+11-011 1 
+
+
+.names n1702_1 diffeq_paj_convert^MUL~43-0[27] diffeq_paj_convert^u_var~27_FF diffeq_paj_convert^MUL~43-0[28] \
+ diffeq_paj_convert^u_var~28_FF diffeq_paj_convert^MUL~46-0[28] n1711 
+-01001 1 
+0-1001 1 
+00-001 1 
+-10101 1 
+1-0101 1 
+11-101 1 
+-10011 1 
+1-0011 1 
+11-011 1 
+-01111 1 
+0-1111 1 
+00-111 1 
+
+
+.names diffeq_paj_convert^u_var~29_FF n1713_1 diffeq_paj_convert^Uinport~29 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1412 
+--1-00 1 
+-1-001 1 
+1--101 1 
+
+
+.names n1708_1 n1711 n1710 n1714 diffeq_paj_convert^MUL~46-0[29] n1713_1 
+-1000 1 
+1-000 1 
+--110 1 
+00-10 1 
+--101 1 
+00-01 1 
+-1011 1 
+1-011 1 
+
+
+.names n1702_1 diffeq_paj_convert^MUL~43-0[28] diffeq_paj_convert^MUL~43-0[27] diffeq_paj_convert^u_var~28_FF \
+ diffeq_paj_convert^u_var~27_FF n1715 n1714 
+--0110 1 
+0--110 1 
+-00-10 1 
+00--10 1 
+0-01-0 1 
+-0-1-0 1 
+000--0 1 
+--1001 1 
+1--001 1 
+-11-01 1 
+11--01 1 
+1-10-1 1 
+-1-0-1 1 
+111--1 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[29] diffeq_paj_convert^u_var~29_FF n1715 
+00 1 
+11 1 
+
+
+.names diffeq_paj_convert^u_var~30_FF n1717_1 diffeq_paj_convert^Uinport~30 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1417 
+--1-00 1 
+-1-001 1 
+1--101 1 
+
+
+.names n1718_1 n1720 diffeq_paj_convert^MUL~43-0[30] diffeq_paj_convert^MUL~46-0[30] diffeq_paj_convert^u_var~30_FF n1717_1 
+10000 1 
+01000 1 
+00100 1 
+11100 1 
+00010 1 
+11010 1 
+10110 1 
+01110 1 
+00001 1 
+11001 1 
+10101 1 
+01101 1 
+10011 1 
+01011 1 
+00111 1 
+11111 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[29] diffeq_paj_convert^u_var~29_FF n1714 n1718_1 
+-01 1 
+1-1 1 
+10- 1 
+
+
+.names n1711 n1709 n1701 n1714 diffeq_paj_convert^MUL~46-0[29] n1710 n1720 
+-00-10 1 
+1---10 1 
+-000-0 1 
+1--0-0 1 
+---01- 1 
+
+
+.names diffeq_paj_convert^u_var~31_FF n1722_1 diffeq_paj_convert^Uinport~31 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1422 
+--1-00 1 
+-0-001 1 
+1--101 1 
+
+
+.names n1718_1 n1720 diffeq_paj_convert^MUL~43-0[30] diffeq_paj_convert^u_var~30_FF diffeq_paj_convert^MUL~46-0[30] n1723_1 \
+ n1722_1 
+11-100 1 
+110-00 1 
+101-00 1 
+011-00 1 
+00-010 1 
+100-10 1 
+010-10 1 
+001-10 1 
+1000-0 1 
+0100-0 1 
+0010-0 1 
+1101-0 1 
+1011-0 1 
+0111-0 1 
+-00101 1 
+0-0101 1 
+00-101 1 
+000-01 1 
+-11011 1 
+1-1011 1 
+11-011 1 
+111-11 1 
+1110-1 1 
+0001-1 1 
+
+
+.names diffeq_paj_convert^MUL~43-0[31] diffeq_paj_convert^MUL~46-0[31] diffeq_paj_convert^u_var~31_FF n1723_1 
+000 1 
+110 1 
+101 1 
+011 1 
+
+
+.names diffeq_paj_convert^Yinport~0 n1437_1 diffeq_paj_convert^MUL~0[0] diffeq_paj_convert^y_var~0_FF \
+ diffeq_paj_convert^reset diffeq_paj_convert^looping_FF n1427 
+1---00 1 
+-01001 1 
+--0101 1 
+-1-101 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~1 diffeq_paj_convert^y_var~1_FF n1436 n1726 \
+ diffeq_paj_convert^reset n1432 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names diffeq_paj_convert^MUL~0[0] diffeq_paj_convert^y_var~0_FF diffeq_paj_convert^MUL~0[1] diffeq_paj_convert^y_var~1_FF \
+ n1573_1 n1726 
+11001 1 
+-0101 1 
+0-101 1 
+-0011 1 
+0-011 1 
+11111 1 
+
+
+.names n1728_1 diffeq_paj_convert^y_var~2_FF diffeq_paj_convert^Yinport~2 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1437 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names diffeq_paj_convert^MUL~0[0] diffeq_paj_convert^y_var~0_FF diffeq_paj_convert^MUL~0[1] diffeq_paj_convert^y_var~1_FF \
+ diffeq_paj_convert^MUL~0[2] diffeq_paj_convert^y_var~2_FF n1728_1 
+--0000 1 
+-0-000 1 
+0--000 1 
+-00-00 1 
+0-0-00 1 
+--1110 1 
+11-110 1 
+111-10 1 
+--1101 1 
+11-101 1 
+111-01 1 
+--0011 1 
+-0-011 1 
+0--011 1 
+-00-11 1 
+0-0-11 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~3 n1730 diffeq_paj_convert^reset n1442 
+--10 1 
+01-0 1 
+
+
+.names n1437_1 n1731 diffeq_paj_convert^MUL~0[3] diffeq_paj_convert^y_var~3_FF diffeq_paj_convert^looping_FF n1730 
+01001 1 
+00101 1 
+-0011 1 
+-1111 1 
+1--11 1 
+
+
+.names diffeq_paj_convert^MUL~0[1] diffeq_paj_convert^MUL~0[2] diffeq_paj_convert^y_var~2_FF diffeq_paj_convert^y_var~1_FF \
+ diffeq_paj_convert^y_var~0_FF diffeq_paj_convert^MUL~0[0] n1731 
+--1111 1 
+-1-111 1 
+1-1-11 1 
+11--11 1 
+1-11-- 1 
+11-1-- 1 
+-11--- 1 
+
+
+.names n1733_1 diffeq_paj_convert^y_var~4_FF diffeq_paj_convert^Yinport~4 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1447 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1731 diffeq_paj_convert^MUL~0[3] diffeq_paj_convert^y_var~3_FF diffeq_paj_convert^MUL~0[4] \
+ diffeq_paj_convert^y_var~4_FF n1733_1 
+-1100 1 
+1-100 1 
+11-00 1 
+-0010 1 
+0-010 1 
+00-10 1 
+-0001 1 
+0-001 1 
+00-01 1 
+-1111 1 
+1-111 1 
+11-11 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~5 n1735 diffeq_paj_convert^reset n1452 
+--10 1 
+01-0 1 
+
+
+.names n1437_1 n1736 diffeq_paj_convert^MUL~0[5] diffeq_paj_convert^y_var~5_FF diffeq_paj_convert^looping_FF n1735 
+01001 1 
+00101 1 
+-0011 1 
+-1111 1 
+1--11 1 
+
+
+.names n1731 diffeq_paj_convert^MUL~0[4] diffeq_paj_convert^y_var~4_FF diffeq_paj_convert^MUL~0[3] \
+ diffeq_paj_convert^y_var~3_FF n1736 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names n1738_1 diffeq_paj_convert^y_var~6_FF diffeq_paj_convert^Yinport~6 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1457 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1736 diffeq_paj_convert^MUL~0[5] diffeq_paj_convert^y_var~5_FF diffeq_paj_convert^MUL~0[6] \
+ diffeq_paj_convert^y_var~6_FF n1738_1 
+-1100 1 
+1-100 1 
+11-00 1 
+-0010 1 
+0-010 1 
+00-10 1 
+-0001 1 
+0-001 1 
+00-01 1 
+-1111 1 
+1-111 1 
+11-11 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~7 n1740 diffeq_paj_convert^reset n1462 
+--10 1 
+01-0 1 
+
+
+.names n1437_1 n1741 diffeq_paj_convert^MUL~0[7] diffeq_paj_convert^y_var~7_FF diffeq_paj_convert^looping_FF n1740 
+01001 1 
+00101 1 
+-0011 1 
+-1111 1 
+1--11 1 
+
+
+.names n1736 diffeq_paj_convert^MUL~0[6] diffeq_paj_convert^y_var~6_FF diffeq_paj_convert^MUL~0[5] \
+ diffeq_paj_convert^y_var~5_FF n1741 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~8 n1743_1 diffeq_paj_convert^reset n1467 
+--10 1 
+01-0 1 
+
+
+.names n1437_1 n1744 diffeq_paj_convert^MUL~0[8] diffeq_paj_convert^y_var~8_FF diffeq_paj_convert^looping_FF n1743_1 
+01001 1 
+00101 1 
+-0011 1 
+-1111 1 
+1--11 1 
+
+
+.names n1741 diffeq_paj_convert^MUL~0[7] diffeq_paj_convert^y_var~7_FF n1744 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~9 n1746 diffeq_paj_convert^reset n1472 
+--10 1 
+01-0 1 
+
+
+.names n1437_1 n1747 diffeq_paj_convert^MUL~0[9] diffeq_paj_convert^y_var~9_FF diffeq_paj_convert^looping_FF n1746 
+01001 1 
+00101 1 
+-0011 1 
+-1111 1 
+1--11 1 
+
+
+.names n1744 diffeq_paj_convert^MUL~0[8] diffeq_paj_convert^y_var~8_FF n1747 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~10 diffeq_paj_convert^y_var~10_FF n1436 n1749 \
+ diffeq_paj_convert^reset n1477 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1750 diffeq_paj_convert^MUL~0[10] diffeq_paj_convert^y_var~10_FF n1573_1 n1749 
+1001 1 
+0101 1 
+0011 1 
+1111 1 
+
+
+.names n1744 diffeq_paj_convert^MUL~0[9] diffeq_paj_convert^y_var~9_FF diffeq_paj_convert^MUL~0[8] \
+ diffeq_paj_convert^y_var~8_FF n1750 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~11 diffeq_paj_convert^y_var~11_FF n1436 n1752 \
+ diffeq_paj_convert^reset n1482 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1753 diffeq_paj_convert^MUL~0[11] diffeq_paj_convert^y_var~11_FF n1573_1 n1752 
+1001 1 
+0101 1 
+0011 1 
+1111 1 
+
+
+.names n1750 diffeq_paj_convert^MUL~0[10] diffeq_paj_convert^y_var~10_FF n1753 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names n1755 diffeq_paj_convert^y_var~12_FF diffeq_paj_convert^Yinport~12 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1487 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1753 diffeq_paj_convert^MUL~0[11] diffeq_paj_convert^y_var~11_FF diffeq_paj_convert^MUL~0[12] \
+ diffeq_paj_convert^y_var~12_FF n1755 
+-1100 1 
+1-100 1 
+11-00 1 
+-0010 1 
+0-010 1 
+00-10 1 
+-0001 1 
+0-001 1 
+00-01 1 
+-1111 1 
+1-111 1 
+11-11 1 
+
+
+.names n1757 diffeq_paj_convert^reset n1492 
+00 1 
+
+
+.names diffeq_paj_convert^Yinport~13 n1437_1 n1758 diffeq_paj_convert^MUL~0[13] diffeq_paj_convert^y_var~13_FF \
+ diffeq_paj_convert^looping_FF n1757 
+0----0 1 
+--1001 1 
+--0101 1 
+-1--01 1 
+-00011 1 
+-01111 1 
+
+
+.names n1759 n1761 n1758 
+00 1 
+
+
+.names n1750 diffeq_paj_convert^MUL~0[11] diffeq_paj_convert^y_var~11_FF diffeq_paj_convert^MUL~0[10] \
+ diffeq_paj_convert^y_var~10_FF n1760 n1759 
+--1110 1 
+-1-110 1 
+1-1-10 1 
+11--10 1 
+1-11-0 1 
+11-1-0 1 
+-11--0 1 
+
+
+.names diffeq_paj_convert^MUL~0[12] diffeq_paj_convert^y_var~12_FF n1760 
+00 1 
+
+
+.names diffeq_paj_convert^MUL~0[12] diffeq_paj_convert^y_var~12_FF n1761 
+11 1 
+
+
+.names n1763 diffeq_paj_convert^reset n1497 
+00 1 
+
+
+.names diffeq_paj_convert^Yinport~14 n1437_1 n1764 diffeq_paj_convert^MUL~0[14] diffeq_paj_convert^y_var~14_FF \
+ diffeq_paj_convert^looping_FF n1763 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1758 diffeq_paj_convert^MUL~0[13] diffeq_paj_convert^y_var~13_FF n1764 
+-11 1 
+0-1 1 
+01- 1 
+
+
+.names n1766 diffeq_paj_convert^reset n1502 
+00 1 
+
+
+.names diffeq_paj_convert^Yinport~15 n1437_1 n1767 diffeq_paj_convert^MUL~0[15] diffeq_paj_convert^y_var~15_FF \
+ diffeq_paj_convert^looping_FF n1766 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names diffeq_paj_convert^MUL~0[13] diffeq_paj_convert^MUL~0[14] diffeq_paj_convert^y_var~14_FF \
+ diffeq_paj_convert^y_var~13_FF n1761 n1759 n1767 
+--0000 0 
+-0-000 0 
+0-0-00 0 
+00--00 0 
+0-00-- 0 
+00-0-- 0 
+-00--- 0 
+
+
+.names n1769 diffeq_paj_convert^reset n1507 
+00 1 
+
+
+.names diffeq_paj_convert^Yinport~16 n1437_1 n1770 diffeq_paj_convert^MUL~0[16] diffeq_paj_convert^y_var~16_FF \
+ diffeq_paj_convert^looping_FF n1769 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1767 diffeq_paj_convert^MUL~0[15] diffeq_paj_convert^y_var~15_FF n1770 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~17 n1772 diffeq_paj_convert^reset n1512 
+--10 1 
+01-0 1 
+
+
+.names n1437_1 n1773 diffeq_paj_convert^MUL~0[17] diffeq_paj_convert^y_var~17_FF diffeq_paj_convert^looping_FF n1772 
+01001 1 
+00101 1 
+-0011 1 
+-1111 1 
+1--11 1 
+
+
+.names n1767 diffeq_paj_convert^MUL~0[16] diffeq_paj_convert^y_var~16_FF diffeq_paj_convert^MUL~0[15] \
+ diffeq_paj_convert^y_var~15_FF n1773 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names n1775 diffeq_paj_convert^reset n1517 
+00 1 
+
+
+.names diffeq_paj_convert^Yinport~18 n1437_1 n1776 diffeq_paj_convert^MUL~0[18] diffeq_paj_convert^y_var~18_FF \
+ diffeq_paj_convert^looping_FF n1775 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1773 diffeq_paj_convert^MUL~0[17] diffeq_paj_convert^y_var~17_FF n1776 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names n1778 n1779 diffeq_paj_convert^MUL~0[19] diffeq_paj_convert^y_var~19_FF n1573_1 diffeq_paj_convert^reset n1522 
+-10010 1 
+-01010 1 
+-00110 1 
+-11110 1 
+0----0 1 
+
+
+.names n1437_1 diffeq_paj_convert^y_var~19_FF diffeq_paj_convert^Yinport~19 diffeq_paj_convert^looping_FF n1778 
+--10 0 
+11-1 0 
+
+
+.names n1776 diffeq_paj_convert^MUL~0[18] diffeq_paj_convert^y_var~18_FF n1779 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~20 n1781 diffeq_paj_convert^reset n1527 
+--10 1 
+01-0 1 
+
+
+.names n1437_1 n1782 n1784 diffeq_paj_convert^MUL~0[20] diffeq_paj_convert^y_var~20_FF diffeq_paj_convert^looping_FF n1781 
+000001 1 
+0-1101 1 
+01-101 1 
+--1011 1 
+-1-011 1 
+-00111 1 
+1---11 1 
+
+
+.names n1773 diffeq_paj_convert^MUL~0[18] diffeq_paj_convert^y_var~18_FF diffeq_paj_convert^MUL~0[17] \
+ diffeq_paj_convert^y_var~17_FF n1783 n1782 
+--0000 1 
+-0-000 1 
+0-0-00 1 
+00--00 1 
+0-00-0 1 
+00-0-0 1 
+-00--0 1 
+
+
+.names diffeq_paj_convert^MUL~0[19] diffeq_paj_convert^y_var~19_FF n1783 
+11 1 
+
+
+.names diffeq_paj_convert^MUL~0[19] diffeq_paj_convert^y_var~19_FF n1784 
+00 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~21 n1786 diffeq_paj_convert^reset n1532 
+--00 1 
+01-0 1 
+
+
+.names n1437_1 n1787 diffeq_paj_convert^MUL~0[21] diffeq_paj_convert^y_var~21_FF diffeq_paj_convert^looping_FF n1786 
+01001 0 
+00101 0 
+-0011 0 
+-1111 0 
+1--11 0 
+
+
+.names diffeq_paj_convert^MUL~0[20] n1784 n1782 diffeq_paj_convert^y_var~20_FF n1787 
+-001 1 
+1--1 1 
+100- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~22 diffeq_paj_convert^y_var~22_FF n1436 n1789 \
+ diffeq_paj_convert^reset n1537 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1790 diffeq_paj_convert^MUL~0[22] diffeq_paj_convert^y_var~22_FF n1573_1 n1789 
+1001 1 
+0101 1 
+0011 1 
+1111 1 
+
+
+.names diffeq_paj_convert^MUL~0[20] diffeq_paj_convert^MUL~0[21] n1782 n1784 diffeq_paj_convert^y_var~21_FF \
+ diffeq_paj_convert^y_var~20_FF n1790 
+--0011 1 
+1---11 1 
+-100-1 1 
+11---1 1 
+1-001- 1 
+-1--1- 1 
+1100-- 1 
+
+
+.names n1792 diffeq_paj_convert^reset n1542 
+00 1 
+
+
+.names diffeq_paj_convert^Yinport~23 n1437_1 n1793 diffeq_paj_convert^MUL~0[23] diffeq_paj_convert^y_var~23_FF \
+ diffeq_paj_convert^looping_FF n1792 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1790 diffeq_paj_convert^MUL~0[22] diffeq_paj_convert^y_var~22_FF n1793 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names diffeq_paj_convert^y_var~24_FF n1795 diffeq_paj_convert^Yinport~24 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1547 
+--1-00 1 
+-0-001 1 
+1--101 1 
+
+
+.names n1796 diffeq_paj_convert^MUL~0[24] diffeq_paj_convert^y_var~24_FF n1795 
+000 1 
+110 1 
+101 1 
+011 1 
+
+
+.names n1790 diffeq_paj_convert^MUL~0[23] diffeq_paj_convert^y_var~23_FF diffeq_paj_convert^MUL~0[22] \
+ diffeq_paj_convert^y_var~22_FF n1796 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~25 diffeq_paj_convert^y_var~25_FF n1436 n1798 \
+ diffeq_paj_convert^reset n1552 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1796 diffeq_paj_convert^MUL~0[24] diffeq_paj_convert^y_var~24_FF diffeq_paj_convert^MUL~0[25] \
+ diffeq_paj_convert^y_var~25_FF n1573_1 n1798 
+-11001 1 
+1-1001 1 
+11-001 1 
+-00101 1 
+0-0101 1 
+00-101 1 
+-00011 1 
+0-0011 1 
+00-011 1 
+-11111 1 
+1-1111 1 
+11-111 1 
+
+
+.names n1800 diffeq_paj_convert^reset n1557 
+00 1 
+
+
+.names diffeq_paj_convert^Yinport~26 n1437_1 n1801 diffeq_paj_convert^MUL~0[26] diffeq_paj_convert^y_var~26_FF \
+ diffeq_paj_convert^looping_FF n1800 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1796 diffeq_paj_convert^MUL~0[25] diffeq_paj_convert^y_var~25_FF diffeq_paj_convert^MUL~0[24] \
+ diffeq_paj_convert^y_var~24_FF n1801 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~27 diffeq_paj_convert^y_var~27_FF n1436 n1803 \
+ diffeq_paj_convert^reset n1562 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1804 n1806 diffeq_paj_convert^MUL~0[27] diffeq_paj_convert^y_var~27_FF n1573_1 n1803 
+00001 1 
+-1101 1 
+1-101 1 
+-1011 1 
+1-011 1 
+00111 1 
+
+
+.names n1796 diffeq_paj_convert^MUL~0[25] diffeq_paj_convert^y_var~25_FF diffeq_paj_convert^MUL~0[24] \
+ diffeq_paj_convert^y_var~24_FF n1805 n1804 
+--0000 1 
+-0-000 1 
+0-0-00 1 
+00--00 1 
+0-00-0 1 
+00-0-0 1 
+-00--0 1 
+
+
+.names diffeq_paj_convert^MUL~0[26] diffeq_paj_convert^y_var~26_FF n1805 
+11 1 
+
+
+.names diffeq_paj_convert^MUL~0[26] diffeq_paj_convert^y_var~26_FF n1806 
+00 1 
+
+
+.names n1808 diffeq_paj_convert^reset n1567 
+00 1 
+
+
+.names diffeq_paj_convert^Yinport~28 n1437_1 n1809 diffeq_paj_convert^MUL~0[28] diffeq_paj_convert^y_var~28_FF \
+ diffeq_paj_convert^looping_FF n1808 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names diffeq_paj_convert^MUL~0[27] n1806 n1804 diffeq_paj_convert^y_var~27_FF n1809 
+-001 1 
+1--1 1 
+100- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~29 diffeq_paj_convert^y_var~29_FF n1463_1 n1811 \
+ diffeq_paj_convert^reset n1572 
+----10 1 
+01---0 1 
+--11-- 1 
+
+
+.names n1812 diffeq_paj_convert^MUL~0[29] diffeq_paj_convert^y_var~29_FF n1573_1 n1811 
+1001 1 
+0101 1 
+0011 1 
+1111 1 
+
+
+.names diffeq_paj_convert^MUL~0[27] diffeq_paj_convert^MUL~0[28] n1804 n1806 diffeq_paj_convert^y_var~28_FF \
+ diffeq_paj_convert^y_var~27_FF n1812 
+--0011 1 
+1---11 1 
+-100-1 1 
+11---1 1 
+1-001- 1 
+-1--1- 1 
+1100-- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~30 diffeq_paj_convert^y_var~30_FF n1436 n1814 \
+ diffeq_paj_convert^reset n1577 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1812 diffeq_paj_convert^MUL~0[29] diffeq_paj_convert^y_var~29_FF diffeq_paj_convert^MUL~0[30] \
+ diffeq_paj_convert^y_var~30_FF n1573_1 n1814 
+-11001 1 
+1-1001 1 
+11-001 1 
+-00101 1 
+0-0101 1 
+00-101 1 
+-00011 1 
+0-0011 1 
+00-011 1 
+-11111 1 
+1-1111 1 
+11-111 1 
+
+
+.names diffeq_paj_convert^looping_FF n1437_1 n1816 diffeq_paj_convert^MUL~0[31] diffeq_paj_convert^y_var~31_FF n1817 n1582 
+-----0 0 
+1-000- 0 
+1-110- 0 
+11--0- 0 
+10101- 0 
+10011- 0 
+
+
+.names n1812 diffeq_paj_convert^MUL~0[30] diffeq_paj_convert^y_var~30_FF diffeq_paj_convert^MUL~0[29] \
+ diffeq_paj_convert^y_var~29_FF n1816 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Yinport~31 diffeq_paj_convert^reset n1817 
+--1 0 
+00- 0 
+
+
+.names diffeq_paj_convert^Xinport~0 n1437_1 diffeq_paj_convert^DXport~0 diffeq_paj_convert^x_var~0_FF \
+ diffeq_paj_convert^reset diffeq_paj_convert^looping_FF n1587 
+1---00 1 
+-01001 1 
+--0101 1 
+-1-101 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~1 diffeq_paj_convert^x_var~1_FF n1436 n1820 \
+ diffeq_paj_convert^reset n1592 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names diffeq_paj_convert^DXport~0 diffeq_paj_convert^x_var~0_FF diffeq_paj_convert^DXport~1 diffeq_paj_convert^x_var~1_FF \
+ n1573_1 n1820 
+11001 1 
+-0101 1 
+0-101 1 
+-0011 1 
+0-011 1 
+11111 1 
+
+
+.names n1822 diffeq_paj_convert^x_var~2_FF diffeq_paj_convert^Xinport~2 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1597 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names diffeq_paj_convert^DXport~0 diffeq_paj_convert^x_var~0_FF diffeq_paj_convert^DXport~1 diffeq_paj_convert^x_var~1_FF \
+ diffeq_paj_convert^DXport~2 diffeq_paj_convert^x_var~2_FF n1822 
+--1100 1 
+11-100 1 
+111-00 1 
+--0010 1 
+-0-010 1 
+0--010 1 
+-00-10 1 
+0-0-10 1 
+--0001 1 
+-0-001 1 
+0--001 1 
+-00-01 1 
+0-0-01 1 
+--1111 1 
+11-111 1 
+111-11 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~3 n1824 diffeq_paj_convert^reset n1602 
+--00 1 
+01-0 1 
+
+
+.names n1437_1 n1825 diffeq_paj_convert^DXport~3 diffeq_paj_convert^x_var~3_FF diffeq_paj_convert^looping_FF n1824 
+01001 0 
+00101 0 
+-0011 0 
+-1111 0 
+1--11 0 
+
+
+.names diffeq_paj_convert^DXport~1 diffeq_paj_convert^DXport~2 diffeq_paj_convert^x_var~2_FF diffeq_paj_convert^x_var~1_FF \
+ diffeq_paj_convert^x_var~0_FF diffeq_paj_convert^DXport~0 n1825 
+--1111 1 
+-1-111 1 
+1-1-11 1 
+11--11 1 
+1-11-- 1 
+11-1-- 1 
+-11--- 1 
+
+
+.names n1827 diffeq_paj_convert^x_var~4_FF diffeq_paj_convert^Xinport~4 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1607 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1828 diffeq_paj_convert^DXport~4 diffeq_paj_convert^x_var~4_FF n1827 
+100 1 
+010 1 
+001 1 
+111 1 
+
+
+.names n1825 diffeq_paj_convert^DXport~3 diffeq_paj_convert^x_var~3_FF n1828 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~5 diffeq_paj_convert^x_var~5_FF n1436 n1830 \
+ diffeq_paj_convert^reset n1612 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1828 diffeq_paj_convert^DXport~4 diffeq_paj_convert^x_var~4_FF diffeq_paj_convert^DXport~5 \
+ diffeq_paj_convert^x_var~5_FF n1573_1 n1830 
+-11001 1 
+1-1001 1 
+11-001 1 
+-00101 1 
+0-0101 1 
+00-101 1 
+-00011 1 
+0-0011 1 
+00-011 1 
+-11111 1 
+1-1111 1 
+11-111 1 
+
+
+.names n1832 diffeq_paj_convert^x_var~6_FF diffeq_paj_convert^Xinport~6 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1617 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names n1833 diffeq_paj_convert^DXport~6 diffeq_paj_convert^x_var~6_FF n1832 
+000 1 
+110 1 
+101 1 
+011 1 
+
+
+.names n1828 diffeq_paj_convert^DXport~5 diffeq_paj_convert^x_var~5_FF diffeq_paj_convert^DXport~4 \
+ diffeq_paj_convert^x_var~4_FF n1833 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~7 diffeq_paj_convert^x_var~7_FF n1436 n1835 \
+ diffeq_paj_convert^reset n1622 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1833 diffeq_paj_convert^DXport~6 diffeq_paj_convert^x_var~6_FF diffeq_paj_convert^DXport~7 \
+ diffeq_paj_convert^x_var~7_FF n1573_1 n1835 
+-11001 1 
+1-1001 1 
+11-001 1 
+-00101 1 
+0-0101 1 
+00-101 1 
+-00011 1 
+0-0011 1 
+00-011 1 
+-11111 1 
+1-1111 1 
+11-111 1 
+
+
+.names n1837 diffeq_paj_convert^x_var~8_FF diffeq_paj_convert^Xinport~8 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1627 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names n1838 diffeq_paj_convert^DXport~8 diffeq_paj_convert^x_var~8_FF n1837 
+000 1 
+110 1 
+101 1 
+011 1 
+
+
+.names n1833 diffeq_paj_convert^DXport~7 diffeq_paj_convert^x_var~7_FF diffeq_paj_convert^DXport~6 \
+ diffeq_paj_convert^x_var~6_FF n1838 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names n1840 diffeq_paj_convert^reset n1632 
+00 1 
+
+
+.names diffeq_paj_convert^Xinport~9 n1437_1 n1841 diffeq_paj_convert^DXport~9 diffeq_paj_convert^x_var~9_FF \
+ diffeq_paj_convert^looping_FF n1840 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1838 diffeq_paj_convert^DXport~8 diffeq_paj_convert^x_var~8_FF n1841 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~10 diffeq_paj_convert^x_var~10_FF n1436 n1843 \
+ diffeq_paj_convert^reset n1637 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1844 diffeq_paj_convert^DXport~10 diffeq_paj_convert^x_var~10_FF n1573_1 n1843 
+1001 1 
+0101 1 
+0011 1 
+1111 1 
+
+
+.names n1838 diffeq_paj_convert^DXport~9 diffeq_paj_convert^x_var~9_FF diffeq_paj_convert^DXport~8 \
+ diffeq_paj_convert^x_var~8_FF n1844 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names n1846 diffeq_paj_convert^x_var~11_FF diffeq_paj_convert^Xinport~11 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1642 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names n1847 diffeq_paj_convert^DXport~11 diffeq_paj_convert^x_var~11_FF n1846 
+000 1 
+110 1 
+101 1 
+011 1 
+
+
+.names n1844 diffeq_paj_convert^DXport~10 diffeq_paj_convert^x_var~10_FF n1847 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~12 diffeq_paj_convert^x_var~12_FF n1436 n1849 \
+ diffeq_paj_convert^reset n1647 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1847 diffeq_paj_convert^DXport~11 diffeq_paj_convert^x_var~11_FF diffeq_paj_convert^DXport~12 \
+ diffeq_paj_convert^x_var~12_FF n1573_1 n1849 
+-11001 1 
+1-1001 1 
+11-001 1 
+-00101 1 
+0-0101 1 
+00-101 1 
+-00011 1 
+0-0011 1 
+00-011 1 
+-11111 1 
+1-1111 1 
+11-111 1 
+
+
+.names n1851 diffeq_paj_convert^x_var~13_FF diffeq_paj_convert^Xinport~13 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1652 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1852 diffeq_paj_convert^DXport~13 diffeq_paj_convert^x_var~13_FF n1851 
+000 1 
+110 1 
+101 1 
+011 1 
+
+
+.names n1853 n1855 n1852 
+00 1 
+
+
+.names n1844 diffeq_paj_convert^DXport~11 diffeq_paj_convert^x_var~11_FF diffeq_paj_convert^DXport~10 \
+ diffeq_paj_convert^x_var~10_FF n1854 n1853 
+--1110 1 
+-1-110 1 
+1-1-10 1 
+11--10 1 
+1-11-0 1 
+11-1-0 1 
+-11--0 1 
+
+
+.names diffeq_paj_convert^DXport~12 diffeq_paj_convert^x_var~12_FF n1854 
+00 1 
+
+
+.names diffeq_paj_convert^DXport~12 diffeq_paj_convert^x_var~12_FF n1855 
+11 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~14 diffeq_paj_convert^x_var~14_FF n1436 n1857 \
+ diffeq_paj_convert^reset n1657 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1852 diffeq_paj_convert^DXport~13 diffeq_paj_convert^x_var~13_FF diffeq_paj_convert^DXport~14 \
+ diffeq_paj_convert^x_var~14_FF n1573_1 n1857 
+-11001 1 
+0-1001 1 
+01-001 1 
+-00101 1 
+1-0101 1 
+10-101 1 
+-00011 1 
+1-0011 1 
+10-011 1 
+-11111 1 
+0-1111 1 
+01-111 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~15 diffeq_paj_convert^x_var~15_FF n1436 n1859 \
+ diffeq_paj_convert^reset n1662 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1860 diffeq_paj_convert^DXport~15 diffeq_paj_convert^x_var~15_FF n1573_1 n1859 
+0001 1 
+1101 1 
+1011 1 
+0111 1 
+
+
+.names diffeq_paj_convert^DXport~13 diffeq_paj_convert^DXport~14 diffeq_paj_convert^x_var~14_FF \
+ diffeq_paj_convert^x_var~13_FF n1855 n1853 n1860 
+--0000 1 
+-0-000 1 
+0-0-00 1 
+00--00 1 
+0-00-- 1 
+00-0-- 1 
+-00--- 1 
+
+
+.names n1862 diffeq_paj_convert^reset n1667 
+00 1 
+
+
+.names diffeq_paj_convert^Xinport~16 n1437_1 n1863 diffeq_paj_convert^DXport~16 diffeq_paj_convert^x_var~16_FF \
+ diffeq_paj_convert^looping_FF n1862 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1860 diffeq_paj_convert^DXport~15 diffeq_paj_convert^x_var~15_FF n1863 
+-11 1 
+0-1 1 
+01- 1 
+
+
+.names n1865 diffeq_paj_convert^reset n1672 
+00 1 
+
+
+.names diffeq_paj_convert^Xinport~17 n1437_1 n1866 diffeq_paj_convert^DXport~17 diffeq_paj_convert^x_var~17_FF \
+ diffeq_paj_convert^looping_FF n1865 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1863 diffeq_paj_convert^DXport~16 diffeq_paj_convert^x_var~16_FF n1866 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names n1868 diffeq_paj_convert^reset n1677 
+00 1 
+
+
+.names diffeq_paj_convert^Xinport~18 n1437_1 n1869 diffeq_paj_convert^DXport~18 diffeq_paj_convert^x_var~18_FF \
+ diffeq_paj_convert^looping_FF n1868 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1870 n1872 n1869 
+00 1 
+
+
+.names n1860 diffeq_paj_convert^DXport~16 diffeq_paj_convert^x_var~16_FF diffeq_paj_convert^DXport~15 \
+ diffeq_paj_convert^x_var~15_FF n1871 n1870 
+--0000 1 
+-0-000 1 
+1-0-00 1 
+10--00 1 
+1-00-0 1 
+10-0-0 1 
+-00--0 1 
+
+
+.names diffeq_paj_convert^DXport~17 diffeq_paj_convert^x_var~17_FF n1871 
+11 1 
+
+
+.names diffeq_paj_convert^DXport~17 diffeq_paj_convert^x_var~17_FF n1872 
+00 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~19 n1874 diffeq_paj_convert^reset n1682 
+--00 1 
+01-0 1 
+
+
+.names n1437_1 n1875 diffeq_paj_convert^DXport~19 diffeq_paj_convert^x_var~19_FF diffeq_paj_convert^looping_FF n1874 
+01001 0 
+00101 0 
+-0011 0 
+-1111 0 
+1--11 0 
+
+
+.names n1869 diffeq_paj_convert^DXport~18 diffeq_paj_convert^x_var~18_FF n1875 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names n1877 diffeq_paj_convert^x_var~20_FF diffeq_paj_convert^Xinport~20 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1687 
+--1-00 1 
+1--001 1 
+-1-101 1 
+
+
+.names n1878 diffeq_paj_convert^DXport~20 diffeq_paj_convert^x_var~20_FF n1877 
+100 1 
+010 1 
+001 1 
+111 1 
+
+
+.names diffeq_paj_convert^DXport~18 diffeq_paj_convert^DXport~19 n1870 n1872 diffeq_paj_convert^x_var~19_FF \
+ diffeq_paj_convert^x_var~18_FF n1878 
+--0011 1 
+1---11 1 
+-100-1 1 
+11---1 1 
+1-001- 1 
+-1--1- 1 
+1100-- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~21 n1880 diffeq_paj_convert^reset n1692 
+--00 1 
+01-0 1 
+
+
+.names n1437_1 n1881 diffeq_paj_convert^DXport~21 diffeq_paj_convert^x_var~21_FF diffeq_paj_convert^looping_FF n1880 
+01001 0 
+00101 0 
+-0011 0 
+-1111 0 
+1--11 0 
+
+
+.names n1878 diffeq_paj_convert^DXport~20 diffeq_paj_convert^x_var~20_FF n1881 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names n1883 diffeq_paj_convert^x_var~22_FF diffeq_paj_convert^Xinport~22 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1697 
+--1-00 1 
+0--001 1 
+-1-101 1 
+
+
+.names n1884 diffeq_paj_convert^DXport~22 diffeq_paj_convert^x_var~22_FF n1883 
+000 1 
+110 1 
+101 1 
+011 1 
+
+
+.names n1878 diffeq_paj_convert^DXport~21 diffeq_paj_convert^x_var~21_FF diffeq_paj_convert^DXport~20 \
+ diffeq_paj_convert^x_var~20_FF n1884 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names n1886 diffeq_paj_convert^reset n1702 
+00 1 
+
+
+.names diffeq_paj_convert^Xinport~23 n1437_1 n1887 diffeq_paj_convert^DXport~23 diffeq_paj_convert^x_var~23_FF \
+ diffeq_paj_convert^looping_FF n1886 
+0----0 1 
+--0001 1 
+--1101 1 
+-1--01 1 
+-01011 1 
+-00111 1 
+
+
+.names n1884 diffeq_paj_convert^DXport~22 diffeq_paj_convert^x_var~22_FF n1887 
+-11 1 
+1-1 1 
+11- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~24 n1889 n1463_1 diffeq_paj_convert^x_var~24_FF \
+ diffeq_paj_convert^reset n1707 
+--1--0 1 
+01---0 1 
+---11- 1 
+
+
+.names n1887 diffeq_paj_convert^DXport~23 diffeq_paj_convert^x_var~23_FF diffeq_paj_convert^DXport~24 \
+ diffeq_paj_convert^x_var~24_FF n1573_1 n1889 
+-11001 1 
+1-1001 1 
+11-001 1 
+-00101 1 
+0-0101 1 
+00-101 1 
+-00011 1 
+0-0011 1 
+00-011 1 
+-11111 1 
+1-1111 1 
+11-111 1 
+
+
+.names diffeq_paj_convert^x_var~25_FF n1891 diffeq_paj_convert^Xinport~25 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1712 
+--1-00 1 
+-1-001 1 
+1--101 1 
+
+
+.names n1892 n1894 diffeq_paj_convert^DXport~25 diffeq_paj_convert^x_var~25_FF n1891 
+0000 1 
+-110 1 
+1-10 1 
+-101 1 
+1-01 1 
+0011 1 
+
+
+.names n1884 diffeq_paj_convert^DXport~23 diffeq_paj_convert^x_var~23_FF diffeq_paj_convert^DXport~22 \
+ diffeq_paj_convert^x_var~22_FF n1893 n1892 
+--0000 1 
+-0-000 1 
+0-0-00 1 
+00--00 1 
+0-00-0 1 
+00-0-0 1 
+-00--0 1 
+
+
+.names diffeq_paj_convert^DXport~24 diffeq_paj_convert^x_var~24_FF n1893 
+11 1 
+
+
+.names diffeq_paj_convert^DXport~24 diffeq_paj_convert^x_var~24_FF n1894 
+00 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~26 n1896 diffeq_paj_convert^reset n1717 
+--00 1 
+01-0 1 
+
+
+.names n1436 n1897 diffeq_paj_convert^DXport~26 n1573_1 diffeq_paj_convert^x_var~26_FF n1896 
+-1010 0 
+-0110 0 
+-0011 0 
+-1111 0 
+1---1 0 
+
+
+.names diffeq_paj_convert^DXport~25 n1894 n1892 diffeq_paj_convert^x_var~25_FF n1897 
+-001 1 
+1--1 1 
+100- 1 
+
+
+.names diffeq_paj_convert^x_var~27_FF n1899 diffeq_paj_convert^Xinport~27 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1722 
+--1-00 1 
+-1-001 1 
+1--101 1 
+
+
+.names n1900 diffeq_paj_convert^DXport~27 diffeq_paj_convert^x_var~27_FF n1899 
+100 1 
+010 1 
+001 1 
+111 1 
+
+
+.names diffeq_paj_convert^DXport~25 diffeq_paj_convert^DXport~26 n1892 n1894 diffeq_paj_convert^x_var~26_FF \
+ diffeq_paj_convert^x_var~25_FF n1900 
+--0011 1 
+1---11 1 
+-100-1 1 
+11---1 1 
+1-001- 1 
+-1--1- 1 
+1100-- 1 
+
+
+.names diffeq_paj_convert^x_var~28_FF n1902 diffeq_paj_convert^Xinport~28 n1437_1 diffeq_paj_convert^reset \
+ diffeq_paj_convert^looping_FF n1727 
+--1-00 1 
+-1-001 1 
+1--101 1 
+
+
+.names n1900 diffeq_paj_convert^DXport~27 diffeq_paj_convert^x_var~27_FF diffeq_paj_convert^DXport~28 \
+ diffeq_paj_convert^x_var~28_FF n1902 
+-1100 1 
+1-100 1 
+11-00 1 
+-0010 1 
+0-010 1 
+00-10 1 
+-0001 1 
+0-001 1 
+00-01 1 
+-1111 1 
+1-111 1 
+11-11 1 
+
+
+.names n1905 n1904 diffeq_paj_convert^DXport~29 diffeq_paj_convert^x_var~29_FF n1573_1 diffeq_paj_convert^reset n1732 
+-10010 1 
+-01010 1 
+-00110 1 
+-11110 1 
+0----0 1 
+
+
+.names n1900 diffeq_paj_convert^DXport~28 diffeq_paj_convert^x_var~28_FF diffeq_paj_convert^DXport~27 \
+ diffeq_paj_convert^x_var~27_FF n1904 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names n1437_1 diffeq_paj_convert^x_var~29_FF diffeq_paj_convert^Xinport~29 diffeq_paj_convert^looping_FF n1905 
+--10 0 
+11-1 0 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~30 diffeq_paj_convert^x_var~30_FF n1436 n1907 \
+ diffeq_paj_convert^reset n1737 
+----10 1 
+--11-0 1 
+01---0 1 
+
+
+.names n1904 diffeq_paj_convert^DXport~29 diffeq_paj_convert^x_var~29_FF diffeq_paj_convert^DXport~30 \
+ diffeq_paj_convert^x_var~30_FF n1573_1 n1907 
+-11001 1 
+1-1001 1 
+11-001 1 
+-00101 1 
+0-0101 1 
+00-101 1 
+-00011 1 
+0-0011 1 
+00-011 1 
+-11111 1 
+1-1111 1 
+11-111 1 
+
+
+.names diffeq_paj_convert^looping_FF n1437_1 n1909 diffeq_paj_convert^DXport~31 diffeq_paj_convert^x_var~31_FF n1910 n1742 
+-----0 0 
+1-000- 0 
+1-110- 0 
+11--0- 0 
+10101- 0 
+10011- 0 
+
+
+.names n1904 diffeq_paj_convert^DXport~30 diffeq_paj_convert^x_var~30_FF diffeq_paj_convert^DXport~29 \
+ diffeq_paj_convert^x_var~29_FF n1909 
+--111 1 
+-1-11 1 
+1-1-1 1 
+11--1 1 
+1-11- 1 
+11-1- 1 
+-11-- 1 
+
+
+.names diffeq_paj_convert^looping_FF diffeq_paj_convert^Xinport~31 diffeq_paj_convert^reset n1910 
+--1 0 
+00- 0 
+
+
+.names unconn 
+0 
+
+
+.names vcc 
+1 
+
+
+.names gnd 
+0 
+
+
+.names diffeq_paj_convert^Xoutport~0_FF diffeq_paj_convert^Xoutport~0 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~1_FF diffeq_paj_convert^Xoutport~1 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~2_FF diffeq_paj_convert^Xoutport~2 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~3_FF diffeq_paj_convert^Xoutport~3 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~4_FF diffeq_paj_convert^Xoutport~4 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~5_FF diffeq_paj_convert^Xoutport~5 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~6_FF diffeq_paj_convert^Xoutport~6 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~7_FF diffeq_paj_convert^Xoutport~7 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~8_FF diffeq_paj_convert^Xoutport~8 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~9_FF diffeq_paj_convert^Xoutport~9 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~10_FF diffeq_paj_convert^Xoutport~10 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~11_FF diffeq_paj_convert^Xoutport~11 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~12_FF diffeq_paj_convert^Xoutport~12 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~13_FF diffeq_paj_convert^Xoutport~13 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~14_FF diffeq_paj_convert^Xoutport~14 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~15_FF diffeq_paj_convert^Xoutport~15 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~16_FF diffeq_paj_convert^Xoutport~16 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~17_FF diffeq_paj_convert^Xoutport~17 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~18_FF diffeq_paj_convert^Xoutport~18 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~19_FF diffeq_paj_convert^Xoutport~19 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~20_FF diffeq_paj_convert^Xoutport~20 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~21_FF diffeq_paj_convert^Xoutport~21 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~22_FF diffeq_paj_convert^Xoutport~22 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~23_FF diffeq_paj_convert^Xoutport~23 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~24_FF diffeq_paj_convert^Xoutport~24 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~25_FF diffeq_paj_convert^Xoutport~25 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~26_FF diffeq_paj_convert^Xoutport~26 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~27_FF diffeq_paj_convert^Xoutport~27 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~28_FF diffeq_paj_convert^Xoutport~28 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~29_FF diffeq_paj_convert^Xoutport~29 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~30_FF diffeq_paj_convert^Xoutport~30 
+1 1 
+
+
+.names diffeq_paj_convert^Xoutport~31_FF diffeq_paj_convert^Xoutport~31 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~0_FF diffeq_paj_convert^Youtport~0 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~1_FF diffeq_paj_convert^Youtport~1 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~2_FF diffeq_paj_convert^Youtport~2 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~3_FF diffeq_paj_convert^Youtport~3 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~4_FF diffeq_paj_convert^Youtport~4 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~5_FF diffeq_paj_convert^Youtport~5 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~6_FF diffeq_paj_convert^Youtport~6 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~7_FF diffeq_paj_convert^Youtport~7 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~8_FF diffeq_paj_convert^Youtport~8 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~9_FF diffeq_paj_convert^Youtport~9 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~10_FF diffeq_paj_convert^Youtport~10 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~11_FF diffeq_paj_convert^Youtport~11 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~12_FF diffeq_paj_convert^Youtport~12 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~13_FF diffeq_paj_convert^Youtport~13 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~14_FF diffeq_paj_convert^Youtport~14 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~15_FF diffeq_paj_convert^Youtport~15 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~16_FF diffeq_paj_convert^Youtport~16 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~17_FF diffeq_paj_convert^Youtport~17 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~18_FF diffeq_paj_convert^Youtport~18 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~19_FF diffeq_paj_convert^Youtport~19 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~20_FF diffeq_paj_convert^Youtport~20 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~21_FF diffeq_paj_convert^Youtport~21 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~22_FF diffeq_paj_convert^Youtport~22 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~23_FF diffeq_paj_convert^Youtport~23 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~24_FF diffeq_paj_convert^Youtport~24 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~25_FF diffeq_paj_convert^Youtport~25 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~26_FF diffeq_paj_convert^Youtport~26 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~27_FF diffeq_paj_convert^Youtport~27 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~28_FF diffeq_paj_convert^Youtport~28 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~29_FF diffeq_paj_convert^Youtport~29 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~30_FF diffeq_paj_convert^Youtport~30 
+1 1 
+
+
+.names diffeq_paj_convert^Youtport~31_FF diffeq_paj_convert^Youtport~31 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~0_FF diffeq_paj_convert^Uoutport~0 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~1_FF diffeq_paj_convert^Uoutport~1 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~2_FF diffeq_paj_convert^Uoutport~2 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~3_FF diffeq_paj_convert^Uoutport~3 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~4_FF diffeq_paj_convert^Uoutport~4 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~5_FF diffeq_paj_convert^Uoutport~5 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~6_FF diffeq_paj_convert^Uoutport~6 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~7_FF diffeq_paj_convert^Uoutport~7 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~8_FF diffeq_paj_convert^Uoutport~8 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~9_FF diffeq_paj_convert^Uoutport~9 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~10_FF diffeq_paj_convert^Uoutport~10 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~11_FF diffeq_paj_convert^Uoutport~11 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~12_FF diffeq_paj_convert^Uoutport~12 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~13_FF diffeq_paj_convert^Uoutport~13 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~14_FF diffeq_paj_convert^Uoutport~14 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~15_FF diffeq_paj_convert^Uoutport~15 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~16_FF diffeq_paj_convert^Uoutport~16 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~17_FF diffeq_paj_convert^Uoutport~17 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~18_FF diffeq_paj_convert^Uoutport~18 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~19_FF diffeq_paj_convert^Uoutport~19 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~20_FF diffeq_paj_convert^Uoutport~20 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~21_FF diffeq_paj_convert^Uoutport~21 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~22_FF diffeq_paj_convert^Uoutport~22 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~23_FF diffeq_paj_convert^Uoutport~23 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~24_FF diffeq_paj_convert^Uoutport~24 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~25_FF diffeq_paj_convert^Uoutport~25 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~26_FF diffeq_paj_convert^Uoutport~26 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~27_FF diffeq_paj_convert^Uoutport~27 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~28_FF diffeq_paj_convert^Uoutport~28 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~29_FF diffeq_paj_convert^Uoutport~29 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~30_FF diffeq_paj_convert^Uoutport~30 
+1 1 
+
+
+.names diffeq_paj_convert^Uoutport~31_FF diffeq_paj_convert^Uoutport~31 
+1 1 
+
+
+
+.end 
+
+
+
+
+.model multiply 
+
+
+.inputs a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] \
+ a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] a[32] a[33] a[34] a[35] b[0] b[1] b[2] b[3] b[4] b[5] b[6] \
+ b[7] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] \
+ b[28] b[29] b[30] b[31] b[32] b[33] b[34] b[35] 
+
+
+.outputs out[0] out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] out[11] out[12] out[13] out[14] \
+ out[15] out[16] out[17] out[18] out[19] out[20] out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29] \
+ out[30] out[31] out[32] out[33] out[34] out[35] out[36] out[37] out[38] out[39] out[40] out[41] out[42] out[43] out[44] \
+ out[45] out[46] out[47] out[48] out[49] out[50] out[51] out[52] out[53] out[54] out[55] out[56] out[57] out[58] out[59] \
+ out[60] out[61] out[62] out[63] out[64] out[65] out[66] out[67] out[68] out[69] out[70] out[71] 
+
+
+.blackbox 
+
+
+
+.end 
+
+
+
+

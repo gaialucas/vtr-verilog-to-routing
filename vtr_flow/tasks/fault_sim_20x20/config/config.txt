@@ -4,7 +4,7 @@
 ##############################################
 
 # Path to directory of circuits to use
-circuits_dir=benchmarks/verilog
+circuits_dir=benchmarks/vtr_benchmark_blif
 
 # Path to directory of architectures to use
 archs_dir=arch/timing
@@ -15,20 +15,56 @@ arch_list_add=k6_frac_N10_mem32K_40nm.xml
 # Parse info and how to parse
 parse_file=fault_sim.txt
 
-script_params=--route_chan_width 60 --device fixed20x20 --write_rr_graph k6_frac_N10_mem32K_40nm_rr.xml --fault_sim
+script_params=-starting_stage vpr --route_chan_width 60 --device fixed20x20 --write_rr_graph k6_frac_N10_mem32K_40nm_rr.xml --fault_sim
 
 # Sweep option range
-script_params_list_add= --equal_fault 0.0025
-script_params_list_add= --equal_fault 0.0050
-script_params_list_add= --equal_fault 0.0100
-script_params_list_add= --equal_fault 0.0125
-script_params_list_add= --equal_fault 0.0150
-script_params_list_add= --equal_fault 0.0200
-script_params_list_add= --equal_fault 0.0250
-script_params_list_add= --equal_fault 0.03
+script_params_list_add= --equal_fault 0.00000
+script_params_list_add= --equal_fault 0.00001
+script_params_list_add= --equal_fault 0.00002
+script_params_list_add= --equal_fault 0.00003
+script_params_list_add= --equal_fault 0.00004
+script_params_list_add= --equal_fault 0.00005
+script_params_list_add= --equal_fault 0.00006
+script_params_list_add= --equal_fault 0.00007
+script_params_list_add= --equal_fault 0.00008
+script_params_list_add= --equal_fault 0.00009
+script_params_list_add= --equal_fault 0.00010 # 10
+script_params_list_add= --equal_fault 0.00015
+script_params_list_add= --equal_fault 0.00020
+script_params_list_add= --equal_fault 0.00025
+script_params_list_add= --equal_fault 0.00030
+script_params_list_add= --equal_fault 0.00035
+script_params_list_add= --equal_fault 0.00040
+script_params_list_add= --equal_fault 0.00045
+script_params_list_add= --equal_fault 0.00050
+script_params_list_add= --equal_fault 0.00055
+script_params_list_add= --equal_fault 0.00060 # 20
+script_params_list_add= --equal_fault 0.00065
+script_params_list_add= --equal_fault 0.00070
+script_params_list_add= --equal_fault 0.00075
+script_params_list_add= --equal_fault 0.00080
+script_params_list_add= --equal_fault 0.00085
+script_params_list_add= --equal_fault 0.00090
+script_params_list_add= --equal_fault 0.00095
+script_params_list_add= --equal_fault 0.00100
+script_params_list_add= --equal_fault 0.00150
+script_params_list_add= --equal_fault 0.00200 # 30
+
+script_params_list_add= --equal_fault 0.00250
+script_params_list_add= --equal_fault 0.00500
+script_params_list_add= --equal_fault 0.00750
+script_params_list_add= --equal_fault 0.01000
+script_params_list_add= --equal_fault 0.01250
+script_params_list_add= --equal_fault 0.01500
+script_params_list_add= --equal_fault 0.01750
+script_params_list_add= --equal_fault 0.02000
+script_params_list_add= --equal_fault 0.02250
+script_params_list_add= --equal_fault 0.02500 # 40
+script_params_list_add= --equal_fault 0.02750
+script_params_list_add= --equal_fault 0.03000
 
 # Add circuits to list to sweep
-circuit_list_add=ch_intrinsics.v
-circuit_list_add=diffeq1.v
-circuit_list_add=diffeq2.v
-circuit_list_add=stereovision3.v
+circuit_list_add=ch_intrinsics.abc.blif
+circuit_list_add=diffeq1.abc.blif
+circuit_list_add=diffeq2.abc.blif
+circuit_list_add=stereovision3.abc.blif
