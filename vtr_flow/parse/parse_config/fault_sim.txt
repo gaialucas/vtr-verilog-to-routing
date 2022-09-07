@@ -1,12 +1,47 @@
 # Metrics for the standard VTR flow with fixed channel width
 # and fault simulation
 
+# Critical and necessary
 %include "common/vtr_flow.txt"
 %include "common/vtr_benchmarks.txt"
-
 %include "common/vpr.common.txt"
-%include "timing/vpr.pack.txt"
-%include "timing/vpr.place_second_run.txt"
-%include "timing/vpr.route_fixed_chan_width_second_run.txt"
+
+# Packing metrics
+device_name;vpr.out;FPGA sized to \d+ x \d+: \d+ grid tiles \((\S+)\)
+pack_time;vpr.out;\s*Packing took (.*) seconds
+
+# Placing metrics
+place_time;vpr.out;\s*Placement took (.*) seconds
+placed_CPD_est;vpr_second_run.out;Placement estimated critical path delay \(least slack\): (.*) ns
+place_total_timing_analysis_time;vpr_second_run.out;Placement Total\s+timing analysis took (.*) seconds
+
+# Routing metrics
+routed_wirelength;vpr_second_run.out;\s*Total wirelength: (.*), average .*
+all_rr_edges;vpr.out;\s*RR Graph Edges: (\d+)
+post_sim_rr_edges;vpr_second_run.out;\s*RR Graph Edges: (\d+)
+total_nets_routed;vpr_second_run.out;Router Stats: total_nets_routed: (\d+) .*
+total_connections_routed;vpr_second_run.out;Router Stats: .*total_connections_routed: (\d+) .*
+
+# Routing area
+logic_block_area_total;vpr_second_run.out;\s*Total logic block area .*: (.*)
+logic_block_area_used;vpr_second_run.out;\s*Total used logic block area: (.*)
+routing_area_total;vpr_second_run.out;\s*Total routing area: (.*), per logic tile: .*
+routing_area_per_tile;vpr_second_run.out;\s*Total routing area: .*, per logic tile: (.*)
+
+# Critical Path estimation
+crit_path_route_success_iteration;vpr_second_run.out;Successfully routed after (\d+) routing iterations
+first_critical_path_delay;vpr.out;Final critical path delay \(least slack\): (.*) ns
+second_critical_path_delay;vpr_second_run.out;Final critical path delay \(least slack\): (.*) ns
+crit_path_route_time;vpr_second_run.out;\s*Routing took (.*) seconds
 
 # Simulation Metrics
+fault_sim_time;fault_sim.out;Simu time:\s*(.*) seconds
+fault_sim_rpt_time;fault_sim.out;Report time:\s*(.*) seconds
+cell_type;fault_sim.out;Cell type:\s*(\S+)
+mux_edges;fault_sim.out;Mux edges:\s*(\d+)
+defect_edges;fault_sim.out;Defect edges:\s*(\d+)
+percent_sa0;fault_sim.out;% SA0:\s*(.*)
+percent_sa1;fault_sim.out;% SA1:\s*(.*)
+percent_ud;fault_sim.out;% UD:\s*(.*)
+percent_defect_edges;fault_sim.out;% Defect edges:\s*(.*)
+percent_unusable_mux;fault_sim.out;% Unusable muxes:\s*(.*)
